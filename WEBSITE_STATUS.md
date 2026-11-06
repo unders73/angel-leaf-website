@@ -46,7 +46,7 @@ Updated 6 November 2026: desktop Activity Collection wording and shared instruct
 - Existing matching pink, outlined brush lettering is retained. Both title graphics now have exactly the same displayed height: 99.953px at 1363px page width and 53.188px at 760px width.
 - At 1363px the Activity Collection artwork and its instruction both have centre x=681.5px. At 760px both centres are x=380px.
 - Angel Leaf logo, back link, header heights, covers, lower illustrations and all destinations remain unchanged.
-- Screenshot comparison confirms every desktop pixel below y=174px is unchanged; the entire 390px mobile screenshot is unchanged.
+- Screenshot comparison confirms every desktop pixel below y=178px is unchanged. Mobile CSS is untouched, and the 390px title, book-panel and cover coordinates exactly match the prior version.
 - Simon explicitly requested desktop-only corrections this turn and will review mobile separately. Do not modify mobile until he gives those instructions.
 - Only activity.html and these notes changed. No new or modified image assets, homepage, other collection pages, or individual book pages.
 
