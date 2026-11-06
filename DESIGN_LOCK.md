@@ -9,4 +9,6 @@ Preserve both artwork files exactly. Do not regenerate, redraw, retouch, recolou
 
 The page selects the appropriate original image and scales it uniformly to fit. All three categories lead to the existing blank category pages.
 
+Simon clarified on 6 November 2026 that the complete opening page must fit on screen with NO SCROLLING. Do not introduce scrolling to fill the width. The desktop version keeps the four books in one row. The white side margins are an aspect-ratio issue, not evidence that the mobile artwork is selected. Obtain explicit agreement before stretching, cropping, rearranging or replacing the artwork to change its proportions. A width-only change was rejected and reverted; do not reapply it.
+
 Simon subsequently requested removing the thin, misaligned hover ring and adding a subtle lift, soft shadow, and press response to the existing arrow icons. This is an interaction-only change: the arrow pixels come directly from the same approved image using CSS positioning. Neither artwork file is edited.
