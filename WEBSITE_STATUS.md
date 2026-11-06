@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026: Simon explicitly approved the desktop. Mobile Activity Collection text now uses the same pink lettering asset, awaiting his final review.
+Updated 6 November 2026: Literacy & Numeracy collection built from the approved K-pop Activity layout; original four covers and matching learning artwork. Activity page remains locked.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -51,10 +51,25 @@ Updated 6 November 2026: Simon explicitly approved the desktop. Mobile Activity 
 - Only activity.html and continuation/design-approval notes changed. All artwork assets, homepage, other collection pages and book detail drafts remain untouched.
 - Desktop is approved and locked. Await Simon’s final look at the updated mobile before recording both views as finally locked.
 
-## Next step
+## Literacy & Numeracy collection — first illustrated review
 
-Simon requested one tab at a time. Desktop Activity collection is approved; await his final mobile review. Only after approval should work continue to Literacy & Numeracy or Adult Colouring. Individual book detail pages come afterwards.
+- Desktop: https://unders73.github.io/angel-leaf-website/learning.html?v=20261106-learning
+- Mobile: https://unders73.github.io/angel-leaf-website/learning.html?view=mobile&v=20261106-learning
+- Built directly from the approved activity.html template. Four columns on desktop, two columns on phones; identical header heights, cover sizes, portrait proportions, cover centre positions, narrow mobile white margins, shared instruction and back navigation.
+- Book order: Literacy Studio Sessions, Literacy World Tour, Numeracy Studio Sessions, Numeracy World Tour.
+- Original covers rendered from the four matching full-wrap PDFs, cropping the right-hand 8.5 × 11 inch trim face. No regenerated book covers.
+- Four new illustrated backgrounds follow the original cover characters and palettes: royal blue/yellow Literacy, cyan/yellow/coral Studio Numeracy, coral/cyan/yellow World Numeracy. Relevant notebooks, pencils, speech bubbles, microphones, globes, calculators, rulers, charts and stage objects surround clear cover spaces.
+- Matching blue K-pop and Literacy & Numeracy Collection brush lettering; the longer collection heading uses two compact lines within the existing header. Desktop collection heading and instruction remain centred; mobile heading remains centred as a group.
+- Mobile background and figure layers are blended for this artwork; figures fill their section naturally. All book positions and sizes match Activity.
+- Checked desktop 1363 × 936, narrow desktop 760 × 800, mobile 390 × 844 and 320 × 740. All title and cover images load; no overlap or horizontal overflow. One book navigation/back journey exercised; every linked book destination exists.
+- At 390px the covers are still 111 × 143.641px, with centre positions and white margins unchanged.
+- The existing homepage already links to learning.html. Homepage, approved Activity page and assets, Adult Colouring page and individual book HTML pages are unchanged.
+- New four cover assets also satisfy existing book detail draft image references.
 
-The individual book pages are existing drafts, and their country purchasing links are not finished. Do not present them as complete.
+## Approval and next step
+
+Simon moved on from the Activity collection and requested its desktop and mobile format for the new learning collection. Preserve Activity as the approved reference. Await his review of this Literacy & Numeracy page before moving on to Adult Colouring.
+
+Individual book detail pages and country purchasing options remain separate later work; do not present those drafts as finished.
 
 Keep the source and these continuation notes current so a conversation restart does not require rebuilding or reapproving completed work.
