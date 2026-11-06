@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 after correcting mobile illustration scale and adding artwork to the desktop header.
+Updated 6 November 2026 with the normal Angel Leaf foliage frame around the desktop header and smaller centred mobile covers.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -28,8 +28,8 @@ Updated 6 November 2026 after correcting mobile illustration scale and adding ar
 
 ## K-pop Activity collection page — illustrated review
 
-- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-balanced
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-balanced
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-leaf-frame
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-leaf-frame
 - Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
 - Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
 - New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
@@ -42,14 +42,13 @@ Updated 6 November 2026 after correcting mobile illustration scale and adding ar
 
 ## Current desktop and mobile refinements
 
-- Desktop cover positions, sizes and lower artwork are locked. The natural brushstroke edge and pink graffiti K-pop title are retained.
-- Both desktop header sides now contain matching music illustration artwork, using the existing turquoise and red assets around the central Angel Leaf logo and heading.
-- Mobile must use the SAME exciting K-pop title artwork as desktop. The previous plain text fallback is hidden on both.
-- Simon rejected the tiny mobile bottom groups. Current mobile groups reuse the original desktop illustrations at 88% of each scene’s size, centred at the bottom, creating a moderate reduction from the original full scene rather than tiny isolated figures.
-- Original cover sizes are unchanged. Mobile cover centres sit at 38.5% of each section, leaving a visible gap above the bottom figures.
-- Tested at 390 × 844 and 320 × 740: title visible, no horizontal or vertical overflow. Desktop image comparison below y=225 at 1363 × 936 is pixel-identical to the preceding desktop version.
-- All book and back-link destinations retained. No homepage, other collection, or individual book-page changes.
-- Reused existing artwork; no new generated images for this correction.
+- Desktop header now uses the normal green Angel Leaf foliage frame, taken from the approved homepage artwork. It surrounds the top and corners. The experimental K-pop music illustrations beside the header have been removed at Simon’s request.
+- The central Angel Leaf logo and approved pink graffiti K-pop title remain. The back link sits inside the frame.
+- Desktop books and all lower scene artwork remain unchanged. At 1363 × 936, the screenshot below y=225px is pixel-identical to the preceding version.
+- Mobile retains the larger, natural bottom illustrations (original artwork at 88% of each scene’s size) and the graffiti K-pop title.
+- Mobile book covers are now about 10% smaller, centred horizontally and at 39% of each scene’s height, with a narrow cream-white margin. At 390px page width each cover is 111 × 143.64px.
+- Checked at 390 × 844 and 320 × 740: all content fits without horizontal or vertical overflow. All book and back-link destinations are unchanged.
+- No changes to homepage, other collections or individual book pages. Existing artwork reused; no new generated images for this adjustment.
 
 ## Next step
 
