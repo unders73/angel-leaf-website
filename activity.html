@@ -48,6 +48,17 @@ h1 span{color:#a72077}
 .book-link{min-height:85.3125cqw}.cover-stage{width:60%;top:40.5%;padding:3px;background:#fffefb;border-radius:3px}.cover{box-shadow:1px 2px 0 #fff9,3px 6px 8px #1b102c40}
 }
 @container(max-width:350px){.masthead{height:142px}.brand{width:194px;right:10px}.back{left:8px;font-size:10px;padding:6px}.intro{top:66px;left:10px;width:calc(100% - 20px);height:70px}h1{font-size:21px;height:35px}.title-art{width:94px;height:34px}.intro p{font-size:16px}.books{min-height:calc(100svh - 142px)}}
+/* Centre the desktop collection wording and its instruction on the page. */
+@container(min-width:681px){
+.intro{width:calc(100% - 48px)}
+.collection-art{position:absolute;left:50%;top:54px;transform:translate(-50%,-50%);flex:none;width:auto;max-width:48cqw;height:clamp(53.333px,7.333333cqw,108px);object-position:center}
+.intro p{position:absolute;left:50%;top:108px;transform:translateX(-50%);width:max-content;margin:0;text-align:center}
+}
+@container(min-width:681px) and (max-width:900px){
+.intro{width:calc(100% - 36px)}
+.collection-art{top:41.5px;height:7cqw}
+.intro p{top:83px}
+}
 @media(prefers-reduced-motion:reduce){.cover{transition:none}}
 </style>
 </head>

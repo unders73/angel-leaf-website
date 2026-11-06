@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 with the mobile heading centred as one group, matching desktop collection lettering, and the logo centred above the red book.
+Updated 6 November 2026: desktop Activity Collection wording and shared instruction centred exactly on the page, with title artwork matched in height.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -28,8 +28,8 @@ Updated 6 November 2026 with the mobile heading centred as one group, matching d
 
 ## K-pop Activity collection page — illustrated review
 
-- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-final-heading
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-final-heading
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-centred-desktop
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-centred-desktop
 - Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
 - Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
 - New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
@@ -42,15 +42,13 @@ Updated 6 November 2026 with the mobile heading centred as one group, matching d
 
 ## Current desktop and mobile refinements
 
-- Mobile: the existing graffiti K-pop and Activity Collection text are centred together as one flex group. At 390px the group centre is exactly 195px; at 320px it is 160px. Simon requested this as the final mobile adjustment before locking the layout.
-- Desktop: Activity Collection uses new matching pink brush-lettering artwork, at a comparable visual height to the approved K-pop lettering. The approved K-pop asset itself is retained.
-- The Angel Leaf logo is reduced from 31% to 24% of the page width and centred at 87.5% of the page width, directly over the red Release Tracker book. At 1363px both centres are 1192.625px.
-- The small back link remains at the upper left. No leafy header.
-- Desktop header heights remain 174px (160px at narrower widths). All pixels below y=174px in the 1363 × 936 screenshot are identical to the preceding version.
-- Mobile covers retain their sizes, narrow cream-white margin and 40.5% vertical centres. Bottom figures remain unchanged.
-- Checked 390 × 844 and 320 × 740 mobile layouts and a 760px narrow desktop: no title/logo overlap or horizontal overflow. At 390px the covers remain 111 × 143.64px.
-- Only activity.html and the new assets/activity-collection-title.webp asset changed, plus these continuation notes. Homepage, other collection pages, original covers, book destinations and individual book pages are unchanged.
-- Preserve this mobile layout and the lower sections; await Simon's review of the desktop heading before continuing to other pages.
+- Desktop: Activity Collection lettering and “View your book of choice” are independently centred at 50% of the entire page. K-pop stays at the left, Angel Leaf stays above the red book at the right.
+- Existing matching pink, outlined brush lettering is retained. Both title graphics now have exactly the same displayed height: 99.953px at 1363px page width and 53.188px at 760px width.
+- At 1363px the Activity Collection artwork and its instruction both have centre x=681.5px. At 760px both centres are x=380px.
+- Angel Leaf logo, back link, header heights, covers, lower illustrations and all destinations remain unchanged.
+- Screenshot comparison confirms every desktop pixel below y=174px is unchanged; the entire 390px mobile screenshot is unchanged.
+- Simon explicitly requested desktop-only corrections this turn and will review mobile separately. Do not modify mobile until he gives those instructions.
+- Only activity.html and these notes changed. No new or modified image assets, homepage, other collection pages, or individual book pages.
 
 ## Next step
 
