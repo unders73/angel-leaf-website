@@ -1,4 +1,88 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Angel Leaf — Our Collections</title><meta name="description" content="Explore Angel Leaf book collections: K-pop activities, literacy and numeracy, and adult colouring."><style>
-*{box-sizing:border-box}body{margin:0;background:#fffdf8;color:#27351d;font-family:Georgia,serif}a{color:inherit}header{max-width:1110px;margin:auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;border-bottom:2px solid #b8d978}header .brand{font-size:clamp(20px,3vw,33px);font-weight:bold;letter-spacing:1px}header nav{display:flex;flex-wrap:wrap;gap:14px;font:600 14px Arial,sans-serif}header a{text-decoration:none}main{max-width:1120px;margin:auto;padding:26px 22px 60px}h1{text-align:center;font-size:clamp(32px,5vw,58px);margin:10px 0 12px}p.lead{text-align:center;margin:0 auto 32px;max-width:750px;font-size:19px;line-height:1.5}.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.card{border:2px solid #c3d58d;background:white;border-radius:15px;overflow:hidden;box-shadow:0 7px 20px #213b2118;text-decoration:none;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.card:hover,.card:focus-visible{transform:translateY(-5px);box-shadow:0 13px 22px #213b2126;outline-color:#79ad3b}.card img{display:block;width:100%;aspect-ratio:2/3;object-fit:contain;background:white;padding:10px}.card span{display:block;text-align:center;padding:10px 9px;font:700 15px Arial,sans-serif;min-height:55px}.coming{position:absolute;top:14px;right:0;background:#f9d840;color:#1d2619;padding:8px 15px;font:800 12px Arial,sans-serif;transform:rotate(10deg)}.pic{position:relative}.intro{background:#f2f8e9;border-radius:16px;padding:18px;margin-bottom:25px;text-align:center}footer{text-align:center;padding:28px;color:#526749;font:13px Arial,sans-serif}.status{font:14px Arial,sans-serif;background:#fff4d2;border-left:4px solid #e5ae37;padding:15px;margin:20px 0;border-radius:5px}.back{display:inline-block;text-decoration:none;border:1px solid #bcd994;border-radius:30px;padding:9px 14px;font:700 14px Arial,sans-serif}.book-hero{display:grid;grid-template-columns:minmax(180px,320px) 1fr;gap:32px;align-items:center}.book-hero img{max-width:100%;border-radius:10px;box-shadow:0 10px 22px #0002}.buy-options{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.buy-options span{border:1px solid #bfd996;border-radius:8px;padding:14px;text-align:center;font:700 15px Arial,sans-serif;background:#f7f9f4}.btn{display:inline-block;background:#316c2c;color:white;text-decoration:none;border-radius:30px;padding:13px 19px;font:700 15px Arial,sans-serif}.home{margin:0 auto;max-width:1448px;position:relative;line-height:0}.home img{width:100%;height:auto;display:block}.hotspot{display:block;position:absolute;left:86.4%;width:9.7%;height:10.2%;border-radius:50%;cursor:pointer;outline-offset:2px;touch-action:manipulation}.hotspot:hover,.hotspot:focus-visible{outline:3px solid #246c24;background:#ffffff20}.hotspot.activity{top:40.1%}.hotspot.learning{top:60.1%}.hotspot.adult{top:80.2%}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
-@media(max-width:680px){main{padding:20px 14px 45px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.card span{font-size:12px}.book-hero{grid-template-columns:1fr}.book-hero img{max-width:230px;margin:auto}.buy-options{grid-template-columns:repeat(2,1fr)}.home{width:100%} .hotspot{border-radius:10px}header{padding:14px}}
-</style></head><body style="background:#fff"><main style="padding:0;max-width:none"><div class="home"><img src="assets/opening-design.png" alt="Angel Leaf Our Collections. Explore our K-pop Activity, K-pop Literacy and Numeracy, and Adult Colouring collections." width="1448" height="1086"><a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="sr">K-pop Activity Collection</span></a><a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="sr">K-pop Literacy and Numeracy Collection</span></a><a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="sr">Adult Colouring Collection</span></a></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Angel Leaf — Our Collections</title>
+  <meta name="description" content="Explore Angel Leaf book collections: K-pop activities, literacy and numeracy, and adult colouring.">
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;background:#fff}
+    .home{
+      --art-width:1448;
+      --art-height:1086;
+      --arrow-art:url('assets/opening-design.png');
+      position:relative;
+      width:min(100%,1448px,133.333333vh);
+      width:min(100%,1448px,133.333333svh);
+      margin:0 auto;
+      line-height:0;
+    }
+    .home picture,.home img{display:block;width:100%;height:auto}
+    .home img{aspect-ratio:4/3}
+    .hotspot{
+      display:block;
+      position:absolute;
+      left:0;
+      width:100%;
+      top:calc(var(--row-y) / var(--art-height) * 100%);
+      height:calc(var(--row-height) / var(--art-height) * 100%);
+      cursor:pointer;
+      touch-action:manipulation;
+      -webkit-tap-highlight-color:transparent;
+    }
+    .hotspot:focus-visible{outline:none}
+    .arrow-lift{
+      position:absolute;
+      left:calc(var(--crop-x) / var(--art-width) * 100%);
+      top:calc((var(--crop-y) - var(--row-y)) / var(--row-height) * 100%);
+      width:calc(var(--crop-width) / var(--art-width) * 100%);
+      height:calc(var(--crop-height) / var(--row-height) * 100%);
+      border-radius:50%;
+      background-image:var(--arrow-art);
+      background-size:calc(var(--art-width) / var(--crop-width) * 100%) calc(var(--art-height) / var(--crop-height) * 100%);
+      background-position:calc(var(--crop-x) / (var(--art-width) - var(--crop-width)) * 100%) calc(var(--crop-y) / (var(--art-height) - var(--crop-height)) * 100%);
+      background-repeat:no-repeat;
+      pointer-events:none;
+      transform-origin:center;
+      transition:transform 180ms ease,filter 180ms ease;
+    }
+    .activity{--row-y:400;--row-height:213;--crop-x:1291;--crop-y:468;--crop-width:81;--crop-height:78}
+    .learning{--row-y:626;--row-height:200;--crop-x:1296;--crop-y:685;--crop-width:81;--crop-height:76}
+    .adult{--row-y:837;--row-height:213;--crop-x:1286;--crop-y:895;--crop-width:88;--crop-height:84}
+    .hotspot:focus-visible .arrow-lift{transform:translateY(-4%) scale(1.10);filter:drop-shadow(0 4px 3px #173b2455)}
+    @media(hover:hover){
+      .hotspot:hover .arrow-lift{transform:translateY(-4%) scale(1.10);filter:drop-shadow(0 4px 3px #173b2440)}
+    }
+    .hotspot:active .arrow-lift{transform:translateY(-1%) scale(1.04);filter:drop-shadow(0 1px 1px #173b2433);transition-duration:70ms}
+    .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+    @media(max-width:680px) and (orientation:portrait){
+      .home{
+        --art-width:1024;
+        --art-height:1536;
+        --arrow-art:url('assets/opening-design-mobile-approved.png');
+        width:min(100%,66.666667vh);
+        width:min(100%,66.666667svh);
+      }
+      .home img{aspect-ratio:2/3}
+      .activity{--row-y:473;--row-height:356;--crop-x:873;--crop-y:596;--crop-width:97;--crop-height:99}
+      .learning{--row-y:838;--row-height:314;--crop-x:873;--crop-y:943;--crop-width:98;--crop-height:98}
+      .adult{--row-y:1162;--row-height:277;--crop-x:897;--crop-y:1264;--crop-width:80;--crop-height:80}
+    }
+    @media(prefers-reduced-motion:reduce){.arrow-lift{transition:none}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="home">
+      <picture>
+        <source media="(max-width:680px) and (orientation:portrait)" srcset="assets/opening-design-mobile-approved.png" width="1024" height="1536">
+        <img src="assets/opening-design.png" width="1448" height="1086" fetchpriority="high" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
+      </picture>
+      <a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">K-pop Activity Collection</span></a>
+      <a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
+      <a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">Adult Colouring Collection</span></a>
+    </div>
+  </main>
+</body>
+</html>
