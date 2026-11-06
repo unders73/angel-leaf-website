@@ -15,14 +15,15 @@ a{color:inherit}
 .site{container-type:inline-size;width:100%;margin:auto;overflow:hidden;position:relative}
 html[data-view="mobile"] .site{max-width:430px;box-shadow:0 0 40px #35212e15}
 .masthead{height:174px;position:relative;background:transparent}
-.brand{position:absolute;right:24px;top:50%;transform:translateY(-50%);display:block;width:31cqw;max-width:620px;line-height:0}
+.brand{position:absolute;left:87.5%;top:50%;transform:translate(-50%,-50%);display:block;width:24cqw;max-width:520px;line-height:0}
 .brand svg{width:100%;height:auto;display:block}
 .back{position:absolute;left:16px;top:10px;display:inline-flex;align-items:center;gap:6px;padding:6px 10px;text-decoration:none;font-size:11px;font-weight:700;color:#346725;border:1px solid #ccdcbf;border-radius:30px;background:#fffefb}
 .back svg{width:13px;height:13px}
-.intro{height:132px;width:calc(69% - 64px);text-align:left;position:absolute;left:24px;top:34px;background:transparent;padding:0}
+.intro{height:132px;width:calc(75% - 48px);text-align:left;position:absolute;left:24px;top:34px;background:transparent;padding:0}
 h1{font-size:clamp(32px,4.6cqw,94px);line-height:1.1;font-style:italic;font-weight:900;letter-spacing:-1.5px;margin:0;display:flex;align-items:center;justify-content:flex-start;gap:10px;height:108px;white-space:nowrap}
 h1 span{color:#a72077}
 .title-art{display:block;width:clamp(160px,22cqw,330px);height:auto;max-height:108px;object-fit:contain;flex-shrink:0}.title-text{display:none}
+.collection-art{display:block;flex:1;min-width:0;height:108px;object-fit:contain;object-position:left center}.collection-text{display:none;color:#27202b}
 .intro p{font-family:Georgia,serif;font-size:21px;margin:0 0 0 10px}
 .books{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));min-height:calc(100svh - 174px);height:42.64cqw}
 .book-link{position:relative;display:block;min-width:0;isolation:isolate;text-decoration:none;--accent:#b3268e;background:#fffefb;overflow:visible}
@@ -37,10 +38,10 @@ h1 span{color:#a72077}
 .book-link:focus-visible .cover{transform:translateY(-7px) scale(1.025)}
 @media(hover:hover){.book-link:hover .cover{transform:translateY(-8px) scale(1.035);box-shadow:3px 5px 0 #fff9,7px 19px 20px #1b102c45}.back:hover{background:#eef6e8}}
 .book-link:active .cover{transform:translateY(-2px)}
-@container(max-width:900px){.masthead{height:160px}.brand{width:30cqw;right:18px}.intro{top:40px;left:18px;width:calc(70% - 50px);height:112px}h1{font-size:3.9cqw;height:83px;gap:5px}.title-art{width:21cqw;max-height:83px}.intro p{font-size:18px;margin-left:7px}.books{min-height:calc(100svh - 160px)}}
+@container(max-width:900px){.masthead{height:160px}.brand{width:24cqw}.intro{top:40px;left:18px;width:calc(75% - 36px);height:112px}h1{font-size:3.9cqw;height:83px;gap:5px}.title-art{width:21cqw;max-height:83px}.collection-art{height:83px}.intro p{font-size:18px;margin-left:7px}.books{min-height:calc(100svh - 160px)}}
 @container(max-width:680px){
-.masthead{height:154px}.brand{width:230px;max-width:62%;right:13px;top:14px;transform:none}.back{left:10px;top:10px;font-size:10px;gap:5px;padding:6px 8px}.back svg{width:12px}.back .full{display:none}
-.intro{left:14px;top:71px;width:calc(100% - 28px);height:75px;padding:0}h1{font-size:24px;letter-spacing:-1px;line-height:1.15;height:39px;gap:5px}.intro p{font-size:18px;margin:8px 0 0;text-align:center}
+.masthead{height:154px}.brand{width:230px;max-width:62%;left:auto;right:13px;top:14px;transform:none}.back{left:10px;top:10px;font-size:10px;gap:5px;padding:6px 8px}.back svg{width:12px}.back .full{display:none}
+.intro{left:14px;top:71px;width:calc(100% - 28px);height:75px;padding:0}h1{font-size:24px;letter-spacing:-1px;line-height:1.15;height:39px;gap:5px;justify-content:center}.collection-art{display:none}.collection-text{display:inline}.intro p{font-size:18px;margin:8px 0 0;text-align:center}
 .scene-original,.scene-top,.title-text{display:none}.title-art{display:block;width:110px;height:37px}.scene-mobile{display:block}
 .mobile-figures{display:block;inset:auto;left:50%;bottom:0;width:88%;height:88%;transform:translateX(-50%);object-fit:cover;object-position:center bottom;mask-image:linear-gradient(transparent 52%,#000 60%)}
 .books{grid-template-columns:repeat(2,minmax(0,1fr));height:auto;min-height:calc(100svh - 154px)}
@@ -55,7 +56,7 @@ h1 span{color:#a72077}
 <header class="masthead">
 <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h14"/></svg><span><span class="full">Our </span>Collections</span></a>
 <a class="brand" href="index.html" aria-label="Angel Leaf — back to Our Collections"><svg viewBox="552 0 675 110" role="img" aria-label="Angel Leaf — Creative Books for Curious Minds"><image href="assets/opening-desktop-approved.png" width="1854" height="848"/></svg></a>
-<div class="intro"><h1><img class="title-art" src="assets/kpop-title.webp" alt="K-POP" width="600" height="200"><span class="title-text">K-POP</span> Activity Collection</h1><p>View your book of choice</p></div>
+<div class="intro"><h1><img class="title-art" src="assets/kpop-title.webp" alt="K-POP" width="600" height="200"><span class="title-text">K-POP</span><img class="collection-art" src="assets/activity-collection-title.webp" alt="Activity Collection" width="1600" height="355"><span class="collection-text">Activity Collection</span></h1><p>View your book of choice</p></div>
 </header>
 <main>
 <div class="books" aria-label="Choose your K-pop book">

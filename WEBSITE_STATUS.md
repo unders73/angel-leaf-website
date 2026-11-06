@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 with Simon’s title-left/logo-right header arrangement and a slight downward adjustment to mobile covers.
+Updated 6 November 2026 with the mobile heading centred as one group, matching desktop collection lettering, and the logo centred above the red book.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -28,8 +28,8 @@ Updated 6 November 2026 with Simon’s title-left/logo-right header arrangement 
 
 ## K-pop Activity collection page — illustrated review
 
-- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-header-layout
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-header-layout
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-final-heading
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-final-heading
 - Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
 - Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
 - New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
@@ -42,14 +42,15 @@ Updated 6 November 2026 with Simon’s title-left/logo-right header arrangement 
 
 ## Current desktop and mobile refinements
 
-- Simon rejected the leafy desktop header. All header vines are removed.
-- Desktop: Angel Leaf logo is on the right. The graffiti K-pop and Activity Collection heading are larger, wider and left-aligned. The smaller back button is high in the top-left corner.
-- Mobile follows the same arrangement where space allows: small back link top-left, logo top-right, left-aligned graffiti K-pop collection title below. Shared instruction remains “View your book of choice”.
-- The desktop header still occupies 174px (160px at narrower widths), so all desktop books and lower artwork retain their positions. The screenshot below y=225px is pixel-identical to the previous version.
-- Mobile covers retain the previous slightly reduced size and narrow cream-white margin, and move from 39% to 40.5% of each section height, about 5–6px lower. Bottom figures are unchanged.
-- At 390px page width the covers remain 111 × 143.64px. Checked 390 × 844 and 320 × 740 with no overflow. At 760px width, the title and right logo do not overlap.
-- All book/back-link destinations retained. Homepage, other collection pages, and individual book pages unchanged.
-- Existing artwork reused, with no new generated images for this update.
+- Mobile: the existing graffiti K-pop and Activity Collection text are centred together as one flex group. At 390px the group centre is exactly 195px; at 320px it is 160px. Simon requested this as the final mobile adjustment before locking the layout.
+- Desktop: Activity Collection uses new matching pink brush-lettering artwork, at a comparable visual height to the approved K-pop lettering. The approved K-pop asset itself is retained.
+- The Angel Leaf logo is reduced from 31% to 24% of the page width and centred at 87.5% of the page width, directly over the red Release Tracker book. At 1363px both centres are 1192.625px.
+- The small back link remains at the upper left. No leafy header.
+- Desktop header heights remain 174px (160px at narrower widths). All pixels below y=174px in the 1363 × 936 screenshot are identical to the preceding version.
+- Mobile covers retain their sizes, narrow cream-white margin and 40.5% vertical centres. Bottom figures remain unchanged.
+- Checked 390 × 844 and 320 × 740 mobile layouts and a 760px narrow desktop: no title/logo overlap or horizontal overflow. At 390px the covers remain 111 × 143.64px.
+- Only activity.html and the new assets/activity-collection-title.webp asset changed, plus these continuation notes. Homepage, other collection pages, original covers, book destinations and individual book pages are unchanged.
+- Preserve this mobile layout and the lower sections; await Simon's review of the desktop heading before continuing to other pages.
 
 ## Next step
 
