@@ -12,14 +12,17 @@
 html,body{margin:0;min-height:100%;background:#fffcf5;color:#27202b}
 body{font-family:Arial,Helvetica,sans-serif}
 a{color:inherit}
-.site{container-type:inline-size;width:100%;margin:auto;overflow:hidden}
+.site{container-type:inline-size;width:100%;margin:auto;overflow:hidden;position:relative}
 html[data-view="mobile"] .site{max-width:430px;box-shadow:0 0 40px #35212e15}
-.masthead{height:83px;display:flex;justify-content:center;align-items:center;position:relative;background:#fffefb}
+.header-art{position:absolute;top:0;width:29%;height:174px;object-fit:cover;object-position:top;pointer-events:none;z-index:0}
+.header-art-left{left:0;mask-image:linear-gradient(to right,#000 55%,transparent 100%),linear-gradient(#000 75%,transparent);mask-composite:intersect}
+.header-art-right{right:0;mask-image:linear-gradient(to left,#000 55%,transparent 100%),linear-gradient(#000 75%,transparent);mask-composite:intersect}
+.masthead{height:83px;display:flex;justify-content:center;align-items:center;position:relative;background:transparent}
 .brand{display:block;width:365px;line-height:0;max-width:42%}
 .brand svg{width:100%;height:auto;display:block}
 .back{position:absolute;left:28px;display:inline-flex;align-items:center;gap:9px;padding:12px 15px;text-decoration:none;font-size:13px;font-weight:700;color:#346725;border:1px solid #ccdcbf;border-radius:30px;background:#fffefb}
 .back svg{width:17px;height:17px}
-.intro{height:91px;text-align:center;position:relative;background:#fffefb;padding:0 15px 13px}
+.intro{height:91px;text-align:center;position:relative;background:transparent;padding:0 15px 13px}
 h1{font-size:clamp(26px,3.15cqw,48px);line-height:1.1;font-style:italic;font-weight:900;letter-spacing:-1.5px;margin:0;display:flex;align-items:center;justify-content:center;gap:8px;height:55px}
 h1 span{color:#a72077}
 .title-art{display:block;width:176px;height:55px;object-fit:contain}.title-text{display:none}
@@ -30,7 +33,7 @@ h1 span{color:#a72077}
 .scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-1;pointer-events:none}
 .scene-original{mask-image:linear-gradient(transparent,#000 28px)}
 .scene-top{height:40px;top:-10px;bottom:auto;object-fit:fill;mask-image:linear-gradient(#000 75%,transparent)}
-.scene-mobile{display:none}
+.scene-mobile,.mobile-figures{display:none}
 .cover-stage{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);width:62%;display:block}
 .cover{display:block;width:100%;height:auto;aspect-ratio:17/22;object-fit:contain;border-radius:2px 4px 4px 2px;box-shadow:2px 3px 0 #fff9,5px 11px 13px #1b102c36;transition:transform .2s ease,box-shadow .2s ease;background:#fffdf8}
 .book-link:focus-visible{outline:5px solid var(--accent);outline-offset:-5px}
@@ -40,17 +43,21 @@ h1 span{color:#a72077}
 @container(max-width:900px){.masthead{height:74px}.brand{width:320px}.back{left:18px;font-size:12px;padding:10px}.intro{height:86px}h1{font-size:31px}.intro p{font-size:19px}.books{min-height:calc(100svh - 160px)}}
 @container(max-width:680px){
 .masthead{height:66px;justify-content:flex-end;padding:7px 13px}.brand{width:230px;max-width:62%}.back{left:12px;font-size:11px;gap:5px;padding:9px 8px}.back svg{width:13px}.back .full{display:none}
-.intro{height:88px;padding:5px 9px 12px}h1{font-size:27px;letter-spacing:-1px;line-height:1.15;display:block;height:auto}.intro p{font-size:18px;margin-top:8px}
-.title-art,.scene-original,.scene-top{display:none}.title-text{display:inline}.scene-mobile{display:block}
+.header-art{display:none}
+.intro{height:88px;padding:5px 9px 12px}h1{font-size:24px;letter-spacing:-1px;line-height:1.15;height:39px;gap:5px}.intro p{font-size:18px;margin-top:8px}
+.scene-original,.scene-top,.title-text{display:none}.title-art{display:block;width:110px;height:37px}.scene-mobile{display:block}
+.mobile-figures{display:block;inset:auto;left:50%;bottom:0;width:88%;height:88%;transform:translateX(-50%);object-fit:cover;object-position:center bottom;mask-image:linear-gradient(transparent 52%,#000 60%)}
 .books{grid-template-columns:repeat(2,minmax(0,1fr));height:auto;min-height:calc(100svh - 154px)}
-.book-link{min-height:85.3125cqw}.cover-stage{width:63%;top:41%}.cover{box-shadow:1px 2px 0 #fff9,3px 6px 8px #1b102c40}
+.book-link{min-height:85.3125cqw}.cover-stage{width:63%;top:38.5%}.cover{box-shadow:1px 2px 0 #fff9,3px 6px 8px #1b102c40}
 }
-@container(max-width:350px){.masthead{height:61px}.brand{width:194px}.back{left:8px;font-size:10px;padding:8px 6px}.intro{height:81px}h1{font-size:24px}.intro p{font-size:16px}.books{min-height:calc(100svh - 142px)}}
+@container(max-width:350px){.masthead{height:61px}.brand{width:194px}.back{left:8px;font-size:10px;padding:8px 6px}.intro{height:81px}h1{font-size:21px;height:35px}.title-art{width:94px;height:34px}.intro p{font-size:16px}.books{min-height:calc(100svh - 142px)}}
 @media(prefers-reduced-motion:reduce){.cover{transition:none}}
 </style>
 </head>
 <body>
 <div class="site">
+<img class="header-art header-art-left" src="assets/kpop-scene-facts.webp" alt="" width="480" height="819">
+<img class="header-art header-art-right" src="assets/kpop-scene-tracker.webp" alt="" width="480" height="819">
 <header class="masthead">
 <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h14"/></svg><span><span class="full">Our </span>Collections</span></a>
 <a class="brand" href="index.html" aria-label="Angel Leaf — back to Our Collections"><svg viewBox="552 0 675 110" role="img" aria-label="Angel Leaf — Creative Books for Curious Minds"><image href="assets/opening-desktop-approved.png" width="1854" height="848"/></svg></a>
@@ -62,24 +69,28 @@ h1 span{color:#a72077}
 <img class="scene scene-original" src="assets/kpop-scene-activity.webp" alt="" width="480" height="819" fetchpriority="high">
 <img class="scene scene-top" src="assets/kpop-top-activity.webp" alt="" width="480" height="45">
 <img class="scene scene-mobile" src="assets/kpop-mobile-activity.webp" alt="" width="480" height="819">
+<img class="scene mobile-figures" src="assets/kpop-scene-activity.webp" alt="" width="480" height="819">
 <span class="cover-stage"><img class="cover" src="assets/activity.webp" width="796" height="1031" alt="K-pop Activity Book — original pink and purple cover" fetchpriority="high"></span>
 </a>
 <a class="book-link" href="book-fun-facts.html" aria-label="Explore K-pop Fun Facts">
 <img class="scene scene-original" src="assets/kpop-scene-facts.webp" alt="" width="480" height="819">
 <img class="scene scene-top" src="assets/kpop-top-facts.webp" alt="" width="480" height="45">
 <img class="scene scene-mobile" src="assets/kpop-mobile-facts.webp" alt="" width="480" height="819">
+<img class="scene mobile-figures" src="assets/kpop-scene-facts.webp" alt="" width="480" height="819">
 <span class="cover-stage"><img class="cover" src="assets/fun-facts.webp" width="797" height="1031" alt="K-pop Fun Facts — original turquoise cover"></span>
 </a>
 <a class="book-link" href="book-fan-journal.html" aria-label="Explore K-pop Fan Journal">
 <img class="scene scene-original" src="assets/kpop-scene-journal.webp" alt="" width="481" height="819">
 <img class="scene scene-top" src="assets/kpop-top-journal.webp" alt="" width="481" height="45">
 <img class="scene scene-mobile" src="assets/kpop-mobile-journal.webp" alt="" width="481" height="819">
+<img class="scene mobile-figures" src="assets/kpop-scene-journal.webp" alt="" width="480" height="819">
 <span class="cover-stage"><img class="cover" src="assets/fan-journal.webp" width="797" height="1031" alt="K-pop Fan Journal — original green and yellow cover"></span>
 </a>
 <a class="book-link" href="book-release-tracker.html" aria-label="Explore K-pop Release Tracker and Review Book">
 <img class="scene scene-original" src="assets/kpop-scene-tracker.webp" alt="" width="480" height="819">
 <img class="scene scene-top" src="assets/kpop-top-tracker.webp" alt="" width="480" height="45">
 <img class="scene scene-mobile" src="assets/kpop-mobile-tracker.webp" alt="" width="480" height="819">
+<img class="scene mobile-figures" src="assets/kpop-scene-tracker.webp" alt="" width="480" height="819">
 <span class="cover-stage"><img class="cover" src="assets/release-tracker.webp" width="797" height="1031" alt="K-pop Release Tracker and Review Book — original red cover"></span>
 </a>
 </div>

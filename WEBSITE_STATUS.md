@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 after Simon’s separate desktop and mobile refinements to the illustrated Activity collection.
+Updated 6 November 2026 after correcting mobile illustration scale and adding artwork to the desktop header.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -28,8 +28,8 @@ Updated 6 November 2026 after Simon’s separate desktop and mobile refinements 
 
 ## K-pop Activity collection page — illustrated review
 
-- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-refined
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-refined
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-balanced
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-balanced
 - Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
 - Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
 - New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
@@ -40,16 +40,16 @@ Updated 6 November 2026 after Simon’s separate desktop and mobile refinements 
 - Local desktop visual check and phone checks at 390 × 844 and 320 × 740 completed, with no horizontal overflow. All artwork and covers load.
 - The approved homepage and other two collection pages are unchanged.
 
-## Separate desktop and mobile refinements
+## Current desktop and mobile refinements
 
-- Desktop: preserve all four cover positions, sizes, and lower artwork. Only finish the upper artwork edge naturally with small brushstroke/ink flourishes, and replace the plain K-pop text with pink graffiti-style artwork matching the cover family.
-- Original desktop scene images remain active. Transparent decorative strips and a short mask affect only the upper edge; the lower images are not regenerated.
-- At 1363 × 936, all four cover rectangles matched the previous version exactly. A pixel comparison showed the entire desktop below y=225px unchanged.
-- Mobile only: use separate scene assets with the lower character/prop groups reduced and horizontally centred at the bottom; retain original cover images and their sizes, shift covers slightly lower to centre them in the new open space.
-- Mobile title and navigation remain as before.
-- Shared instruction remains “View your book of choice”.
-- Mobile checked at 390 × 844 and 320 × 740. All navigation destinations retained.
-- No changes to the homepage, other collections, or individual book pages.
+- Desktop cover positions, sizes and lower artwork are locked. The natural brushstroke edge and pink graffiti K-pop title are retained.
+- Both desktop header sides now contain matching music illustration artwork, using the existing turquoise and red assets around the central Angel Leaf logo and heading.
+- Mobile must use the SAME exciting K-pop title artwork as desktop. The previous plain text fallback is hidden on both.
+- Simon rejected the tiny mobile bottom groups. Current mobile groups reuse the original desktop illustrations at 88% of each scene’s size, centred at the bottom, creating a moderate reduction from the original full scene rather than tiny isolated figures.
+- Original cover sizes are unchanged. Mobile cover centres sit at 38.5% of each section, leaving a visible gap above the bottom figures.
+- Tested at 390 × 844 and 320 × 740: title visible, no horizontal or vertical overflow. Desktop image comparison below y=225 at 1363 × 936 is pixel-identical to the preceding desktop version.
+- All book and back-link destinations retained. No homepage, other collection, or individual book-page changes.
+- Reused existing artwork; no new generated images for this correction.
 
 ## Next step
 
