@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026: Literacy & Numeracy collection built from the approved K-pop Activity layout; original four covers and matching learning artwork. Activity page remains locked.
+Updated 6 November 2026: Literacy & Numeracy geometry verified against the approved Activity page; mobile artwork scale and overlap corrected. Activity page remains locked.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -65,6 +65,16 @@ Updated 6 November 2026: Literacy & Numeracy collection built from the approved 
 - At 390px the covers are still 111 × 143.641px, with centre positions and white margins unchanged.
 - The existing homepage already links to learning.html. Homepage, approved Activity page and assets, Adult Colouring page and individual book HTML pages are unchanged.
 - New four cover assets also satisfy existing book detail draft image references.
+
+## Literacy & Numeracy alignment check
+
+- Compared rendered Activity and Learning geometry at desktop 1363 × 936 and phones 390 × 844 / 320 × 740. Header, panel, cover-stage and cover rectangles match exactly at each viewport.
+- All book covers remain in their existing positions and keep their natural 17:22 portrait ratio. Desktop CSS and artwork are unchanged.
+- Mobile bottom artwork now uses the same 88% width/height, centred and bottom-anchored, as Activity. The base scene fades earlier so the original full-size microphones and heads do not remain behind the books.
+- Visually checked both phone sizes: the top Literacy covers clear the microphones and heads. Drawings differ by collection, but their display boxes and scale now match.
+- Only learning.html and these notes changed. Homepage, Activity, Adult Colouring, individual book pages and all image assets are untouched.
+- Updated desktop: https://unders73.github.io/angel-leaf-website/learning.html?v=20261106-learning-aligned
+- Updated mobile: https://unders73.github.io/angel-leaf-website/learning.html?view=mobile&v=20261106-learning-aligned
 
 ## Approval and next step
 
