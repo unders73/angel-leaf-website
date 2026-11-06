@@ -18,6 +18,15 @@ main{min-height:100vh;min-height:100svh;display:grid;place-items:center}
 .mobile{display:none;width:min(100%,50vh);width:min(100%,50svh);--w:887;--h:1774}
 .home img{display:block;width:100%;height:auto}
 .hotspot{position:absolute;display:block;left:0;width:100%;top:calc(var(--y)/var(--h)*100%);height:calc(var(--height)/var(--h)*100%);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* Narrow only the desktop cover tiles; their heights, centres and all other artwork stay fixed. */
+.desktop .book-backdrop{position:absolute;display:block;pointer-events:none;-webkit-mask-image:linear-gradient(to right,transparent,#000 2.4%,#000 97.6%,transparent);mask-image:linear-gradient(to right,transparent,#000 2.4%,#000 97.6%,transparent)}
+.desktop .book{
+position:absolute;left:calc(var(--bx)/1854*100%);top:calc(var(--by)/848*100%);width:calc(var(--bw)/1854*100%);height:calc(var(--bh)/848*100%);pointer-events:none;
+overflow:hidden;
+}
+.desktop .book::after{
+content:"";position:absolute;inset:0;background-image:url('assets/opening-desktop-approved.png');background-size:calc(1854/var(--bw)*100%) calc(848/var(--bh)*100%);background-position:calc(var(--bx)/(1854 - var(--bw))*100%) calc(var(--by)/(848 - var(--bh))*100%);background-repeat:no-repeat;transform:scaleX(var(--thin));transform-origin:center;
+}
 .desktop .activity{--y:228;--height:193;--cy:326}
 .desktop .learning{--y:432;--height:179;--cy:521}
 .desktop .adult{--y:623;--height:194;--cy:712}
@@ -29,12 +38,19 @@ box-shadow:inset 0 0 0 2px #fff,inset 0 0 0 5px #f3e82e,inset 0 0 0 7px #fff,ins
 transition:transform 180ms ease,filter 180ms ease;
 }
 .arrow svg{display:block;width:43%;height:55%;filter:drop-shadow(1px 2px 1px #092400);overflow:visible}
-.mobile .activity{--y:416;--height:470;--x:750;--ay:584;--aw:99;--ah:110}
-.mobile .learning{--y:896;--height:456;--x:750;--ay:1064;--aw:99;--ah:110}
-.mobile .adult{--y:1357;--height:323;--x:775;--ay:1482;--aw:88;--ah:92}
+/* Mobile controls all reuse the original bottom button, at its original size and x position. */
+.mobile .activity{--y:416;--height:470;--ay:593;--patch-y:580;--sample-y:704}
+.mobile .learning{--y:896;--height:456;--ay:1073;--patch-y:1060;--sample-y:1184}
+.mobile .adult{--y:1357;--height:323;--ay:1482}
+/* Cover only the former larger controls with the adjacent matching panel texture. */
+.mobile .activity::before,.mobile .learning::before{
+content:"";position:absolute;left:calc(746/887*100%);top:calc((var(--patch-y) - var(--y))/var(--height)*100%);width:calc(106/887*100%);height:calc(116/var(--height)*100%);
+background-image:url('assets/opening-mobile-approved.png');background-size:calc(887/106*100%) calc(1774/116*100%);background-position:calc(746/(887 - 106)*100%) calc(var(--sample-y)/(1774 - 116)*100%);background-repeat:no-repeat;
+-webkit-mask-image:radial-gradient(ellipse closest-side,#000 95%,transparent 100%);mask-image:radial-gradient(ellipse closest-side,#000 95%,transparent 100%);pointer-events:none;
+}
 .mobile .arrow{
-position:absolute;left:calc(var(--x)/887*100%);top:calc((var(--ay) - var(--y))/var(--height)*100%);width:calc(var(--aw)/887*100%);height:calc(var(--ah)/var(--height)*100%);border-radius:50%;
-background-image:url('assets/opening-mobile-approved.png');background-size:calc(887/var(--aw)*100%) calc(1774/var(--ah)*100%);background-position:calc(var(--x)/(887 - var(--aw))*100%) calc(var(--ay)/(1774 - var(--ah))*100%);background-repeat:no-repeat;transition:transform 180ms ease,filter 180ms ease;
+position:absolute;left:calc(775/887*100%);top:calc((var(--ay) - var(--y))/var(--height)*100%);width:calc(88/887*100%);height:calc(92/var(--height)*100%);border-radius:50%;
+background-image:url('assets/opening-mobile-approved.png');background-size:calc(887/88*100%) calc(1774/92*100%);background-position:calc(775/(887 - 88)*100%) calc(1482/(1774 - 92)*100%);background-repeat:no-repeat;transition:transform 180ms ease,filter 180ms ease;
 }
 .hotspot:focus-visible{outline:none}
 .hotspot:focus-visible .arrow{outline:3px solid #213d17;outline-offset:3px;transform:translateY(-4%) scale(1.06)}
@@ -49,6 +65,19 @@ html[data-view="mobile"] .desktop{display:none}html[data-view="mobile"] .mobile{
 <body><main>
 <div class="home desktop">
 <img src="assets/opening-desktop-approved.png" width="1854" height="848" fetchpriority="high" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
+<svg class="book-backdrop" aria-hidden="true" style="left:40.99244875943905%;top:28.419811320754718%;width:49.083063646170444%;height:20.5188679245283%" viewBox="0 0 910 174" preserveAspectRatio="none"><defs><linearGradient id="panel-0" x2="0" y2="1"><stop stop-color="#fdd9fc"/><stop offset="1" stop-color="#fddefd"/></linearGradient><pattern id="diamond-0" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="910" height="174" fill="url(#panel-0)"/><rect width="910" height="174" fill="url(#diamond-0)"/></svg>
+<svg class="book-backdrop" aria-hidden="true" style="left:40.99244875943905%;top:51.886792452830186%;width:49.083063646170444%;height:19.221698113207548%" viewBox="0 0 910 163" preserveAspectRatio="none"><defs><linearGradient id="panel-1" x2="0" y2="1"><stop stop-color="#d6edfd"/><stop offset="1" stop-color="#cdeafd"/></linearGradient><pattern id="diamond-1" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="910" height="163" fill="url(#panel-1)"/><rect width="910" height="163" fill="url(#diamond-1)"/></svg>
+<svg class="book-backdrop" aria-hidden="true" style="left:58.144552319309604%;top:74.05660377358491%;width:30.097087378640776%;height:21.933962264150946%" viewBox="0 0 558 186" preserveAspectRatio="none"><defs><linearGradient id="panel-2" x2="0" y2="1"><stop stop-color="#fdfaec"/><stop offset="1" stop-color="#fff9eb"/></linearGradient><pattern id="diamond-2" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="558" height="186" fill="url(#panel-2)"/><rect width="558" height="186" fill="url(#diamond-2)"/></svg>
+<span class="book" aria-hidden="true" style="--bx:783;--by:241;--bw:198;--bh:172;--thin:0.67"></span>
+<span class="book" aria-hidden="true" style="--bx:999;--by:241;--bw:203;--bh:172;--thin:0.66"></span>
+<span class="book" aria-hidden="true" style="--bx:1214;--by:241;--bw:207;--bh:172;--thin:0.65"></span>
+<span class="book" aria-hidden="true" style="--bx:1437;--by:241;--bw:212;--bh:172;--thin:0.63"></span>
+<span class="book" aria-hidden="true" style="--bx:780;--by:442;--bw:200;--bh:160;--thin:0.62"></span>
+<span class="book" aria-hidden="true" style="--bx:999;--by:442;--bw:202;--bh:160;--thin:0.61"></span>
+<span class="book" aria-hidden="true" style="--bx:1214;--by:442;--bw:207;--bh:160;--thin:0.6"></span>
+<span class="book" aria-hidden="true" style="--bx:1439;--by:442;--bw:211;--bh:160;--thin:0.59"></span>
+<span class="book" aria-hidden="true" style="--bx:1090;--by:628;--bw:255;--bh:186;--thin:0.64"></span>
+<span class="book" aria-hidden="true" style="--bx:1351;--by:628;--bw:273;--bh:186;--thin:0.6"></span>
 <a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Activity Collection</span></a>
 <a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
 <a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">Adult Colouring Collection</span></a>
