@@ -1,88 +1,63 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Angel Leaf — Our Collections</title>
-  <meta name="description" content="Explore Angel Leaf book collections: K-pop activities, literacy and numeracy, and adult colouring.">
-  <style>
-    *{box-sizing:border-box}
-    html,body{margin:0;background:#fff}
-    .home{
-      --art-width:1448;
-      --art-height:1086;
-      --arrow-art:url('assets/opening-design.png');
-      position:relative;
-      width:min(100%,1448px,133.333333vh);
-      width:min(100%,1448px,133.333333svh);
-      margin:0 auto;
-      line-height:0;
-    }
-    .home picture,.home img{display:block;width:100%;height:auto}
-    .home img{aspect-ratio:4/3}
-    .hotspot{
-      display:block;
-      position:absolute;
-      left:0;
-      width:100%;
-      top:calc(var(--row-y) / var(--art-height) * 100%);
-      height:calc(var(--row-height) / var(--art-height) * 100%);
-      cursor:pointer;
-      touch-action:manipulation;
-      -webkit-tap-highlight-color:transparent;
-    }
-    .hotspot:focus-visible{outline:none}
-    .arrow-lift{
-      position:absolute;
-      left:calc(var(--crop-x) / var(--art-width) * 100%);
-      top:calc((var(--crop-y) - var(--row-y)) / var(--row-height) * 100%);
-      width:calc(var(--crop-width) / var(--art-width) * 100%);
-      height:calc(var(--crop-height) / var(--row-height) * 100%);
-      border-radius:50%;
-      background-image:var(--arrow-art);
-      background-size:calc(var(--art-width) / var(--crop-width) * 100%) calc(var(--art-height) / var(--crop-height) * 100%);
-      background-position:calc(var(--crop-x) / (var(--art-width) - var(--crop-width)) * 100%) calc(var(--crop-y) / (var(--art-height) - var(--crop-height)) * 100%);
-      background-repeat:no-repeat;
-      pointer-events:none;
-      transform-origin:center;
-      transition:transform 180ms ease,filter 180ms ease;
-    }
-    .activity{--row-y:400;--row-height:213;--crop-x:1291;--crop-y:468;--crop-width:81;--crop-height:78}
-    .learning{--row-y:626;--row-height:200;--crop-x:1296;--crop-y:685;--crop-width:81;--crop-height:76}
-    .adult{--row-y:837;--row-height:213;--crop-x:1286;--crop-y:895;--crop-width:88;--crop-height:84}
-    .hotspot:focus-visible .arrow-lift{transform:translateY(-4%) scale(1.10);filter:drop-shadow(0 4px 3px #173b2455)}
-    @media(hover:hover){
-      .hotspot:hover .arrow-lift{transform:translateY(-4%) scale(1.10);filter:drop-shadow(0 4px 3px #173b2440)}
-    }
-    .hotspot:active .arrow-lift{transform:translateY(-1%) scale(1.04);filter:drop-shadow(0 1px 1px #173b2433);transition-duration:70ms}
-    .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-    @media(max-width:680px) and (orientation:portrait){
-      .home{
-        --art-width:1024;
-        --art-height:1536;
-        --arrow-art:url('assets/opening-design-mobile-approved.png');
-        width:min(100%,66.666667vh);
-        width:min(100%,66.666667svh);
-      }
-      .home img{aspect-ratio:2/3}
-      .activity{--row-y:473;--row-height:356;--crop-x:873;--crop-y:596;--crop-width:97;--crop-height:99}
-      .learning{--row-y:838;--row-height:314;--crop-x:873;--crop-y:943;--crop-width:98;--crop-height:98}
-      .adult{--row-y:1162;--row-height:277;--crop-x:897;--crop-y:1264;--crop-width:80;--crop-height:80}
-    }
-    @media(prefers-reduced-motion:reduce){.arrow-lift{transition:none}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Angel Leaf — Our Collections</title>
+<meta name="description" content="Explore Angel Leaf book collections: K-pop activities, literacy and numeracy, and adult colouring.">
+<script>
+const requestedView = new URLSearchParams(location.search).get('view');
+if (requestedView === 'desktop' || requestedView === 'mobile') document.documentElement.dataset.view = requestedView;
+</script>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;min-height:100%}
+main{min-height:100vh;min-height:100svh;display:grid;place-items:center}
+.home{position:relative;margin:auto;line-height:0}
+.desktop{width:min(100%,218.632075vh);width:min(100%,218.632075svh);--w:1854;--h:848}
+.mobile{display:none;width:min(100%,50vh);width:min(100%,50svh);--w:887;--h:1774}
+.home img{display:block;width:100%;height:auto}
+.hotspot{position:absolute;display:block;left:0;width:100%;top:calc(var(--y)/var(--h)*100%);height:calc(var(--height)/var(--h)*100%);cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.desktop .activity{--y:228;--height:193;--cy:326}
+.desktop .learning{--y:432;--height:179;--cy:521}
+.desktop .adult{--y:623;--height:194;--cy:712}
+.desktop .arrow{
+position:absolute;left:calc(1697/1854*100%);top:calc((var(--cy) - var(--y) - 48)/var(--height)*100%);width:calc(96/1854*100%);aspect-ratio:1;
+display:grid;place-items:center;border-radius:50%;
+background:radial-gradient(circle at 30% 20%,#679e16 0,#397100 48%,#164700 85%);
+box-shadow:inset 0 0 0 2px #fff,inset 0 0 0 5px #f3e82e,inset 0 0 0 7px #fff,inset 0 -5px 6px #123f0080;
+transition:transform 180ms ease,filter 180ms ease;
+}
+.arrow svg{display:block;width:43%;height:55%;filter:drop-shadow(1px 2px 1px #092400);overflow:visible}
+.mobile .activity{--y:416;--height:470;--x:750;--ay:584;--aw:99;--ah:110}
+.mobile .learning{--y:896;--height:456;--x:750;--ay:1064;--aw:99;--ah:110}
+.mobile .adult{--y:1357;--height:323;--x:775;--ay:1482;--aw:88;--ah:92}
+.mobile .arrow{
+position:absolute;left:calc(var(--x)/887*100%);top:calc((var(--ay) - var(--y))/var(--height)*100%);width:calc(var(--aw)/887*100%);height:calc(var(--ah)/var(--height)*100%);border-radius:50%;
+background-image:url('assets/opening-mobile-approved.png');background-size:calc(887/var(--aw)*100%) calc(1774/var(--ah)*100%);background-position:calc(var(--x)/(887 - var(--aw))*100%) calc(var(--ay)/(1774 - var(--ah))*100%);background-repeat:no-repeat;transition:transform 180ms ease,filter 180ms ease;
+}
+.hotspot:focus-visible{outline:none}
+.hotspot:focus-visible .arrow{outline:3px solid #213d17;outline-offset:3px;transform:translateY(-4%) scale(1.06)}
+@media(hover:hover){.hotspot:hover .arrow{transform:translateY(-4%) scale(1.06);filter:drop-shadow(0 3px 2px #173b2440)}}
+.hotspot:active .arrow{transform:translateY(-1%) scale(1.02)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:680px) and (orientation:portrait){html:not([data-view="desktop"]) .desktop{display:none}html:not([data-view="desktop"]) .mobile{display:block}}
+html[data-view="mobile"] .desktop{display:none}html[data-view="mobile"] .mobile{display:block}
+@media(prefers-reduced-motion:reduce){.arrow{transition:none!important}}
+</style>
 </head>
-<body>
-  <main>
-    <div class="home">
-      <picture>
-        <source media="(max-width:680px) and (orientation:portrait)" srcset="assets/opening-design-mobile-approved.png" width="1024" height="1536">
-        <img src="assets/opening-design.png" width="1448" height="1086" fetchpriority="high" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
-      </picture>
-      <a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">K-pop Activity Collection</span></a>
-      <a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
-      <a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow-lift" aria-hidden="true"></span><span class="sr">Adult Colouring Collection</span></a>
-    </div>
-  </main>
-</body>
+<body><main>
+<div class="home desktop">
+<img src="assets/opening-desktop-approved.png" width="1854" height="848" fetchpriority="high" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
+<a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Activity Collection</span></a>
+<a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
+<a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">Adult Colouring Collection</span></a>
+</div>
+<div class="home mobile">
+<img src="assets/opening-mobile-approved.png" width="887" height="1774" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
+<a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow" aria-hidden="true"></span><span class="sr">K-pop Activity Collection</span></a>
+<a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow" aria-hidden="true"></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
+<a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow" aria-hidden="true"></span><span class="sr">Adult Colouring Collection</span></a>
+</div>
+</main></body>
 </html>
