@@ -1,4 +1,4 @@
-# Approved Angel Leaf landing artwork
+# Angel Leaf approved designs
 
 Updated 6 November 2026 after Simon's desktop cover-proportion and mobile button corrections.
 
@@ -34,4 +34,17 @@ The only subsequently authorised change is mobile: show the existing pink Activi
 
 ## Activity collection retained as reference; learning collection review
 
-Simon has moved on to the Literacy & Numeracy collection and instructed reuse of the finished Activity desktop/mobile format. Preserve activity.html and all its artwork unchanged. The new learning.html adapts book covers, title wording/colour and surrounding illustrations only; it awaits review. Do not change the approved homepage or Activity page while revising learning.html.
+Simon has moved on to the Literacy & Numeracy collection and instructed reuse of the finished Activity desktop/mobile format. Preserve activity.html and all its artwork unchanged. The new learning.html adapts book covers, title wording/colour and surrounding illustrations only. Its final approval is recorded below. Do not change the approved homepage or Activity page while revising learning.html.
+
+## Literacy & Numeracy collection — desktop and mobile locked
+
+Simon explicitly approved both corrected views: “Yes, lock in please, thank you.”
+
+Approved source: commit 909039c4052e1d043a29220939e834cecbd7f7b2, learning.html and its referenced image assets.
+
+- Desktop: https://unders73.github.io/angel-leaf-website/learning.html?v=20261106-learning-aligned
+- Mobile: https://unders73.github.io/angel-leaf-website/learning.html?view=mobile&v=20261106-learning-aligned
+- Preserve both layouts, lettering, logo, colours, book order, original cover proportions and positions, white margins, panel dimensions, artwork scale and navigation.
+- Verified book and panel geometry matches Activity at 1363 × 936, 390 × 844 and 320 × 740. Mobile figures are centred and bottom-anchored at 88%; base-scene fade is 48–58%, clearing heads and microphones beneath the Literacy covers.
+- Do not redesign or adjust these approved views unless Simon explicitly requests a further change. Preserve them when building the remaining collection and individual book pages.
+- This approval concerns the collection page. Individual book detail drafts and country purchase links remain unfinished.

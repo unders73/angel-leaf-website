@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026: Literacy & Numeracy geometry verified against the approved Activity page; mobile artwork scale and overlap corrected. Activity page remains locked.
+Updated 6 November 2026: Simon approved and locked both Literacy & Numeracy desktop and mobile views. Activity remains the approved reference.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -78,7 +78,9 @@ Updated 6 November 2026: Literacy & Numeracy geometry verified against the appro
 
 ## Approval and next step
 
-Simon moved on from the Activity collection and requested its desktop and mobile format for the new learning collection. Preserve Activity as the approved reference. Await his review of this Literacy & Numeracy page before moving on to Adult Colouring.
+Simon explicitly approved both Literacy & Numeracy views: “Yes, lock in please, thank you.” Approved website source is commit 909039c4052e1d043a29220939e834cecbd7f7b2. Both desktop and mobile learning.html designs and their assets are locked; preserve the layout, typography, artwork and book positioning exactly unless Simon requests another change. This approval was recorded through documentation only; no website code or assets changed.
+
+Activity remains the approved reference. Adult Colouring is the remaining collection page; await Simon’s instruction to begin it.
 
 Individual book detail pages and country purchasing options remain separate later work; do not present those drafts as finished.
 
