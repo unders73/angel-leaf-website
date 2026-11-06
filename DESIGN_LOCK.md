@@ -25,3 +25,9 @@ Simon confirmed that the mobile page fills the screen correctly. Preserve its si
 - Do not regenerate or redesign the opening page.
 
 Next: Simon will test the corrected links, then we will build the collection page behind the opening page.
+
+## K-pop Activity collection desktop approval — 6 November 2026
+
+Simon explicitly approved the desktop in activity.html: “Yes, desktop approved. Leave it like that.” The approved desktop version is commit 3b1f7247379d1b744a4b92837fc7fec185ffbe68, with K-pop left, Activity Collection centred on the page and its instruction directly underneath, and the smaller Angel Leaf logo centred over the red book. Preserve all desktop layout, lettering, logo, cover proportions and lower artwork.
+
+The only subsequently authorised change is mobile: show the existing pink Activity Collection lettering asset instead of the black text, keeping the heading centred and everything else unchanged. This is implemented with CSS confined to mobile container rules. Simon will look at this mobile update before locking both views together. Do not infer final mobile approval before that review.
