@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 after building the first K-pop Activity collection page for review.
+Updated 6 November 2026 after replacing the basic Activity collection layout with four full-height illustrated K-pop sections for Simon’s review.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -26,17 +26,19 @@ Updated 6 November 2026 after building the first K-pop Activity collection page 
 - Original artwork files, desktop controls, page-fit CSS, responsive selection and six collection-link destinations are retained.
 - Visually checked both corrected views before publication.
 
-## K-pop Activity collection page — first review
+## K-pop Activity collection page — illustrated review
 
-- Desktop/reponsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-collection
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-collection
-- One shared heading: “Choose a book to explore”. No repeated “View this book” buttons.
-- Four large clickable genuine cover images. Four columns on desktop; two columns on phones. Covers retain natural portrait proportions.
-- Pink/lilac collection styling, Angel Leaf logo, music/headphone/heart/star motifs, and a back-to-collections link.
-- Cover images rendered from the original K-Pop Activity, Quiz (Fun Facts), Journal, and Release & Review cover PDFs. Front trim is 8.5 × 11 inches. Originals are not regenerated.
-- All four cover links were clicked and reached the matching existing individual-book pages.
-- Visually reviewed desktop and phone widths of 390 and 320 pixels. No horizontal overflow.
-- The approved homepage and the other two collection pages have not changed.
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-artwork
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-artwork
+- Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
+- Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
+- New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
+- One shared instruction: “View your book of choice”. Each book/section is clickable. No repeated buttons.
+- Four columns on desktop; two columns on phones. Covers retain natural 8.5 × 11 portrait proportions.
+- Cover images rendered from the original Activity, Quiz (Fun Facts), Journal, and Release & Review PDFs. Originals are not regenerated.
+- Individual-book destinations are retained: book-activity.html, book-fun-facts.html, book-fan-journal.html, book-release-tracker.html.
+- Local desktop visual check and phone checks at 390 × 844 and 320 × 740 completed, with no horizontal overflow. All artwork and covers load.
+- The approved homepage and other two collection pages are unchanged.
 
 ## Next step
 
