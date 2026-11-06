@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 after the mobile button and desktop cover-proportion corrections.
+Updated 6 November 2026 after building the first K-pop Activity collection page for review.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -26,10 +26,22 @@ Updated 6 November 2026 after the mobile button and desktop cover-proportion cor
 - Original artwork files, desktop controls, page-fit CSS, responsive selection and six collection-link destinations are retained.
 - Visually checked both corrected views before publication.
 
+## K-pop Activity collection page — first review
+
+- Desktop/reponsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-collection
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-collection
+- One shared heading: “Choose a book to explore”. No repeated “View this book” buttons.
+- Four large clickable genuine cover images. Four columns on desktop; two columns on phones. Covers retain natural portrait proportions.
+- Pink/lilac collection styling, Angel Leaf logo, music/headphone/heart/star motifs, and a back-to-collections link.
+- Cover images rendered from the original K-Pop Activity, Quiz (Fun Facts), Journal, and Release & Review cover PDFs. Front trim is 8.5 × 11 inches. Originals are not regenerated.
+- All four cover links were clicked and reached the matching existing individual-book pages.
+- Visually reviewed desktop and phone widths of 390 and 320 pixels. No horizontal overflow.
+- The approved homepage and the other two collection pages have not changed.
+
 ## Next step
 
-Simon will try both published review links first. Then build the page behind the opening page. `activity.html`, `learning.html`, and `colouring.html` remain the existing collection placeholders; do not claim the whole shop is finished.
+Simon requested one tab at a time and will review this first Activity collection page. Await his design feedback before applying its structure to Literacy & Numeracy or Adult Colouring. Build individual book detail pages afterwards.
 
-The existing book detail pages and literacy page are retained. Do not assume their presence constitutes approval for the next collection-page design.
+The individual book pages are existing drafts, and their country purchasing links are not finished. Do not present them as complete.
 
-Keep the source and these continuation notes current so a conversation restart does not require rebuilding or reapproving the opening page.
+Keep the source and these continuation notes current so a conversation restart does not require rebuilding or reapproving completed work.
