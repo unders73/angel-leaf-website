@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated 6 November 2026 after replacing the basic Activity collection layout with four full-height illustrated K-pop sections for Simon’s review.
+Updated 6 November 2026 after Simon’s separate desktop and mobile refinements to the illustrated Activity collection.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -28,8 +28,8 @@ Updated 6 November 2026 after replacing the basic Activity collection layout wit
 
 ## K-pop Activity collection page — illustrated review
 
-- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-artwork
-- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-artwork
+- Desktop/responsive: https://unders73.github.io/angel-leaf-website/activity.html?v=20261106-refined
+- Mobile review: https://unders73.github.io/angel-leaf-website/activity.html?view=mobile&v=20261106-refined
 - Simon rejected the basic first page: he requested fuller K-pop branding and artwork around each book, extending top to bottom.
 - Four full-height illustrated colour sections: pink/lilac Activity, turquoise Fun Facts, green/yellow Fan Journal, red/cream Release Tracker.
 - New artwork follows the original cover family: characters, brushstrokes, headphones, music, hearts and stars. Artwork is decorative; the actual book covers remain separate original images.
@@ -39,6 +39,17 @@ Updated 6 November 2026 after replacing the basic Activity collection layout wit
 - Individual-book destinations are retained: book-activity.html, book-fun-facts.html, book-fan-journal.html, book-release-tracker.html.
 - Local desktop visual check and phone checks at 390 × 844 and 320 × 740 completed, with no horizontal overflow. All artwork and covers load.
 - The approved homepage and other two collection pages are unchanged.
+
+## Separate desktop and mobile refinements
+
+- Desktop: preserve all four cover positions, sizes, and lower artwork. Only finish the upper artwork edge naturally with small brushstroke/ink flourishes, and replace the plain K-pop text with pink graffiti-style artwork matching the cover family.
+- Original desktop scene images remain active. Transparent decorative strips and a short mask affect only the upper edge; the lower images are not regenerated.
+- At 1363 × 936, all four cover rectangles matched the previous version exactly. A pixel comparison showed the entire desktop below y=225px unchanged.
+- Mobile only: use separate scene assets with the lower character/prop groups reduced and horizontally centred at the bottom; retain original cover images and their sizes, shift covers slightly lower to centre them in the new open space.
+- Mobile title and navigation remain as before.
+- Shared instruction remains “View your book of choice”.
+- Mobile checked at 390 × 844 and 320 × 740. All navigation destinations retained.
+- No changes to the homepage, other collections, or individual book pages.
 
 ## Next step
 
