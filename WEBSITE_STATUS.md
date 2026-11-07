@@ -93,3 +93,7 @@ Simon approved the desktop/mobile layout and authorised the eight-book rollout w
 ## Latest individual-book refinement
 
 All eight books and the original Literacy proof now have the smaller centred Angel Leaf logo with no border-masking background; the visible coming-soon footer is removed; the store heading reads “Choose your Amazon store” with a locally served Amazon wordmark. Shared gallery/market geometry and all actual book artwork are retained. CSS/JS cache keys updated.
+
+## Final header spacing revision
+
+Desktop header controls now sit below the border, with a larger centred Angel Leaf logo lowered into the clear header area. The approved mobile logo is unchanged. The Amazon wordmark baseline matches the adjacent heading words, with its smile underneath and clear space above the country controls. Shared styles applied to all eight book pages and the first proof. Local validation covers normal/short laptop windows and small phones; original covers, real samples, store controls and purchase-link data retained. Review image: reviews/Angel-Leaf-Final-Spacing.jpg.

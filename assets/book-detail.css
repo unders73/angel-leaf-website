@@ -51,3 +51,22 @@ html[data-view="mobile"] .page{grid-template-rows:clamp(53px,8.6svh,76px) minmax
 @container(max-width:700px){.market h2{height:calc(clamp(22px,6cqw,28px) + 6px)}}
 @container(max-width:700px) and (max-height:650px){.market h2{height:29px}}
 @container(min-width:701px){.brand{top:26px;height:calc(100% - 30px)}}
+
+/* Final requested spacing: retain the approved phone logo and all book geometry. */
+@container(min-width:701px){
+ .brand{top:clamp(46px,6.7cqh,60px);width:clamp(185px,20cqw,235px);height:auto;aspect-ratio:940/341}
+ .back{transform:translateY(14px)}
+ .head-links{transform:translateY(40px)}
+}
+.market h2{align-items:baseline;transform:translateY(-.24em)}
+.amazon-wordmark{display:inline-block;position:relative;flex:none;width:3.35em;height:.595em;line-height:0}
+.amazon-logo{position:absolute;inset:0 auto auto 0;width:100%;height:auto;transform:none}
+/* Short laptop screens need a reserved header row for the lowered logo. */
+@media(min-width:701px) and (max-height:800px){
+ .page{grid-template-rows:clamp(110px,15svh,120px) minmax(0,1fr) 36%}
+}
+@container(min-width:701px) and (max-height:760px){
+ .brand{width:190px;top:55px}
+ .back{transform:none}
+ .head-links{transform:translateY(25px)}
+}

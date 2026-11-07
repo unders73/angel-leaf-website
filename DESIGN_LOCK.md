@@ -57,3 +57,9 @@ Simon approved the first Literacy Studio Sessions desktop/mobile proof: “the l
 ## Individual-book header and store refinements — 7 November 2026
 
 Simon requested only three changes across the eight approved book pages: a smaller, centrally aligned Angel Leaf logo clear of the border; removal of the small purchasing-links-coming-soon footer; and “Choose your Amazon store” with an Amazon logo. Shared header positioning removes the former opaque white backing so the matching artwork remains continuous. Existing book galleries, titles, country buttons, original cover/sample artwork and collection pages remain unchanged. The footer text is removed while its empty layout space is retained to preserve country button positions. Purchase-link placeholder dialogs remain until actual links are supplied.
+
+## Desktop header clearance and Amazon baseline — 7 November 2026
+
+Simon approved the mobile Angel Leaf logo exactly as positioned and requested desktop-only enlargement/lowering of the centred logo and lowering of Back to collection, Sample pages and Choose your Amazon store below the decorative border. He also requested Amazon lettering aligned with the surrounding words, its smile below, and proportionate clearance above the country buttons on both layouts.
+
+These refinements use shared styles for all eight books. Mobile brand rules and measured coordinates remain unchanged. Standard desktop/mobile gallery and country-button geometry is retained. Short desktop windows reserve a slightly taller header row to keep the larger lowered logo clear of the book images, while the country grid stays in place. Amazon lettering uses its actual wordmark baseline and the whole heading is lifted slightly; the smile clears the helper text by at least 7px in tested layouts. Checked 1363×936, 1363×768, 390×844 and 320×568 with no page scrolling.
