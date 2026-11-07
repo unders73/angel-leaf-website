@@ -85,3 +85,7 @@ Simon requested: (1) correct the Fun Facts cover/Explore overlap on desktop only
 ## Adult Colouring matching displays and rustic border — 7 November 2026
 
 Simon requested only matching sizes for the Coming Soon display and a nostalgic rustic border with vines, branches and trees, on desktop and mobile. Both cover display frames and ribbons now match exactly while original cover artwork retains its proportions. The new decorative border is confined to the Adult Colouring page. All other collection and book pages remain locked and untouched. Amazon purchasing links are a separate next phase.
+
+## Fuller Adult Colouring artwork requested — 7 November 2026
+
+Simon approved the nostalgic direction and requested a denser version of the edge artwork. The current page uses rustic-botanical-frame-dense.webp, preserving the palette, trees and antique style while filling the straight edges with fuller foliage. The book artwork and matching cover/ribbon presentation remain unchanged. Only the small closing caption gets clearance above the fuller bottom edge. Preserve all other collections and pages.

@@ -129,3 +129,9 @@ New rustic-botanical-frame.webp is a generated transparent sepia/gold botanical 
 Checked 320x568, 390x844, 900x500, 1263x580 and 1363x936: matching cover/ribbon dimensions, all content inside the viewport, document size equals viewport size. The Coming Soon text fits fully inside both previews at the smallest phone size. Existing homepage, Activity/Learning collections, eight K-pop pages, cover files and purchasing data are unchanged. Amazon links remain the next requested phase after Simon's walk with Kiki; no links added in this refinement.
 
 Deployment mapping: the local dist/ folder is only the preview web root. GitHub Pages serves repository ROOT. Publish local dist/colouring.html as colouring.html and local dist/assets/... as assets/..., never add a dist directory to the remote repository.
+
+## Denser Adult Colouring border — 7 November 2026
+
+Simon liked the nostalgic page and asked for fuller artwork around the edges, with more visual presence like the K-pop borders. The original botanical frame was edited into rustic-botanical-frame-dense.webp: fuller overlapping ivy, foliage, woody branches and small flowers along all four edges, keeping the same palette and corner trees. CSS round repetition keeps the edge details proportional instead of stretching individual leaves into long thin lines. The mobile border stays inside a 50px decorative corner area. The small closing caption is lifted 28px on desktop and 12px on mobile to clear the fuller bottom artwork. Covers, matching preview frames, Coming Soon labels, headings and navigation are unchanged.
+
+Checked 320x568, 390x844, 1263x580 and 1363x936: document dimensions equal viewport dimensions, the preview frames remain equal, and all content is visible. Only colouring.html, the new border asset and these continuation notes are published. No other pages or Amazon-link data changed.
