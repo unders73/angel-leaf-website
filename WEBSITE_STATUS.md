@@ -101,3 +101,7 @@ Desktop header controls now sit below the border, with a larger centred Angel Le
 ## Current: mobile locked; fuller desktop samples and fitted icons
 
 All eight individual book pages now show their cover plus four real PDF sample pages on desktop. The two additional samples are desktop-only. Country flags and globe fit the existing button bars, including shorter widescreen layouts. Mobile is explicitly approved and unchanged (pixel-identical Activity comparison); its gallery and lightbox remain three images. Desktop logo, border artwork, titles and the homepage/collection files are untouched. Review version: desktop-gallery-20261107. Purchasing URLs are still pending Simon's table.
+
+## Star seam and Back navigation repair — 7 November 2026
+
+Simon approved the fuller desktop gallery and requested repair of a clipped top-border star and the Back button. The Activity border now uses a left slice at 165px, before the star, with a matching proportional border width; the original artwork file is unchanged. On compact desktop windows (height <=760px), the decorative eyebrow is hidden in its existing space and the header is raised above the intro so the Back link remains visible and clickable. All eight Back links were clicked and reached their correct Activity or Learning collection. At 390x844, all 119 Activity DOM element geometries and checked visual styles match the previous version; mobile Back navigation also succeeds. CSS cache key: border-back-20261107. No book images, purchase data, collection pages or mobile styles changed.

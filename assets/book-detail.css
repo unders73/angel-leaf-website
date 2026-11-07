@@ -91,3 +91,19 @@ html[data-view="mobile"] .page{grid-template-rows:clamp(53px,8.6svh,76px) minmax
  .country-name{font-size:min(1em,70cqh);line-height:1.15}
  .country .arrow{font-size:min(22px,90cqh);line-height:1}
 }
+
+/* Keep the Activity frame's star whole at the horizontal repeat seam. */
+@media(min-width:701px){
+ html:not([data-view="mobile"]) body[data-book="activity"] .page:before{
+  border-image-slice:190 190 190 165 fill;
+  border-image-width:100px 100px 100px 86.842105px;
+ }
+}
+@media(min-width:701px) and (max-width:1100px){
+ html:not([data-view="mobile"]) body[data-book="activity"] .page:before{border-image-width:70px 70px 70px 60.789474px}
+}
+/* The compact heading must not cover the collection navigation. */
+@container book-page (min-width:701px) and (max-height:760px){
+ .masthead{z-index:2}
+ .intro .eyebrow{visibility:hidden}
+}

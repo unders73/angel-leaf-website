@@ -69,3 +69,7 @@ These refinements use shared styles for all eight books. Mobile brand rules and 
 Simon explicitly approved mobile across all eight books: “mobile, don't touch, finished.” Preserve the existing phone layout, logo, artwork, original three-image gallery, country buttons, type and no-scroll behaviour.
 
 The only authorised desktop changes are a fuller gallery (his preferred cover plus four genuine interior pages, with overlap allowed) and reducing country flags/globe to fit the existing bars. These changes are desktop-container-only. The original logo, artwork, title, intro and store layout are unchanged. Additional samples and the five-image lightbox are desktop-only; mobile retains its original three. See BOOK_PAGE_PROOF.md for genuine source page mapping. Further design changes require a new request.
+
+## Desktop star and Back-link repair — 7 November 2026
+
+Simon approved the fuller desktop display, then requested the clipped star and Back link be fixed. Only the Activity desktop frame slicing and compact desktop header stacking/eyebrow visibility are changed. The Back control takes priority over the decorative eyebrow where they overlap on short screens. The approved mobile layout is retained; all artwork asset bytes remain unchanged.
