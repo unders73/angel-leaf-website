@@ -73,7 +73,8 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  .frame-left{top:210px;bottom:100px;width:44px}.frame-right{top:230px;bottom:70px;width:32px}
 }
 
-.cover-art.print-cover{display:none}
+#range-curious .book:first-child img.cover-art{display:none}
+.cover-art.print-cover{display:block}
 /* Requested desktop refinement; mobile presentation remains exactly as approved. */
 @container colouring (min-width:901px){
  .range-books{display:flex;justify-content:center;align-items:start;gap:clamp(10px,.9cqw,14px)}
@@ -92,6 +93,11 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
 @container colouring (max-width:900px){
  .book{grid-template-columns:calc(min(220px,calc((100cqh - 314px)/2),52cqw)*.8) minmax(0,1fr)}
  .cover-window{justify-self:center;aspect-ratio:var(--cover-ratio,4/5)}
+}
+/* Both Curious Wonderings covers share the approved mobile height and width. */
+@container colouring (max-width:900px){
+ #range-curious .book .cover-window{aspect-ratio:1253/1620}
+ #range-curious .cover-art{object-fit:fill}
 }
 </style>
 </head>
@@ -118,11 +124,11 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
 <section class="shelf" aria-label="Six colouring books coming soon">
  <section class="range" id="range-curious" data-current="true" aria-labelledby="title-curious"><h2 class="range-title" id="title-curious">Curious Wonderings</h2><div class="range-books">
  <figure class="book">
-  <div class="cover-window"><svg class="cover-art print-cover" viewBox="60 0 1043 1426" preserveAspectRatio="none" role="img" aria-label="Where Time Stands Still — complete gold-framed front cover"><defs><clipPath id="where-time-print-front"><rect x="60" y="0" width="1043" height="1426"/></clipPath></defs><image href="assets/colouring/where-time-stands-still-complete.webp" width="1103" height="1426" clip-path="url(#where-time-print-front)"/></svg><img class="cover-art" src="assets/colouring/where-time-stands-still.webp" width="1122" height="1402" alt="Where Time Stands Still — original brown and gold cover"><span class="watermark">Coming Soon</span></div>
+  <div class="cover-window"><svg class="cover-art print-cover" viewBox="60 0 1043 1426" preserveAspectRatio="none" role="img" aria-label="Where Time Stands Still — complete gold-framed front cover"><defs><clipPath id="where-time-print-front"><rect x="60" y="0" width="1043" height="1426"/></clipPath></defs><image href="assets/colouring/where-time-stands-still-complete.webp" width="1103" height="1426" clip-path="url(#where-time-print-front)"/></svg><span class="watermark">Coming Soon</span></div>
   <figcaption><h3>Where Time<br>Stands Still</h3><p>A nostalgic colouring book</p></figcaption>
  </figure>
  <figure class="book">
-  <div class="cover-window"><svg class="cover-art" viewBox="800 0 736 1024" role="img" aria-label="Treasures of Another Time — original cream and gold front cover"><defs><clipPath id="treasures-front"><rect x="800" y="0" width="736" height="1024"/></clipPath></defs><image href="assets/colouring/treasures-of-another-time-wrap.webp" width="1536" height="1024" clip-path="url(#treasures-front)"/></svg><span class="watermark">Coming Soon</span></div>
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/treasures-of-another-time-approved.webp" width="1253" height="1620" alt="Treasures of Another Time — approved Curious Wonderings front cover"><span class="watermark">Coming Soon</span></div>
   <figcaption><h3>Treasures of<br>Another Time</h3><p>A nostalgic colouring book</p></figcaption>
  </figure>
  </div></section>
