@@ -119,3 +119,13 @@ Simon requested only a desktop Fun Facts strapline adjustment plus a Coming Soon
 colouring.html replaces its plain placeholder with the two existing covers, original Angel Leaf logo, cream/gold styling and CSS Coming Soon ribbons. The original Library images Where Time Stands Still Cover.png and Treasures of Another Time Cover.png were converted to WebP for the site. The second source is a full wrap; SVG viewBox displays its front cover (x=800, width=736 of 1536x1024) without altering the artwork. Both covers fit at 320x568, 390x844, 900x500, 1263x580 and 1363x936, with document dimensions equal to the viewport. The Back link reaches the existing homepage. No purchase claims or release dates were added.
 
 Only these two page files and the two new colouring assets change the deployed site; every other page, shared stylesheet/script and existing asset remains unchanged.
+
+## Final Adult Colouring presentation — 7 November 2026
+
+Simon requested matching-sized Coming Soon displays and a rustic, nostalgic page border with vines, branches and trees for desktop and mobile. Both cover previews now use identical 4:5 presentation frames and proportion-preserving art inside them. The two ribbon boxes, font sizes, positions and angles are identical at each viewport. Treasures retains its original front-only view via an explicit SVG clip path. Neither original cover image asset was edited.
+
+New rustic-botanical-frame.webp is a generated transparent sepia/gold botanical frame, with ivy branches, antique floral corner details and small trees in the lower corners. It is applied as a responsive nine-slice border so the artwork surrounds the existing content on both desktop and mobile. Only colouring.html, this new border asset and continuation documents change.
+
+Checked 320x568, 390x844, 900x500, 1263x580 and 1363x936: matching cover/ribbon dimensions, all content inside the viewport, document size equals viewport size. The Coming Soon text fits fully inside both previews at the smallest phone size. Existing homepage, Activity/Learning collections, eight K-pop pages, cover files and purchasing data are unchanged. Amazon links remain the next requested phase after Simon's walk with Kiki; no links added in this refinement.
+
+Deployment mapping: the local dist/ folder is only the preview web root. GitHub Pages serves repository ROOT. Publish local dist/colouring.html as colouring.html and local dist/assets/... as assets/..., never add a dist directory to the remote repository.

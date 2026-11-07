@@ -81,3 +81,7 @@ Simon requested the approved collection compositions adapt to each visitor's bro
 ## Narrow final refinements authorised — 7 November 2026
 
 Simon requested: (1) correct the Fun Facts cover/Explore overlap on desktop only; (2) show the two existing Adult Colouring covers with attractive Coming Soon overlays on desktop and mobile. He explicitly requested that nothing else in any collection or book page change. Preserve all other approved files. The Fun Facts correction is an inline desktop-container-only strapline size rule; its mobile rendering is unchanged. The Adult Colouring page uses the existing brown/gold Where Time Stands Still and cream/gold Treasures of Another Time front covers. This is a temporary Coming Soon presentation, not approval to redesign other collection pages or revise the book artwork.
+
+## Adult Colouring matching displays and rustic border — 7 November 2026
+
+Simon requested only matching sizes for the Coming Soon display and a nostalgic rustic border with vines, branches and trees, on desktop and mobile. Both cover display frames and ribbons now match exactly while original cover artwork retains its proportions. The new decorative border is confined to the Adult Colouring page. All other collection and book pages remain locked and untouched. Amazon purchasing links are a separate next phase.

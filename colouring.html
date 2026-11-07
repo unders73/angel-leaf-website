@@ -11,8 +11,8 @@
 html,body{margin:0;min-height:100%;background:#faf6ed;color:#35432c}
 body{font-family:Georgia,'Times New Roman',serif}
 .page{position:relative;isolation:isolate;container-type:size;container-name:colouring;width:min(100%,1440px);height:100svh;margin:auto;padding:18px 5% 16px;display:grid;grid-template-rows:82px 108px minmax(0,1fr) 30px;overflow:hidden;background:radial-gradient(ellipse at 0 100%,#e8eadb80,transparent 45%),radial-gradient(ellipse at 100% 0,#e9ddc480,transparent 45%),#fffcf5}
-.page:before{content:"";position:absolute;inset:11px;border:1px solid #b7a26a80;pointer-events:none;z-index:-1}
-.page:after{content:"";position:absolute;inset:16px;border:1px solid #b7a26a33;pointer-events:none;z-index:-1}
+.page:before{content:"";position:absolute;inset:0;border:0 solid transparent;border-image:url("assets/colouring/rustic-botanical-frame.webp") 390 / clamp(58px,min(10cqw,15cqh),140px) / 0 stretch;pointer-events:none;z-index:-1}
+.page:after{content:"";position:absolute;inset:12px;border:1px solid #ab854b33;pointer-events:none;z-index:-1}
 .masthead{position:relative;display:flex;align-items:center;justify-content:center;min-height:0}
 .brand{display:block;width:260px;max-width:33%;line-height:0}.brand img{display:block;width:100%;height:auto}
 .back{position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #bac7a8;border-radius:24px;background:#fffdf7;text-decoration:none;color:#3e5b32;font:600 12px Arial,sans-serif}
@@ -22,9 +22,9 @@ h1{font-weight:normal;font-size:clamp(28px,3.6cqw,48px);line-height:1.08;margin:
 .intro .lead{font-size:16px;line-height:1.35;color:#786a52;margin:10px 0 0}
 .shelf{min-height:0;display:flex;align-items:center;justify-content:center;gap:clamp(36px,8cqw,110px);padding:16px 0 10px}
 .book{margin:0;display:flex;align-items:center;flex-direction:column;gap:17px;min-width:0}
-.cover-window{position:relative;isolation:isolate;height:min(480px,calc(100cqh - 330px),45cqw);aspect-ratio:var(--ratio);border-radius:2px;overflow:hidden;box-shadow:3px 5px 0 #b7a78255,9px 16px 22px #39280c25;background:#ebd5a9}
+.cover-window{position:relative;isolation:isolate;container-type:size;container-name:book-preview;height:min(480px,calc(100cqh - 330px),45cqw);aspect-ratio:4/5;padding:6px;border:1px solid #ad8c5366;border-radius:2px;overflow:hidden;box-shadow:3px 5px 0 #b7a78255,9px 16px 22px #39280c25;background:linear-gradient(100deg,#e7d5ac,#fbefce 48%,#e7d5ac)}
 .cover-art{display:block;width:100%;height:100%;object-fit:contain}
-.watermark{position:absolute;left:-12%;top:67%;width:124%;transform:rotate(-12deg);padding:10px 0;text-align:center;color:#32432c;background:#fff9e9ed;border-top:1px solid #c1aa70;border-bottom:1px solid #c1aa70;box-shadow:0 3px 9px #39280c25;font-size:clamp(17px,2.1cqw,27px);letter-spacing:2px;white-space:nowrap;font-style:italic}
+.watermark{position:absolute;left:50%;top:67%;width:124%;transform:translateX(-50%) rotate(-12deg);padding:clamp(4px,2cqw,10px) 0;text-align:center;color:#32432c;background:#fff9e9ed;border-top:1px solid #c1aa70;border-bottom:1px solid #c1aa70;box-shadow:0 3px 9px #39280c25;font-size:clamp(12px,7cqw,27px);letter-spacing:clamp(.4px,.5cqw,2px);white-space:nowrap;font-style:italic}
 figcaption{text-align:center;max-width:300px}figcaption h2{font-size:20px;line-height:1.2;font-weight:normal;margin:0;color:#4b3a24}figcaption p{font-size:12px;color:#82745c;font-style:italic;margin:6px 0 0}
 .closing{align-self:center;text-align:center;font-size:13px;font-style:italic;color:#7b6b4d;margin:0}.closing:before,.closing:after{content:"";display:inline-block;vertical-align:middle;width:30px;height:1px;background:#b8a16b88;margin:0 12px}
 html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-rows:70px 108px minmax(0,1fr) 28px}
@@ -35,12 +35,11 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  .shelf{display:grid;grid-template-rows:repeat(2,minmax(0,1fr));gap:15px;padding:14px 0}
  .book{display:grid;grid-template-columns:auto minmax(0,1fr);gap:17px;width:100%;justify-content:start;align-items:center}
  .cover-window{height:min(220px,calc((100cqh - 276px)/2),52cqw)}
- .watermark{font-size:clamp(12px,3.9cqw,16px);padding:6px 0;letter-spacing:1px}
  figcaption{text-align:left;max-width:145px}figcaption h2{font-size:19px;line-height:1.2}figcaption p{font-size:12px;line-height:1.4;margin-top:9px}
  .closing{font-size:11px}.closing:before,.closing:after{width:15px;margin:0 7px}
 }
-@container colouring (max-width:350px){.intro h1{font-size:25px}.brand{width:160px}.book{gap:13px}figcaption h2{font-size:16px}figcaption p{font-size:11px}.watermark{font-size:12px}}
-@container colouring (min-width:681px) and (max-height:700px){.page h1{font-size:36px}.watermark{font-size:20px;padding:7px 0}figcaption h2{font-size:17px}.book{gap:12px}}
+@container colouring (max-width:350px){.intro h1{font-size:25px}.brand{width:160px}.book{gap:13px}figcaption h2{font-size:16px}figcaption p{font-size:11px}}
+@container colouring (min-width:681px) and (max-height:700px){.page h1{font-size:36px}figcaption h2{font-size:17px}.book{gap:12px}}
 </style>
 </head>
 <body>
@@ -52,11 +51,11 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
 <section class="intro" aria-labelledby="collection-title"><p class="eyebrow">A little time for yourself</p><h1 id="collection-title">Adult Colouring Collection</h1><p class="lead">Nostalgic scenes to colour and enjoy.</p></section>
 <section class="shelf" aria-label="Two colouring books coming soon">
  <figure class="book">
-  <div class="cover-window" style="--ratio:1122/1402"><img class="cover-art" src="assets/colouring/where-time-stands-still.webp" width="1122" height="1402" alt="Where Time Stands Still — original brown and gold cover"><span class="watermark">Coming Soon</span></div>
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/where-time-stands-still.webp" width="1122" height="1402" alt="Where Time Stands Still — original brown and gold cover"><span class="watermark">Coming Soon</span></div>
   <figcaption><h2>Where Time<br>Stands Still</h2><p>A nostalgic colouring book</p></figcaption>
  </figure>
  <figure class="book">
-  <div class="cover-window" style="--ratio:736/1024"><svg class="cover-art" viewBox="800 0 736 1024" role="img" aria-label="Treasures of Another Time — original cream and gold front cover"><image href="assets/colouring/treasures-of-another-time-wrap.webp" width="1536" height="1024"/></svg><span class="watermark">Coming Soon</span></div>
+  <div class="cover-window"><svg class="cover-art" viewBox="800 0 736 1024" role="img" aria-label="Treasures of Another Time — original cream and gold front cover"><defs><clipPath id="treasures-front"><rect x="800" y="0" width="736" height="1024"/></clipPath></defs><image href="assets/colouring/treasures-of-another-time-wrap.webp" width="1536" height="1024" clip-path="url(#treasures-front)"/></svg><span class="watermark">Coming Soon</span></div>
   <figcaption><h2>Treasures of<br>Another Time</h2><p>A nostalgic colouring book</p></figcaption>
  </figure>
 </section>
