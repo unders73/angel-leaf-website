@@ -89,3 +89,7 @@ Simon requested only matching sizes for the Coming Soon display and a nostalgic 
 ## Fuller Adult Colouring artwork requested — 7 November 2026
 
 Simon approved the nostalgic direction and requested a denser version of the edge artwork. The current page uses rustic-botanical-frame-dense.webp, preserving the palette, trees and antique style while filling the straight edges with fuller foliage. The book artwork and matching cover/ribbon presentation remain unchanged. Only the small closing caption gets clearance above the fuller bottom edge. Preserve all other collections and pages.
+
+## Irregular, inward-reaching Adult Colouring frame — 7 November 2026
+
+Simon supplied the full botanical-frame screenshot as the reference and requested substantially broader, less symmetrical artwork, with branches reaching into the page at different points. The existing dense artwork is now composed from larger corner and side sections with different depths. Keep the top lighter and the original Angel Leaf logo fixed and unobstructed on desktop and mobile. Logo, cards, captions, headings, navigation and ribbons retain their existing geometry. This change is restricted to Adult Colouring; do not alter other collections or pages.

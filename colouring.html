@@ -11,8 +11,18 @@
 html,body{margin:0;min-height:100%;background:#faf6ed;color:#35432c}
 body{font-family:Georgia,'Times New Roman',serif}
 .page{position:relative;isolation:isolate;container-type:size;container-name:colouring;width:min(100%,1440px);height:100svh;margin:auto;padding:18px 5% 16px;display:grid;grid-template-rows:82px 108px minmax(0,1fr) 30px;overflow:hidden;background:radial-gradient(ellipse at 0 100%,#e8eadb80,transparent 45%),radial-gradient(ellipse at 100% 0,#e9ddc480,transparent 45%),#fffcf5}
-.page:before{content:"";position:absolute;inset:0;border:0 solid transparent;border-image:url("assets/colouring/rustic-botanical-frame-dense.webp") 390 / clamp(50px,min(10cqw,15cqh),140px) / 0 round;pointer-events:none;z-index:-1}
-.page:after{content:"";position:absolute;inset:12px;border:1px solid #ab854b33;pointer-events:none;z-index:-1}
+.page:before{content:"";position:absolute;inset:0;border:0 solid transparent;border-image:url("assets/colouring/rustic-botanical-frame-dense.webp") 390 / clamp(28px,min(4.5cqw,7cqh),72px) clamp(50px,min(10cqw,15cqh),140px) clamp(50px,min(10cqw,15cqh),140px) clamp(50px,min(10cqw,15cqh),140px) / 0 round;pointer-events:none;z-index:-1}
+.botanical-frame{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.botanical-frame svg{position:absolute;display:block;overflow:hidden}
+.frame-tl{left:0;top:0;width:clamp(105px,18cqw,230px);aspect-ratio:1;mask-image:linear-gradient(90deg,#000 82%,transparent),linear-gradient(#000 80%,transparent);mask-composite:intersect}
+.frame-tr{right:0;top:0;width:clamp(90px,15cqw,190px);aspect-ratio:1;mask-image:linear-gradient(270deg,#000 82%,transparent),linear-gradient(#000 80%,transparent);mask-composite:intersect}
+.frame-bl{left:0;bottom:0;width:clamp(140px,26cqw,340px);aspect-ratio:1;mask-image:linear-gradient(90deg,#000 88%,transparent),linear-gradient(transparent,#000 12%);mask-composite:intersect}
+.frame-br{right:0;bottom:0;width:clamp(130px,23cqw,300px);aspect-ratio:1;mask-image:linear-gradient(270deg,#000 88%,transparent),linear-gradient(transparent,#000 12%);mask-composite:intersect}
+.frame-left{left:0;top:clamp(110px,14cqh,140px);bottom:clamp(100px,14cqw,185px);width:clamp(70px,14cqw,190px);height:auto;mask-image:linear-gradient(transparent,#000 8%,#000 86%,transparent)}
+.frame-right{right:0;top:clamp(100px,13cqh,130px);bottom:clamp(100px,13cqw,175px);width:clamp(60px,12cqw,165px);height:auto;mask-image:linear-gradient(transparent,#000 8%,#000 86%,transparent)}
+.frame-left,.frame-right{position:absolute;display:flex;flex-direction:column;overflow:hidden}
+.botanical-frame .side-fragment{position:relative;flex:none;width:100%;height:auto;aspect-ratio:240/650;mask-image:linear-gradient(transparent,#000 7%,#000 92%,transparent)}
+.side-fragment+.side-fragment{margin-top:-28%}
 .masthead{position:relative;display:flex;align-items:center;justify-content:center;min-height:0}
 .brand{display:block;width:260px;max-width:33%;line-height:0}.brand img{display:block;width:100%;height:auto}
 .back{position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #bac7a8;border-radius:24px;background:#fffdf7;text-decoration:none;color:#3e5b32;font:600 12px Arial,sans-serif}
@@ -26,7 +36,7 @@ h1{font-weight:normal;font-size:clamp(28px,3.6cqw,48px);line-height:1.08;margin:
 .cover-art{display:block;width:100%;height:100%;object-fit:contain}
 .watermark{position:absolute;left:50%;top:67%;width:124%;transform:translateX(-50%) rotate(-12deg);padding:clamp(4px,2cqw,10px) 0;text-align:center;color:#32432c;background:#fff9e9ed;border-top:1px solid #c1aa70;border-bottom:1px solid #c1aa70;box-shadow:0 3px 9px #39280c25;font-size:clamp(12px,7cqw,27px);letter-spacing:clamp(.4px,.5cqw,2px);white-space:nowrap;font-style:italic}
 figcaption{text-align:center;max-width:300px}figcaption h2{font-size:20px;line-height:1.2;font-weight:normal;margin:0;color:#4b3a24}figcaption p{font-size:12px;color:#82745c;font-style:italic;margin:6px 0 0}
-.closing{transform:translateY(-28px);align-self:center;text-align:center;font-size:13px;font-style:italic;color:#7b6b4d;margin:0}.closing:before,.closing:after{content:"";display:inline-block;vertical-align:middle;width:30px;height:1px;background:#b8a16b88;margin:0 12px}
+.closing{transform:translateY(-28px);align-self:center;text-align:center;font-size:13px;font-style:italic;color:#7b6b4d;margin:0}.closing span{background:#fffcf5;box-shadow:0 0 5px 3px #fffcf5}.closing:before,.closing:after{content:"";display:inline-block;vertical-align:middle;width:30px;height:1px;background:#b8a16b88;margin:0 12px}
 html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-rows:70px 108px minmax(0,1fr) 28px}
 @media(max-width:680px){.page{padding:14px 22px;grid-template-rows:70px 108px minmax(0,1fr) 28px}}
 @container colouring (max-width:680px){
@@ -40,10 +50,25 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
 }
 @container colouring (max-width:350px){.intro h1{font-size:25px}.brand{width:160px}.book{gap:13px}figcaption h2{font-size:16px}figcaption p{font-size:11px}}
 @container colouring (min-width:681px) and (max-height:700px){.page h1{font-size:36px}figcaption h2{font-size:17px}.book{gap:12px}}
+
+@container colouring (max-width:680px){
+ .page:before{border-image-width:32px 32px 50px 50px}
+ .frame-tl{width:72px}.frame-tr{width:32px}
+ .frame-bl{width:clamp(125px,40cqw,155px)}.frame-br{width:clamp(80px,26cqw,112px)}
+ .frame-left{top:210px;bottom:100px;width:44px}.frame-right{top:230px;bottom:70px;width:32px}
+}
 </style>
 </head>
 <body>
 <main class="page">
+<div class="botanical-frame" aria-hidden="true">
+<svg class="frame-tl" viewBox="0 0 390 390" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg>
+<svg class="frame-tr" viewBox="864 0 390 390" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg>
+<svg class="frame-bl" viewBox="0 864 390 390" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg>
+<svg class="frame-br" viewBox="864 864 390 390" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg>
+<div class="frame-left"><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="0 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg></div>
+<div class="frame-right"><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg><svg class="side-fragment" viewBox="1014 170 240 650" preserveAspectRatio="none"><image href="assets/colouring/rustic-botanical-frame-dense.webp" width="1254" height="1254"/></svg></div>
+</div>
 <header class="masthead">
  <a class="back" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m14 5-7 7 7 7M7 12h14"/></svg><span><span class="full">Our </span>Collections</span></a>
  <a class="brand" href="index.html" aria-label="Angel Leaf — Our Collections"><img src="assets/proof-literacy/brand.webp" alt="Angel Leaf — Creative Books for Curious Minds"></a>
@@ -59,7 +84,7 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
   <figcaption><h2>Treasures of<br>Another Time</h2><p>A nostalgic colouring book</p></figcaption>
  </figure>
 </section>
-<p class="closing">More to discover, coming soon.</p>
+<p class="closing"><span>More to discover, coming soon.</span></p>
 </main>
 </body>
 </html>
