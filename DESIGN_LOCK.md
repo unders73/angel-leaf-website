@@ -145,3 +145,8 @@ Simon also explicitly confirmed the current desktop Where Time Stands Still cove
 ## Desktop home-page final edge correction — 7 November 2026
 
 Simon locked the mobile version and requested only the white line alongside the Fairground thumbnail and verification of the desktop Treasures cover. The pale line at the overlap is the foreground black cover's outer right margin: a desktop-home-only clip trims that margin; the existing Fairground edge clip remains. The desktop Treasures image is explicitly versioned to the approved PDF-derived three-oval cover. The live source was already using the approved image, confirmed against the supplied PDF. All mobile markup, mobile styles, collection-page files and assets remain unchanged in this correction.
+
+
+## Hidden Details approved frame-shape correction — 7 November 2026
+
+Simon supplied `Black Wonders Cover with Raised Footer-1.png` and `Grey Fairground Memories Book Cover-2.png`, superseding the earlier covers. Wonders of the World now has rectangular illustration frames and Fairground Memories has oval illustration frames. New versioned WebP delivery assets are direct format conversions of the supplied PNGs, with no artwork generation or redesign. Both desktop and mobile Hidden Details collection views use the replacements; the existing desktop home thumbnails reference the same replacements for consistency. Thin pale outer margins are hidden with tightly scoped CSS clipping, retaining the decorative gold frames. Existing cover dimensions, titles, banners, controls, page artwork and layout remain as approved. The mobile homepage is unchanged.
