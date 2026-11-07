@@ -93,3 +93,7 @@ Simon approved the nostalgic direction and requested a denser version of the edg
 ## Irregular, inward-reaching Adult Colouring frame — 7 November 2026
 
 Simon supplied the full botanical-frame screenshot as the reference and requested substantially broader, less symmetrical artwork, with branches reaching into the page at different points. The existing dense artwork is now composed from larger corner and side sections with different depths. Keep the top lighter and the original Angel Leaf logo fixed and unobstructed on desktop and mobile. Logo, cards, captions, headings, navigation and ribbons retain their existing geometry. This change is restricted to Adult Colouring; do not alter other collections or pages.
+
+## Mobile Treasures position only — 7 November 2026
+
+Simon asked for one final change: raise the Treasures cover and its wording together on mobile. The complete second figure now has a responsive upward translation, confined to the mobile container. All other page content and desktop remain unchanged. Do not continue redesigning the border; focus next on the Amazon purchasing links.
