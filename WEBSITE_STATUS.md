@@ -145,3 +145,7 @@ The logo source, position and dimensions are unchanged. All main content boundin
 ## Mobile Treasures clearance — 7 November 2026
 
 Simon requested only that the Treasures of Another Time cover and its adjacent wording move upwards together on mobile, to clear the lower tree. One mobile-container-only transform raises the entire second figure by up to 64px, limited on short phone screens to preserve spacing from the first book. At 390x844 the second figure finishes 33px above the lower-tree SVG box; the first book, logo, border, captions styling and desktop rules are unchanged. No other deployed page or asset changed. Amazon purchasing links are the next priority.
+
+## Six-book UK/US purchasing links — 7 November 2026
+
+Simon authorised continuing with the six existing books; the two World Tour titles cannot be uploaded until Sunday 8 November. Recovered his six ASINs and exact UK/US destinations from 4 November and connected those 12 buttons. See AMAZON_LINKS.md for the full table and verification limits. Amazon rejects the browser session, so product availability and delivery are not independently verified. Other country destinations remain pending, not guessed. World Tour continues to display Coming soon. All visual design is unchanged. The shared purchase-data fetch bypasses stale caches; only its script query changes on the eight book pages and retained preview.

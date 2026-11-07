@@ -1,13 +1,31 @@
 {
   "schema_version": 1,
   "books": {
-    "activity": {},
-    "fun-facts": {},
-    "fan-journal": {},
-    "release-tracker": {},
-    "studio-literacy": {},
+    "activity": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HP25B3L8",
+      "United States": "https://www.amazon.com/dp/B0HP25B3L8"
+    },
+    "fun-facts": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HP64CHY1",
+      "United States": "https://www.amazon.com/dp/B0HP64CHY1"
+    },
+    "fan-journal": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HP7X9TMT",
+      "United States": "https://www.amazon.com/dp/B0HP7X9TMT"
+    },
+    "release-tracker": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HP8D7TCQ",
+      "United States": "https://www.amazon.com/dp/B0HP8D7TCQ"
+    },
+    "studio-literacy": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HQ6B61GK",
+      "United States": "https://www.amazon.com/dp/B0HQ6B61GK"
+    },
     "world-literacy": {},
-    "studio-numeracy": {},
+    "studio-numeracy": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HQ2Z4C5L",
+      "United States": "https://www.amazon.com/dp/B0HQ2Z4C5L"
+    },
     "world-numeracy": {}
   }
 }
