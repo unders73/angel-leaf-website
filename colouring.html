@@ -106,15 +106,14 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  .range-title{font-size:clamp(18px,1.9cqw,26px);line-height:clamp(18.4px,1.955cqw,26.45px);color:#6b4329}
  .shelf figcaption h3{color:#51301f}
 }
-/* Clear, straight brown progression arrows; no leaves or curling stems. */
+/* Mobile arrows stay locked; desktop arrows are straight, textured brown twigs. */
 .direction-arrow{color:#6b4329;pointer-events:none;overflow:visible}
 .arrow-body{fill:currentColor}
-.branch-grain{fill:none;stroke:#b28a58;stroke-width:.7;stroke-linecap:round;vector-effect:non-scaling-stroke;opacity:.65}
 .range-progress,.range-step{display:none}
 @container colouring (min-width:901px){
  .shelf{--range-gap:clamp(20px,3cqw,40px);gap:var(--range-gap)}
  .range{position:relative}
- .range-progress{display:block;position:absolute;left:calc(100% + var(--range-gap)/2);top:clamp(9.2px,.9775cqw,13.225px);width:clamp(42px,5cqw,64px);height:clamp(14px,1.35cqw,18px);transform:translate(-50%,-50%)}
+ .range-progress{display:block;position:absolute;left:calc(100% + var(--range-gap)/2);top:clamp(9.2px,.9775cqw,13.225px);width:clamp(42px,5cqw,64px);height:clamp(18px,1.65cqw,22px);transform:translate(-50%,-50%)}
 }
 @container colouring (max-width:900px){
  .range-switcher{display:grid;grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr) 22px minmax(0,1fr);gap:4px;width:calc(100% - 16px);margin-inline:8px}
@@ -145,7 +144,17 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  <button class="range-tab" id="tab-hidden" type="button" role="tab" aria-controls="range-hidden" aria-selected="false" tabindex="-1" data-range="hidden">Hidden<br>Details</button>
 </div>
 <section class="shelf" aria-label="Six colouring books coming soon">
- <section class="range" id="range-gentle" data-current="true" aria-labelledby="title-gentle"><h2 class="range-title" id="title-gentle">Gentle Moments</h2><svg class="direction-arrow range-progress" viewBox="0 0 100 28" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="arrow-body" d="M0 10H74V0L100 14L74 28V18H0Z"/><path class="branch-grain" d="M5 12H42M47 12H72M12 16H35M40 16H66"/></svg><div class="range-books">
+ <section class="range" id="range-gentle" data-current="true" aria-labelledby="title-gentle"><h2 class="range-title" id="title-gentle">Gentle Moments</h2><svg class="direction-arrow range-progress" viewBox="0 0 100 32" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+ <defs><linearGradient id="twig-bark-gentle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#674526"/><stop offset=".3" stop-color="#a57a45"/><stop offset=".47" stop-color="#b8935e"/><stop offset=".66" stop-color="#8e6136"/><stop offset="1" stop-color="#53381f"/></linearGradient></defs>
+ <path fill="url(#twig-bark-gentle)" stroke="#624326" stroke-width="1.3" stroke-linejoin="round" d="M3 10.5 17 10.2 21 8.9 27 10.2 43 10.5 48 9.7 67 10.8 79 10.6 72 4.5 72.5 1.5 76.5 2.3 84 7.2 91 11 98.8 16 91.1 20.5 83 25.7 75 30.5 71.5 29.5 72.5 26.5 80.5 21 64 21.4 59 22.5 53 21.4 36 21.6 30 20.6 12 21.2 3 20.5Q.8 16 3 10.5Z"/>
+ <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="#d3b47b" stroke-width="1.5" d="M5 12.6 18 12.3Q24 11.5 30 13L44 13.2 49 12.5 67 13.6 85 14M75 4.2 86 11 95 15.4M78 26.5 91 18.6"/>
+  <path stroke="#614024" stroke-width="1.5" d="M4 18.8 16 18.2Q22 16.4 28 18L42 19 57 18.2 70 19M36 15.7 48 15.3 58 16.3 77 15.8M81 10.5 90 15.9 84 19.4"/>
+  <path stroke="#c09a60" stroke-width=".9" d="M7 15.2 17 14.8M32 18 44 17.6M48 20.3 57 20.1M61 12.5 71 12.8M77 6.8 85 12.3M82 24.3 91 18.3"/>
+  <path stroke="#74502c" stroke-width="1.25" d="M20 13.1Q24 10.9 28.5 14.9Q26 18.3 20.4 16.3Q18.8 14.8 20 13.1ZM58 10.6 60.5 14.1 59 17.9 61 21"/>
+  <path stroke="#d0ad73" stroke-width=".9" d="M21.5 14Q24.4 12.9 26.5 15Q24.5 16.1 22 15.2M61.5 11.7 63 14.8 62 17.7"/>
+ </g>
+</svg><div class="range-books">
  <figure class="book">
   <div class="cover-window"><img class="cover-art" src="assets/colouring/journeys-of-yesterday.webp" alt="Journeys of Yesterday — approved front cover"><span class="watermark">Coming Soon</span></div>
   <figcaption><h3>Journeys of<br>Yesterday</h3><p>A nostalgic colouring book</p></figcaption>
@@ -153,7 +162,17 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
   <div class="cover-window"><img class="cover-art" src="assets/colouring/postcards-from-the-coast.webp" alt="Postcards from the Coast — approved front cover"><span class="watermark">Coming Soon</span></div>
   <figcaption><h3>Postcards from<br>the Coast</h3><p>A nostalgic colouring book</p></figcaption>
  </figure> </div></section>
- <section class="range" id="range-curious" data-current="false" aria-labelledby="title-curious"><h2 class="range-title" id="title-curious">Curious Wonderings</h2><svg class="direction-arrow range-progress" viewBox="0 0 100 28" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="arrow-body" d="M0 10H74V0L100 14L74 28V18H0Z"/><path class="branch-grain" d="M5 12H42M47 12H72M12 16H35M40 16H66"/></svg><div class="range-books">
+ <section class="range" id="range-curious" data-current="false" aria-labelledby="title-curious"><h2 class="range-title" id="title-curious">Curious Wonderings</h2><svg class="direction-arrow range-progress" viewBox="0 0 100 32" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+ <defs><linearGradient id="twig-bark-curious" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#674526"/><stop offset=".3" stop-color="#a57a45"/><stop offset=".47" stop-color="#b8935e"/><stop offset=".66" stop-color="#8e6136"/><stop offset="1" stop-color="#53381f"/></linearGradient></defs>
+ <path fill="url(#twig-bark-curious)" stroke="#624326" stroke-width="1.3" stroke-linejoin="round" d="M3 10.5 17 10.2 21 8.9 27 10.2 43 10.5 48 9.7 67 10.8 79 10.6 72 4.5 72.5 1.5 76.5 2.3 84 7.2 91 11 98.8 16 91.1 20.5 83 25.7 75 30.5 71.5 29.5 72.5 26.5 80.5 21 64 21.4 59 22.5 53 21.4 36 21.6 30 20.6 12 21.2 3 20.5Q.8 16 3 10.5Z"/>
+ <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="#d3b47b" stroke-width="1.5" d="M5 12.6 18 12.3Q24 11.5 30 13L44 13.2 49 12.5 67 13.6 85 14M75 4.2 86 11 95 15.4M78 26.5 91 18.6"/>
+  <path stroke="#614024" stroke-width="1.5" d="M4 18.8 16 18.2Q22 16.4 28 18L42 19 57 18.2 70 19M36 15.7 48 15.3 58 16.3 77 15.8M81 10.5 90 15.9 84 19.4"/>
+  <path stroke="#c09a60" stroke-width=".9" d="M7 15.2 17 14.8M32 18 44 17.6M48 20.3 57 20.1M61 12.5 71 12.8M77 6.8 85 12.3M82 24.3 91 18.3"/>
+  <path stroke="#74502c" stroke-width="1.25" d="M20 13.1Q24 10.9 28.5 14.9Q26 18.3 20.4 16.3Q18.8 14.8 20 13.1ZM58 10.6 60.5 14.1 59 17.9 61 21"/>
+  <path stroke="#d0ad73" stroke-width=".9" d="M21.5 14Q24.4 12.9 26.5 15Q24.5 16.1 22 15.2M61.5 11.7 63 14.8 62 17.7"/>
+ </g>
+</svg><div class="range-books">
  <figure class="book">
   <div class="cover-window"><svg class="cover-art print-cover" viewBox="60 0 1043 1426" preserveAspectRatio="none" role="img" aria-label="Where Time Stands Still — complete gold-framed front cover"><defs><clipPath id="where-time-print-front"><rect x="60" y="0" width="1043" height="1426"/></clipPath></defs><image href="assets/colouring/where-time-stands-still-complete.webp" width="1103" height="1426" clip-path="url(#where-time-print-front)"/></svg><span class="watermark">Coming Soon</span></div>
   <figcaption><h3>Where Time<br>Stands Still</h3><p>A nostalgic colouring book</p></figcaption>

@@ -232,3 +232,8 @@ Simon requested a targeted exception to the mobile lock: the collection order is
 ## Final straight brown progression arrows — 7 November 2026
 
 Simon replaced the decorative leafy-arrow brief. Desktop now uses a straight, thicker brown shaft with subtle horizontal wood-grain highlights and a solid, clearly defined arrowhead approximately capital-letter height. Leaves, tendrils and curves are removed. Mobile uses a simple solid brown arrow centred between the unchanged 38px-high buttons; arrow height is one third of button height. Only the four inline arrow SVGs and their styling changed. Range order/default, controls, book artwork, sizing, typography, logo, borders and other pages remain as approved.
+
+
+## Desktop twig-arrow refinement — 7 November 2026
+
+Simon approved and locked the mobile arrows and requested only thicker, straight brown twig/vine arrows on desktop, in the botanical border style. The two desktop SVGs now have organic bark edges, warm brown shading, knots and engraved grain with clear branch-shaped arrow tips. Their stem is thicker; heading centres and horizontal spans are retained. Mobile SVGs, mobile CSS, book artwork, sizes, titles, border, logo, homepage and other pages are unchanged. Browser checks confirmed the desktop appearance and a pixel-identical 390×844 mobile view.
