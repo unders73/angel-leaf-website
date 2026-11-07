@@ -73,3 +73,7 @@ The only authorised desktop changes are a fuller gallery (his preferred cover pl
 ## Desktop star and Back-link repair — 7 November 2026
 
 Simon approved the fuller desktop display, then requested the clipped star and Back link be fixed. Only the Activity desktop frame slicing and compact desktop header stacking/eyebrow visibility are changed. The Back control takes priority over the decorative eyebrow where they overlap on short screens. The approved mobile layout is retained; all artwork asset bytes remain unchanged.
+
+## Collection desktop fit authorised — 7 November 2026
+
+Simon requested the approved collection compositions adapt to each visitor's browser window without desktop scrolling or cropped bottoms. Activity and Learning now uniformly scale as needed to fit both available dimensions and recalculate after resizing. This is a viewport-fitting correction only: artwork, layout relationships, cover proportions and destinations are retained. Approved mobile layouts are unchanged, including explicit mobile previews. Preserve this automatic behaviour in subsequent work.

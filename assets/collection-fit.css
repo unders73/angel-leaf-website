@@ -1,0 +1,20 @@
+/* Fit the approved desktop composition as one unit; phone layouts are unchanged. */
+html[data-collection-fit="desktop"],
+html[data-collection-fit="desktop"] body {
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+html[data-collection-fit="desktop"] body {
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html[data-collection-fit="desktop"] .site {
+  flex: none;
+  width: 100%;
+  margin: 0;
+  transform: scale(var(--collection-scale, 1));
+  transform-origin: center;
+}
