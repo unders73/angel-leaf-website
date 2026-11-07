@@ -97,3 +97,8 @@ Simon supplied the full botanical-frame screenshot as the reference and requeste
 ## Mobile Treasures position only — 7 November 2026
 
 Simon asked for one final change: raise the Treasures cover and its wording together on mobile. The complete second figure now has a responsive upward translation, confined to the mobile container. All other page content and desktop remain unchanged. Do not continue redesigning the border; focus next on the Amazon purchasing links.
+
+
+## Authorised Adult Colouring expansion — 7 November 2026
+
+Simon supplied the four approved covers (Journeys of Yesterday, Postcards from the Coast, Wonders of the World and Fairground Memories) and requested the website update. The six-book collection groups the original two and new four into Curious Wonderings, Gentle Moments and Hidden Details. Desktop shows all six; mobile/tablet selects a pair using three range buttons. This authorisation is confined to colouring.html and the four new cover assets. Keep the original logo and botanical artwork, equal cover frames, Coming Soon ribbons and raised second mobile figure. All other pages, artwork and purchasing links remain locked.

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Adult Colouring Collection | Angel Leaf</title>
-<meta name="description" content="Where Time Stands Still and Treasures of Another Time. Two nostalgic Angel Leaf colouring books, coming soon.">
+<meta name="description" content="Six nostalgic Angel Leaf colouring books across Curious Wonderings, Gentle Moments and Hidden Details. Coming soon.">
 <script>if(new URLSearchParams(location.search).get('view')==='mobile')document.documentElement.dataset.view='mobile';</script>
 <style>
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:#faf6ed;color:#35432c}
 body{font-family:Georgia,'Times New Roman',serif}
-.page{position:relative;isolation:isolate;container-type:size;container-name:colouring;width:min(100%,1440px);height:100svh;margin:auto;padding:18px 5% 16px;display:grid;grid-template-rows:82px 108px minmax(0,1fr) 30px;overflow:hidden;background:radial-gradient(ellipse at 0 100%,#e8eadb80,transparent 45%),radial-gradient(ellipse at 100% 0,#e9ddc480,transparent 45%),#fffcf5}
+.page{position:relative;isolation:isolate;container-type:size;container-name:colouring;width:min(100%,1440px);height:100svh;margin:auto;padding:18px 5% 16px;display:grid;grid-template-rows:82px 108px 0 minmax(0,1fr) 30px;overflow:hidden;background:radial-gradient(ellipse at 0 100%,#e8eadb80,transparent 45%),radial-gradient(ellipse at 100% 0,#e9ddc480,transparent 45%),#fffcf5}
 .page:before{content:"";position:absolute;inset:0;border:0 solid transparent;border-image:url("assets/colouring/rustic-botanical-frame-dense.webp") 390 / clamp(28px,min(4.5cqw,7cqh),72px) clamp(50px,min(10cqw,15cqh),140px) clamp(50px,min(10cqw,15cqh),140px) clamp(50px,min(10cqw,15cqh),140px) / 0 round;pointer-events:none;z-index:-1}
 .botanical-frame{position:absolute;inset:0;pointer-events:none;z-index:-1}
 .botanical-frame svg{position:absolute;display:block;overflow:hidden}
@@ -23,36 +23,50 @@ body{font-family:Georgia,'Times New Roman',serif}
 .frame-left,.frame-right{position:absolute;display:flex;flex-direction:column;overflow:hidden}
 .botanical-frame .side-fragment{position:relative;flex:none;width:100%;height:auto;aspect-ratio:240/650;mask-image:linear-gradient(transparent,#000 7%,#000 92%,transparent)}
 .side-fragment+.side-fragment{margin-top:-28%}
-.masthead{position:relative;display:flex;align-items:center;justify-content:center;min-height:0}
+.masthead{grid-row:1;position:relative;display:flex;align-items:center;justify-content:center;min-height:0}
 .brand{display:block;width:260px;max-width:33%;line-height:0}.brand img{display:block;width:100%;height:auto}
 .back{position:absolute;left:0;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border:1px solid #bac7a8;border-radius:24px;background:#fffdf7;text-decoration:none;color:#3e5b32;font:600 12px Arial,sans-serif}
 .back svg{width:14px;height:14px}.back:hover{background:#f0f3e6}.back:focus-visible,.brand:focus-visible{outline:3px solid #8d773a;outline-offset:4px}
-.intro{text-align:center;align-self:center}.eyebrow{font:600 10px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#897245;margin:0 0 9px}
+.intro{grid-row:2;text-align:center;align-self:center}.eyebrow{font:600 10px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#897245;margin:0 0 9px}
 h1{font-weight:normal;font-size:clamp(28px,3.6cqw,48px);line-height:1.08;margin:0;color:#34442c}
 .intro .lead{font-size:16px;line-height:1.35;color:#786a52;margin:10px 0 0}
-.shelf{min-height:0;display:flex;align-items:center;justify-content:center;gap:clamp(36px,8cqw,110px);padding:16px 0 10px}
-.book{margin:0;display:flex;align-items:center;flex-direction:column;gap:17px;min-width:0}
-.cover-window{position:relative;isolation:isolate;container-type:size;container-name:book-preview;height:min(480px,calc(100cqh - 330px),45cqw);aspect-ratio:4/5;padding:6px;border:1px solid #ad8c5366;border-radius:2px;overflow:hidden;box-shadow:3px 5px 0 #b7a78255,9px 16px 22px #39280c25;background:linear-gradient(100deg,#e7d5ac,#fbefce 48%,#e7d5ac)}
+.range-switcher{grid-row:3;display:none}
+.shelf{grid-row:4;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:clamp(20px,3cqw,40px);padding:0 clamp(50px,6cqw,86px) 76px}
+.range{min-width:0;min-height:0}
+.range-title{text-align:center;font-size:clamp(16px,1.7cqw,23px);font-weight:normal;line-height:1.15;letter-spacing:.4px;color:#6c5430;margin:0 0 20px}
+.range-books{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:clamp(12px,1.4cqw,20px)}
+.book{margin:0;display:flex;align-items:center;flex-direction:column;gap:12px;min-width:0}
+.cover-window{position:relative;isolation:isolate;container-type:size;container-name:book-preview;width:100%;height:auto;max-width:calc((100cqh - 350px)*.8);aspect-ratio:4/5;padding:6px;border:1px solid #ad8c5366;border-radius:2px;overflow:hidden;box-shadow:3px 5px 0 #b7a78255,9px 16px 22px #39280c25;background:linear-gradient(100deg,#e7d5ac,#fbefce 48%,#e7d5ac)}
 .cover-art{display:block;width:100%;height:100%;object-fit:contain}
 .watermark{position:absolute;left:50%;top:67%;width:124%;transform:translateX(-50%) rotate(-12deg);padding:clamp(4px,2cqw,10px) 0;text-align:center;color:#32432c;background:#fff9e9ed;border-top:1px solid #c1aa70;border-bottom:1px solid #c1aa70;box-shadow:0 3px 9px #39280c25;font-size:clamp(12px,7cqw,27px);letter-spacing:clamp(.4px,.5cqw,2px);white-space:nowrap;font-style:italic}
-figcaption{text-align:center;max-width:300px}figcaption h2{font-size:20px;line-height:1.2;font-weight:normal;margin:0;color:#4b3a24}figcaption p{font-size:12px;color:#82745c;font-style:italic;margin:6px 0 0}
-.closing{transform:translateY(-28px);align-self:center;text-align:center;font-size:13px;font-style:italic;color:#7b6b4d;margin:0}.closing span{background:#fffcf5;box-shadow:0 0 5px 3px #fffcf5}.closing:before,.closing:after{content:"";display:inline-block;vertical-align:middle;width:30px;height:1px;background:#b8a16b88;margin:0 12px}
-html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-rows:70px 108px minmax(0,1fr) 28px}
-@media(max-width:680px){.page{padding:14px 22px;grid-template-rows:70px 108px minmax(0,1fr) 28px}}
-@container colouring (max-width:680px){
+.shelf figcaption p{display:none}
+figcaption{text-align:center;max-width:300px}figcaption h3{font-size:clamp(14px,1.45cqw,19px);line-height:1.2;font-weight:normal;margin:0;color:#4b3a24}figcaption p{font-size:11px;color:#82745c;font-style:italic;margin:6px 0 0}
+.closing{grid-row:5;transform:translateY(-28px);align-self:center;text-align:center;font-size:13px;font-style:italic;color:#7b6b4d;margin:0}.closing span{background:#fffcf5;box-shadow:0 0 5px 3px #fffcf5}.closing:before,.closing:after{content:"";display:inline-block;vertical-align:middle;width:30px;height:1px;background:#b8a16b88;margin:0 12px}
+html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-rows:70px 108px 38px minmax(0,1fr) 28px}
+@media(max-width:900px){.page{padding:14px 22px;grid-template-rows:70px 108px 38px minmax(0,1fr) 28px}}
+@container colouring (max-width:900px){
  .brand{width:188px;max-width:59%;margin-left:auto}.back{font-size:10px;padding:7px 9px;gap:4px}.back .full{display:none}
  .intro h1{font-size:29px;max-width:310px;margin:auto}.eyebrow{font-size:9px;letter-spacing:2.4px;margin-bottom:7px}.intro .lead{font-size:13px;max-width:275px;margin:9px auto 0}
- .shelf{display:grid;grid-template-rows:repeat(2,minmax(0,1fr));gap:15px;padding:14px 0}
+ .range-switcher{display:flex;gap:6px;align-items:stretch;padding:0;min-width:0;position:relative;z-index:1}
+ .range-tab{flex:1;min-width:0;padding:5px 3px;border:1px solid #beac82;border-radius:8px;background:#fffaf0;color:#655131;font:600 10px/1.15 Arial,sans-serif;cursor:pointer}
+ .range-tab[aria-selected="true"]{background:#526044;border-color:#526044;color:#fffdf3}
+ .range-tab:focus-visible{outline:3px solid #a88a45;outline-offset:2px}
+ .shelf{display:block;padding:14px 0;min-height:0;max-width:430px;width:100%;margin-inline:auto}
+ .range{height:100%;display:none}.range[data-current="true"]{display:block}.range-title{display:none}
+ .range-books{display:grid;grid-template-columns:1fr;grid-template-rows:repeat(2,minmax(0,1fr));height:100%;gap:15px}
  .book{display:grid;grid-template-columns:auto minmax(0,1fr);gap:17px;width:100%;justify-content:start;align-items:center}
  .book:last-child{transform:translateY(clamp(-64px,calc(52cqw - 50cqh + 122px),-16px))}
- .cover-window{height:min(220px,calc((100cqh - 276px)/2),52cqw)}
- figcaption{text-align:left;max-width:145px}figcaption h2{font-size:19px;line-height:1.2}figcaption p{font-size:12px;line-height:1.4;margin-top:9px}
+ .cover-window{width:auto;max-width:none;height:min(220px,calc((100cqh - 314px)/2),52cqw)}
+ .shelf figcaption p{display:block}
+ figcaption{text-align:left;max-width:145px}figcaption h3{font-size:19px;line-height:1.2}figcaption p{font-size:11px;line-height:1.4;margin-top:9px}
  .closing{transform:translateY(-12px);font-size:11px}.closing:before,.closing:after{width:15px;margin:0 7px}
 }
-@container colouring (max-width:350px){.intro h1{font-size:25px}.brand{width:160px}.book{gap:13px}figcaption h2{font-size:16px}figcaption p{font-size:11px}}
-@container colouring (min-width:681px) and (max-height:700px){.page h1{font-size:36px}figcaption h2{font-size:17px}.book{gap:12px}}
+@container colouring (max-width:350px){.intro h1{font-size:25px}.brand{width:160px}.book{gap:13px}figcaption h3{font-size:16px}figcaption p{font-size:11px}}
+@container colouring (min-width:901px) and (max-height:700px){.page h1{font-size:36px}figcaption h3{font-size:17px}.book{gap:12px}figcaption{background:#fffcf5;box-shadow:0 0 8px 6px #fffcf5}}
 
-@container colouring (max-width:680px){
+@container colouring (min-width:901px) and (min-height:850px){.shelf{align-items:center;padding-bottom:140px}}
+
+@container colouring (max-width:900px){
  .page:before{border-image-width:32px 32px 50px 50px}
  .frame-tl{width:72px}.frame-tr{width:32px}
  .frame-bl{width:clamp(125px,40cqw,155px)}.frame-br{width:clamp(80px,26cqw,112px)}
@@ -75,17 +89,52 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  <a class="brand" href="index.html" aria-label="Angel Leaf — Our Collections"><img src="assets/proof-literacy/brand.webp" alt="Angel Leaf — Creative Books for Curious Minds"></a>
 </header>
 <section class="intro" aria-labelledby="collection-title"><p class="eyebrow">A little time for yourself</p><h1 id="collection-title">Adult Colouring Collection</h1><p class="lead">Nostalgic scenes to colour and enjoy.</p></section>
-<section class="shelf" aria-label="Two colouring books coming soon">
+<div class="range-switcher" role="tablist" aria-label="Choose a colouring range">
+ <button class="range-tab" id="tab-curious" type="button" role="tab" aria-controls="range-curious" aria-selected="true" data-range="curious">Curious<br>Wonderings</button>
+ <button class="range-tab" id="tab-gentle" type="button" role="tab" aria-controls="range-gentle" aria-selected="false" tabindex="-1" data-range="gentle">Gentle<br>Moments</button>
+ <button class="range-tab" id="tab-hidden" type="button" role="tab" aria-controls="range-hidden" aria-selected="false" tabindex="-1" data-range="hidden">Hidden<br>Details</button>
+</div>
+<section class="shelf" aria-label="Six colouring books coming soon">
+ <section class="range" id="range-curious" data-current="true" aria-labelledby="title-curious"><h2 class="range-title" id="title-curious">Curious Wonderings</h2><div class="range-books">
  <figure class="book">
   <div class="cover-window"><img class="cover-art" src="assets/colouring/where-time-stands-still.webp" width="1122" height="1402" alt="Where Time Stands Still — original brown and gold cover"><span class="watermark">Coming Soon</span></div>
-  <figcaption><h2>Where Time<br>Stands Still</h2><p>A nostalgic colouring book</p></figcaption>
+  <figcaption><h3>Where Time<br>Stands Still</h3><p>A nostalgic colouring book</p></figcaption>
  </figure>
  <figure class="book">
   <div class="cover-window"><svg class="cover-art" viewBox="800 0 736 1024" role="img" aria-label="Treasures of Another Time — original cream and gold front cover"><defs><clipPath id="treasures-front"><rect x="800" y="0" width="736" height="1024"/></clipPath></defs><image href="assets/colouring/treasures-of-another-time-wrap.webp" width="1536" height="1024" clip-path="url(#treasures-front)"/></svg><span class="watermark">Coming Soon</span></div>
-  <figcaption><h2>Treasures of<br>Another Time</h2><p>A nostalgic colouring book</p></figcaption>
+  <figcaption><h3>Treasures of<br>Another Time</h3><p>A nostalgic colouring book</p></figcaption>
  </figure>
+ </div></section>
+ <section class="range" id="range-gentle" data-current="false" aria-labelledby="title-gentle"><h2 class="range-title" id="title-gentle">Gentle Moments</h2><div class="range-books">
+ <figure class="book">
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/journeys-of-yesterday.webp" alt="Journeys of Yesterday — approved front cover"><span class="watermark">Coming Soon</span></div>
+  <figcaption><h3>Journeys of<br>Yesterday</h3><p>A nostalgic colouring book</p></figcaption>
+ </figure> <figure class="book">
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/postcards-from-the-coast.webp" alt="Postcards from the Coast — approved front cover"><span class="watermark">Coming Soon</span></div>
+  <figcaption><h3>Postcards from<br>the Coast</h3><p>A nostalgic colouring book</p></figcaption>
+ </figure> </div></section>
+ <section class="range" id="range-hidden" data-current="false" aria-labelledby="title-hidden"><h2 class="range-title" id="title-hidden">Hidden Details</h2><div class="range-books">
+ <figure class="book">
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/wonders-of-the-world.webp" alt="Wonders of the World — approved front cover"><span class="watermark">Coming Soon</span></div>
+  <figcaption><h3>Wonders of<br>the World</h3><p>A nostalgic colouring book</p></figcaption>
+ </figure> <figure class="book">
+  <div class="cover-window"><img class="cover-art" src="assets/colouring/fairground-memories.webp" alt="Fairground Memories — approved front cover"><span class="watermark">Coming Soon</span></div>
+  <figcaption><h3>Fairground<br>Memories</h3><p>A nostalgic colouring book</p></figcaption>
+ </figure> </div></section>
 </section>
 <p class="closing"><span>More to discover, coming soon.</span></p>
 </main>
+<script>
+const rangeTabs=[...document.querySelectorAll('.range-tab')];
+const ranges=[...document.querySelectorAll('.range')];
+function chooseRange(key,focus=false){
+ rangeTabs.forEach(tab=>{const selected=tab.dataset.range===key;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;if(selected&&focus)tab.focus();});
+ ranges.forEach(range=>range.dataset.current=String(range.id==='range-'+key));
+}
+rangeTabs.forEach((tab,index)=>{
+ tab.addEventListener('click',()=>chooseRange(tab.dataset.range));
+ tab.addEventListener('keydown',event=>{let next;if(event.key==='ArrowRight')next=(index+1)%rangeTabs.length;else if(event.key==='ArrowLeft')next=(index+rangeTabs.length-1)%rangeTabs.length;else if(event.key==='Home')next=0;else if(event.key==='End')next=rangeTabs.length-1;else return;event.preventDefault();chooseRange(rangeTabs[next].dataset.range,true);});
+});
+</script>
 </body>
 </html>

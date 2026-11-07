@@ -1,5 +1,13 @@
 # Angel Leaf website — continuation point
 
+## Six-book Adult Colouring collection — 7 November 2026
+
+Simon supplied four locked front covers and authorised the website update. Adult Colouring now contains six Coming Soon books in three pairs: Curious Wonderings (Where Time Stands Still; Treasures of Another Time), Gentle Moments (Journeys of Yesterday; Postcards from the Coast), and Hidden Details (Wonders of the World; Fairground Memories).
+
+Desktop shows the six covers together with range headings. At mobile/tablet widths the three range buttons select a pair, preserving readable covers and adjacent captions; the second book stays raised above the lower tree. All six use equal presentation frames and matching ribbons, with the artwork proportionally contained. The original logo, cover assets, botanical border and every unrelated page are retained. The four new full-resolution WebP delivery copies preserve the supplied cover compositions and proportions. No release dates or new Amazon purchase claims are added.
+
+Local checks cover 320×568 and 390×844 phones, 768×1024 tablet, 1366×600 and 1366×768 laptops, and 1920×1080 desktop; range switching and keyboard navigation were exercised. Source is committed to GitHub and the checked version is published separately to Firebase.
+
 ## Primary address updated — 7 November 2026
 
 The public website is now https://angelleaf.web.app/ on free Firebase Hosting. The approved desktop and mobile designs are preserved. GitHub remains the source, and the former GitHub Pages address remains available. See FIREBASE_HOSTING.md for verification and publishing steps. Future updates must be published to Firebase as well as committed to GitHub; GitHub-to-Firebase automatic deployment is not configured.
