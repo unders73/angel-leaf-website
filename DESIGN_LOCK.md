@@ -175,3 +175,8 @@ Simon approved and locked the mobile arrows and requested only thicker, straight
 ## Adult collection engraved logo — 7 November 2026
 
 Simon supplied Angel_Leaf_Hollow_Engraved_Final_Spacing_Transparent.png and authorised this logo only on the adult collection page, desktop and mobile. It is stored as a pixel-identical lossless transparent WebP. The existing responsive logo box, position and link are preserved, with object-fit contain so the new artwork is not distorted. A restrained CSS brightness adjustment and subpixel shadow reinforce the brown linework at its small display size. No logo illustration or faces are regenerated. Homepage, all other page logos, mobile arrows, books and layout remain unchanged. The thicker desktop twig arrows from the preceding request are retained.
+
+
+## Filled ANGEL LEAF lettering — 7 November 2026
+
+Simon requested filling only the hollow ANGEL LEAF letter bodies, with precisely the existing brown; the leaf must stay outlined. A deterministic enclosed-region fill sampled existing opaque lettering RGB(185,124,63), preserved the A counters, and left every visible pixel outside the selected letter interiors unchanged. The angels/faces, leaf and tagline are pixel-identical to the supplied artwork. A new lossless WebP is used in colouring.html on desktop and mobile. Only the image reference changed: the existing CSS brown treatment, logo dimensions, position, arrows, page layout and all other pages are untouched. A transparent PNG copy was supplied because JPEG cannot retain transparency.
