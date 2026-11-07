@@ -227,3 +227,8 @@ Simon reconfirmed the complete mobile site is locked. He requested slightly larg
 ## Adult range progression order and vine arrows — 7 November 2026
 
 Simon requested a targeted exception to the mobile lock: the collection order is Gentle Moments, Curious Wonderings, Hidden Details, from gentler to more detailed. Desktop range sections move as complete groups (headings, covers and captions). Mobile tab DOM order matches, and Gentle Moments is the initial selected range. Keyboard Left/Right/Home/End navigation continues to follow that order. Small original inline SVG vine arrows sit between the desktop headings and between the mobile tabs. Mobile tabs are narrower and inset 8px at each side, retaining their original height and vertical position. All book artwork, sizes, captions, page border, logo, homepage and other pages are preserved. The homepage already had the correct pair order.
+
+
+## Final straight brown progression arrows — 7 November 2026
+
+Simon replaced the decorative leafy-arrow brief. Desktop now uses a straight, thicker brown shaft with subtle horizontal wood-grain highlights and a solid, clearly defined arrowhead approximately capital-letter height. Leaves, tendrils and curves are removed. Mobile uses a simple solid brown arrow centred between the unchanged 38px-high buttons; arrow height is one third of button height. Only the four inline arrow SVGs and their styling changed. Range order/default, controls, book artwork, sizing, typography, logo, borders and other pages remain as approved.
