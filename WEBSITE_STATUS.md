@@ -217,3 +217,8 @@ Simon locked the mobile version and requested only the white line alongside the 
 ## Hidden Details approved frame-shape correction — 7 November 2026
 
 Simon supplied `Black Wonders Cover with Raised Footer-1.png` and `Grey Fairground Memories Book Cover-2.png`, superseding the earlier covers. Wonders of the World now has rectangular illustration frames and Fairground Memories has oval illustration frames. New versioned WebP delivery assets are direct format conversions of the supplied PNGs, with no artwork generation or redesign. Both desktop and mobile Hidden Details collection views use the replacements; the existing desktop home thumbnails reference the same replacements for consistency. Thin pale outer margins are hidden with tightly scoped CSS clipping, retaining the decorative gold frames. Existing cover dimensions, titles, banners, controls, page artwork and layout remain as approved. The mobile homepage is unchanged.
+
+
+## Desktop adult collection typography — 7 November 2026
+
+Simon reconfirmed the complete mobile site is locked. He requested slightly larger desktop Curious Wonderings, Gentle Moments and Hidden Details headings, in warmer brown, and darker/browner book titles below. Only a `min-width:901px` colouring-container override was added: range-heading size increases from 1.7cqw/max23px to 1.9cqw/max26px, colour #6b4329; book titles use #51301f. The heading line box retains its previous height so cover positions do not shift. All mobile rules, other text, covers, dimensions, artwork and homepage remain unchanged.

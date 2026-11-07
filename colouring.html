@@ -101,6 +101,11 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
 }
 /* Remove the supplied Hidden Details covers' pale outer edge, preserving the gold artwork. */
 #range-hidden .cover-window{clip-path:inset(.65% .8% .6% .8% round 1.2%)}
+/* Desktop range names and book titles: warmer brown, with slightly larger range headings. */
+@container colouring (min-width:901px){
+ .range-title{font-size:clamp(18px,1.9cqw,26px);line-height:clamp(18.4px,1.955cqw,26.45px);color:#6b4329}
+ .shelf figcaption h3{color:#51301f}
+}
 </style>
 </head>
 <body>
