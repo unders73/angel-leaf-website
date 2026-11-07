@@ -60,6 +60,14 @@ background-image:url('assets/opening-mobile-approved.png');background-size:calc(
 @media(max-width:680px) and (orientation:portrait){html:not([data-view="desktop"]) .desktop{display:none}html:not([data-view="desktop"]) .mobile{display:block}}
 html[data-view="mobile"] .desktop{display:none}html[data-view="mobile"] .mobile{display:block}
 @media(prefers-reduced-motion:reduce){.arrow{transition:none!important}}
+
+/* Adult desktop shelf: three upright overlapping pairs, original title art shifted left. */
+.desktop .adult-title{position:absolute;left:calc(658/1854*100%);top:calc(636/848*100%);width:calc(313/1854*100%);height:calc(163/848*100%);pointer-events:none}
+.desktop .adult-title svg{width:100%;height:100%;display:block}
+.desktop .adult-books{position:absolute;left:calc(991/1854*100%);top:calc(635/848*100%);width:calc(677/1854*100%);height:calc(171/848*100%);display:flex;justify-content:space-between;pointer-events:none}
+.desktop .adult-pair{position:relative;width:31.8%;height:100%}
+.desktop .adult-cover{position:absolute;top:0;height:100%;width:auto;max-width:68%;object-fit:contain;filter:drop-shadow(2px 3px 2px #382a2330)}
+.desktop .adult-cover:first-child{left:0}.desktop .adult-cover:last-child{right:0}
 </style>
 </head>
 <body><main>
@@ -67,7 +75,7 @@ html[data-view="mobile"] .desktop{display:none}html[data-view="mobile"] .mobile{
 <img src="assets/opening-desktop-approved.png" width="1854" height="848" fetchpriority="high" alt="Angel Leaf. Creative books for curious minds. Our Collections. A thoughtfully created range of books to inspire imagination, spark curiosity and bring joy to everyday life.">
 <svg class="book-backdrop" aria-hidden="true" style="left:40.99244875943905%;top:28.419811320754718%;width:49.083063646170444%;height:20.5188679245283%" viewBox="0 0 910 174" preserveAspectRatio="none"><defs><linearGradient id="panel-0" x2="0" y2="1"><stop stop-color="#fdd9fc"/><stop offset="1" stop-color="#fddefd"/></linearGradient><pattern id="diamond-0" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="910" height="174" fill="url(#panel-0)"/><rect width="910" height="174" fill="url(#diamond-0)"/></svg>
 <svg class="book-backdrop" aria-hidden="true" style="left:40.99244875943905%;top:51.886792452830186%;width:49.083063646170444%;height:19.221698113207548%" viewBox="0 0 910 163" preserveAspectRatio="none"><defs><linearGradient id="panel-1" x2="0" y2="1"><stop stop-color="#d6edfd"/><stop offset="1" stop-color="#cdeafd"/></linearGradient><pattern id="diamond-1" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="910" height="163" fill="url(#panel-1)"/><rect width="910" height="163" fill="url(#diamond-1)"/></svg>
-<svg class="book-backdrop" aria-hidden="true" style="left:58.144552319309604%;top:74.05660377358491%;width:30.097087378640776%;height:21.933962264150946%" viewBox="0 0 558 186" preserveAspectRatio="none"><defs><linearGradient id="panel-2" x2="0" y2="1"><stop stop-color="#fdfaec"/><stop offset="1" stop-color="#fff9eb"/></linearGradient><pattern id="diamond-2" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="558" height="186" fill="url(#panel-2)"/><rect width="558" height="186" fill="url(#diamond-2)"/></svg>
+<svg class="book-backdrop adult-backdrop" aria-hidden="true" style="left:36.1381%;top:74.0566%;width:54.4768%;height:21.93396%" viewBox="0 0 1010 186" preserveAspectRatio="none"><defs><linearGradient id="panel-2" x2="0" y2="1"><stop stop-color="#fdfaec"/><stop offset="1" stop-color="#fff9eb"/></linearGradient><pattern id="diamond-2" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M0 21 21 0 42 21 21 42Z" fill="#fff" opacity=".12"/></pattern></defs><rect width="1010" height="186" fill="url(#panel-2)"/><rect width="1010" height="186" fill="url(#diamond-2)"/></svg>
 <span class="book" aria-hidden="true" style="--bx:783;--by:241;--bw:198;--bh:172;--thin:0.67"></span>
 <span class="book" aria-hidden="true" style="--bx:999;--by:241;--bw:203;--bh:172;--thin:0.66"></span>
 <span class="book" aria-hidden="true" style="--bx:1214;--by:241;--bw:207;--bh:172;--thin:0.65"></span>
@@ -76,8 +84,14 @@ html[data-view="mobile"] .desktop{display:none}html[data-view="mobile"] .mobile{
 <span class="book" aria-hidden="true" style="--bx:999;--by:442;--bw:202;--bh:160;--thin:0.61"></span>
 <span class="book" aria-hidden="true" style="--bx:1214;--by:442;--bw:207;--bh:160;--thin:0.6"></span>
 <span class="book" aria-hidden="true" style="--bx:1439;--by:442;--bw:211;--bh:160;--thin:0.59"></span>
-<span class="book" aria-hidden="true" style="--bx:1090;--by:628;--bw:255;--bh:186;--thin:0.64"></span>
-<span class="book" aria-hidden="true" style="--bx:1351;--by:628;--bw:273;--bh:186;--thin:0.6"></span>
+
+
+<div class="adult-title" aria-hidden="true"><svg viewBox="680 628 350 182" preserveAspectRatio="xMidYMid meet"><image href="assets/opening-desktop-approved.png" width="1854" height="848"/></svg></div>
+<div class="adult-books" aria-label="Six adult colouring books">
+ <div class="adult-pair"><img class="adult-cover" src="assets/colouring/journeys-of-yesterday.webp" alt="Journeys of Yesterday"><img class="adult-cover" src="assets/colouring/postcards-from-the-coast.webp" alt="Postcards from the Coast"></div>
+ <div class="adult-pair"><img class="adult-cover" src="assets/colouring/where-time-stands-still.webp" alt="Where Time Stands Still"><svg class="adult-cover" viewBox="800 0 736 1024" role="img" aria-label="Treasures of Another Time"><image href="assets/colouring/treasures-of-another-time-wrap.webp" width="1536" height="1024"/></svg></div>
+ <div class="adult-pair"><img class="adult-cover" src="assets/colouring/wonders-of-the-world.webp" alt="Wonders of the World"><img class="adult-cover" src="assets/colouring/fairground-memories.webp" alt="Fairground Memories"></div>
+</div>
 <a class="hotspot activity" href="activity.html" aria-label="Explore K-pop Activity Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Activity Collection</span></a>
 <a class="hotspot learning" href="learning.html" aria-label="Explore K-pop Literacy and Numeracy Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">K-pop Literacy and Numeracy Collection</span></a>
 <a class="hotspot adult" href="colouring.html" aria-label="Explore Adult Colouring Collection"><span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M12 8 31 26 12 44" fill="none" stroke="#f9fcf1" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="sr">Adult Colouring Collection</span></a>

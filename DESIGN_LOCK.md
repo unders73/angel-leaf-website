@@ -102,3 +102,12 @@ Simon asked for one final change: raise the Treasures cover and its wording toge
 ## Authorised Adult Colouring expansion — 7 November 2026
 
 Simon supplied the four approved covers (Journeys of Yesterday, Postcards from the Coast, Wonders of the World and Fairground Memories) and requested the website update. The six-book collection groups the original two and new four into Curious Wonderings, Gentle Moments and Hidden Details. Desktop shows all six; mobile/tablet selects a pair using three range buttons. This authorisation is confined to colouring.html and the four new cover assets. Keep the original logo and botanical artwork, equal cover frames, Coming Soon ribbons and raised second mobile figure. All other pages, artwork and purchasing links remain locked.
+
+
+## Desktop adult-cover refinement — 7 November 2026
+
+Simon requested desktop/laptop corrections only. The opening page adult row now shows all six genuine cover assets as three upright, slightly overlapping pairs: Gentle Moments on the left, Curious Wonderings (Where Time Stands Still and Treasures of Another Time) in the middle, and Hidden Details on the right. The original Adult Colouring Collection title artwork is shifted slightly left and proportionally fitted; only its adult-row patch is extended. The original raster artwork is retained byte for byte. K-pop rows, arrows, destinations and all mobile opening-page content remain unchanged.
+
+On the desktop collection page, the added cover-window padding, border, background and shadow are removed. Each window now follows its cover's original ratio at equal height, so the Coming Soon ribbon clips to the actual cover width. Each pair is brought closer together and centred beneath its range heading; captions remain centred below their own cover. These rules apply only to desktop colouring containers wider than 900px.
+
+Validation: opening and collection mobile layouts have identical visible element geometry and checked styles before/after at 390×844 and 320×568. Desktop checks at 1366×768, 1366×600 and 1920×1080 confirm no scroll, border-free covers, centred ranges and captions, and all content within the viewport. The collection link and return navigation are retained. No cover asset, K-pop page, shared stylesheet/script or Amazon data changed.

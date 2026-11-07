@@ -72,6 +72,16 @@ html[data-view="mobile"] .page{max-width:430px;padding:14px 22px;grid-template-r
  .frame-bl{width:clamp(125px,40cqw,155px)}.frame-br{width:clamp(80px,26cqw,112px)}
  .frame-left{top:210px;bottom:100px;width:44px}.frame-right{top:230px;bottom:70px;width:32px}
 }
+
+/* Requested desktop refinement; mobile presentation remains exactly as approved. */
+@container colouring (min-width:901px){
+ .range-books{display:flex;justify-content:center;align-items:start;gap:clamp(10px,.9cqw,14px)}
+ .book{flex:0 1 auto}
+ .cover-window{height:min(240px,15cqw,calc(100cqh - 350px));width:auto;max-width:none;aspect-ratio:var(--cover-ratio,4/5);padding:0;border:0;border-radius:0;background:none;box-shadow:none}
+ .cover-art{filter:drop-shadow(2px 4px 3px #39280c22)}
+ #range-curious .book:last-child .cover-window{--cover-ratio:736/1024}
+ #range-gentle .book:last-child .cover-window,#range-hidden .book:first-child .cover-window{--cover-ratio:1103/1426}
+}
 </style>
 </head>
 <body>
