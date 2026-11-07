@@ -77,3 +77,7 @@ Simon approved the fuller desktop display, then requested the clipped star and B
 ## Collection desktop fit authorised — 7 November 2026
 
 Simon requested the approved collection compositions adapt to each visitor's browser window without desktop scrolling or cropped bottoms. Activity and Learning now uniformly scale as needed to fit both available dimensions and recalculate after resizing. This is a viewport-fitting correction only: artwork, layout relationships, cover proportions and destinations are retained. Approved mobile layouts are unchanged, including explicit mobile previews. Preserve this automatic behaviour in subsequent work.
+
+## Narrow final refinements authorised — 7 November 2026
+
+Simon requested: (1) correct the Fun Facts cover/Explore overlap on desktop only; (2) show the two existing Adult Colouring covers with attractive Coming Soon overlays on desktop and mobile. He explicitly requested that nothing else in any collection or book page change. Preserve all other approved files. The Fun Facts correction is an inline desktop-container-only strapline size rule; its mobile rendering is unchanged. The Adult Colouring page uses the existing brown/gold Where Time Stands Still and cream/gold Treasures of Another Time front covers. This is a temporary Coming Soon presentation, not approval to redesign other collection pages or revise the book artwork.
