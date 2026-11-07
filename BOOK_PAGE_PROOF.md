@@ -25,7 +25,7 @@ Every sample is a direct rasterisation of the original PDF at 1.8×. Covers rema
 
 ## Purchasing links
 
-The exact country order remains UK, US, Canada, Australia, Ireland, New Zealand, South Africa, South Korea and More countries. `assets/purchase-links.json` now contains Simon's supplied UK and US URLs for the six existing books. World Tour maps and other countries remain empty. See AMAZON_LINKS.md for source IDs, checks and the Amazon verification limit. Empty buttons retain Coming soon. More countries supports additional country entries in the same table.
+The exact country order remains UK, US, Canada, Australia, Ireland, New Zealand, South Africa, South Korea and More countries. `assets/purchase-links.json` contains 14 standard Amazon regional URLs per existing book, using Simon's six supplied ASINs and KDP's documented /dp/ASIN pattern. Five main buttons open regional stores; New Zealand, South Africa and South Korea show international delivery-check options; More countries lists nine further stores. Both World Tour maps stay empty until their books are uploaded. See AMAZON_LINKS.md for mappings, tests and availability-verification limits.
 
 ## Validation
 

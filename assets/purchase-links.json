@@ -3,29 +3,113 @@
   "books": {
     "activity": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HP25B3L8",
-      "United States": "https://www.amazon.com/dp/B0HP25B3L8"
+      "United States": "https://www.amazon.com/dp/B0HP25B3L8",
+      "Canada": "https://www.amazon.ca/dp/B0HP25B3L8",
+      "Australia": "https://www.amazon.com.au/dp/B0HP25B3L8",
+      "Ireland": "https://www.amazon.ie/dp/B0HP25B3L8",
+      "Germany": "https://www.amazon.de/dp/B0HP25B3L8",
+      "France": "https://www.amazon.fr/dp/B0HP25B3L8",
+      "Spain": "https://www.amazon.es/dp/B0HP25B3L8",
+      "Italy": "https://www.amazon.it/dp/B0HP25B3L8",
+      "Netherlands": "https://www.amazon.nl/dp/B0HP25B3L8",
+      "Poland": "https://www.amazon.pl/dp/B0HP25B3L8",
+      "Sweden": "https://www.amazon.se/dp/B0HP25B3L8",
+      "Belgium": "https://www.amazon.com.be/dp/B0HP25B3L8",
+      "Japan": "https://www.amazon.co.jp/dp/B0HP25B3L8"
     },
     "fun-facts": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HP64CHY1",
-      "United States": "https://www.amazon.com/dp/B0HP64CHY1"
+      "United States": "https://www.amazon.com/dp/B0HP64CHY1",
+      "Canada": "https://www.amazon.ca/dp/B0HP64CHY1",
+      "Australia": "https://www.amazon.com.au/dp/B0HP64CHY1",
+      "Ireland": "https://www.amazon.ie/dp/B0HP64CHY1",
+      "Germany": "https://www.amazon.de/dp/B0HP64CHY1",
+      "France": "https://www.amazon.fr/dp/B0HP64CHY1",
+      "Spain": "https://www.amazon.es/dp/B0HP64CHY1",
+      "Italy": "https://www.amazon.it/dp/B0HP64CHY1",
+      "Netherlands": "https://www.amazon.nl/dp/B0HP64CHY1",
+      "Poland": "https://www.amazon.pl/dp/B0HP64CHY1",
+      "Sweden": "https://www.amazon.se/dp/B0HP64CHY1",
+      "Belgium": "https://www.amazon.com.be/dp/B0HP64CHY1",
+      "Japan": "https://www.amazon.co.jp/dp/B0HP64CHY1"
     },
     "fan-journal": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HP7X9TMT",
-      "United States": "https://www.amazon.com/dp/B0HP7X9TMT"
+      "United States": "https://www.amazon.com/dp/B0HP7X9TMT",
+      "Canada": "https://www.amazon.ca/dp/B0HP7X9TMT",
+      "Australia": "https://www.amazon.com.au/dp/B0HP7X9TMT",
+      "Ireland": "https://www.amazon.ie/dp/B0HP7X9TMT",
+      "Germany": "https://www.amazon.de/dp/B0HP7X9TMT",
+      "France": "https://www.amazon.fr/dp/B0HP7X9TMT",
+      "Spain": "https://www.amazon.es/dp/B0HP7X9TMT",
+      "Italy": "https://www.amazon.it/dp/B0HP7X9TMT",
+      "Netherlands": "https://www.amazon.nl/dp/B0HP7X9TMT",
+      "Poland": "https://www.amazon.pl/dp/B0HP7X9TMT",
+      "Sweden": "https://www.amazon.se/dp/B0HP7X9TMT",
+      "Belgium": "https://www.amazon.com.be/dp/B0HP7X9TMT",
+      "Japan": "https://www.amazon.co.jp/dp/B0HP7X9TMT"
     },
     "release-tracker": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HP8D7TCQ",
-      "United States": "https://www.amazon.com/dp/B0HP8D7TCQ"
+      "United States": "https://www.amazon.com/dp/B0HP8D7TCQ",
+      "Canada": "https://www.amazon.ca/dp/B0HP8D7TCQ",
+      "Australia": "https://www.amazon.com.au/dp/B0HP8D7TCQ",
+      "Ireland": "https://www.amazon.ie/dp/B0HP8D7TCQ",
+      "Germany": "https://www.amazon.de/dp/B0HP8D7TCQ",
+      "France": "https://www.amazon.fr/dp/B0HP8D7TCQ",
+      "Spain": "https://www.amazon.es/dp/B0HP8D7TCQ",
+      "Italy": "https://www.amazon.it/dp/B0HP8D7TCQ",
+      "Netherlands": "https://www.amazon.nl/dp/B0HP8D7TCQ",
+      "Poland": "https://www.amazon.pl/dp/B0HP8D7TCQ",
+      "Sweden": "https://www.amazon.se/dp/B0HP8D7TCQ",
+      "Belgium": "https://www.amazon.com.be/dp/B0HP8D7TCQ",
+      "Japan": "https://www.amazon.co.jp/dp/B0HP8D7TCQ"
     },
     "studio-literacy": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HQ6B61GK",
-      "United States": "https://www.amazon.com/dp/B0HQ6B61GK"
+      "United States": "https://www.amazon.com/dp/B0HQ6B61GK",
+      "Canada": "https://www.amazon.ca/dp/B0HQ6B61GK",
+      "Australia": "https://www.amazon.com.au/dp/B0HQ6B61GK",
+      "Ireland": "https://www.amazon.ie/dp/B0HQ6B61GK",
+      "Germany": "https://www.amazon.de/dp/B0HQ6B61GK",
+      "France": "https://www.amazon.fr/dp/B0HQ6B61GK",
+      "Spain": "https://www.amazon.es/dp/B0HQ6B61GK",
+      "Italy": "https://www.amazon.it/dp/B0HQ6B61GK",
+      "Netherlands": "https://www.amazon.nl/dp/B0HQ6B61GK",
+      "Poland": "https://www.amazon.pl/dp/B0HQ6B61GK",
+      "Sweden": "https://www.amazon.se/dp/B0HQ6B61GK",
+      "Belgium": "https://www.amazon.com.be/dp/B0HQ6B61GK",
+      "Japan": "https://www.amazon.co.jp/dp/B0HQ6B61GK"
     },
     "world-literacy": {},
     "studio-numeracy": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HQ2Z4C5L",
-      "United States": "https://www.amazon.com/dp/B0HQ2Z4C5L"
+      "United States": "https://www.amazon.com/dp/B0HQ2Z4C5L",
+      "Canada": "https://www.amazon.ca/dp/B0HQ2Z4C5L",
+      "Australia": "https://www.amazon.com.au/dp/B0HQ2Z4C5L",
+      "Ireland": "https://www.amazon.ie/dp/B0HQ2Z4C5L",
+      "Germany": "https://www.amazon.de/dp/B0HQ2Z4C5L",
+      "France": "https://www.amazon.fr/dp/B0HQ2Z4C5L",
+      "Spain": "https://www.amazon.es/dp/B0HQ2Z4C5L",
+      "Italy": "https://www.amazon.it/dp/B0HQ2Z4C5L",
+      "Netherlands": "https://www.amazon.nl/dp/B0HQ2Z4C5L",
+      "Poland": "https://www.amazon.pl/dp/B0HQ2Z4C5L",
+      "Sweden": "https://www.amazon.se/dp/B0HQ2Z4C5L",
+      "Belgium": "https://www.amazon.com.be/dp/B0HQ2Z4C5L",
+      "Japan": "https://www.amazon.co.jp/dp/B0HQ2Z4C5L"
     },
     "world-numeracy": {}
+  },
+  "international_routes": {
+    "New Zealand": [
+      "Australia"
+    ],
+    "South Africa": [
+      "United Kingdom",
+      "United States"
+    ],
+    "South Korea": [
+      "United States"
+    ]
   }
 }

@@ -149,3 +149,9 @@ Simon requested only that the Treasures of Another Time cover and its adjacent w
 ## Six-book UK/US purchasing links — 7 November 2026
 
 Simon authorised continuing with the six existing books; the two World Tour titles cannot be uploaded until Sunday 8 November. Recovered his six ASINs and exact UK/US destinations from 4 November and connected those 12 buttons. See AMAZON_LINKS.md for the full table and verification limits. Amazon rejects the browser session, so product availability and delivery are not independently verified. Other country destinations remain pending, not guessed. World Tour continues to display Coming soon. All visual design is unchanged. The shared purchase-data fetch bypasses stale caches; only its script query changes on the eight book pages and retained preview.
+
+## Remaining regional Amazon links — 7 November 2026
+
+Simon clarified that country addresses share the same book code. Confirmed KDP's official /dp/ASIN linking guidance and its 14 paperback marketplaces, then populated all 84 regional URLs for the six supplied codes. Canada, Australia and Ireland now work alongside UK and US. More countries lists Germany, France, Spain, Italy, Netherlands, Poland, Sweden, Belgium and Japan. New Zealand, South Africa and South Korea open clear international delivery-check options instead of implying local KDP stores. Amazon determines actual availability and delivery. The inability to inspect Amazon stock is recorded separately from successful link construction.
+
+All 72 book/country button flows passed a functional test, including all World Tour placeholders; 84 destination domains and ASINs match. The long store list fits and scrolls on small phones. Only link data, country-dialog behavior and script cache queries changed; all visual design remains untouched. See AMAZON_LINKS.md.
