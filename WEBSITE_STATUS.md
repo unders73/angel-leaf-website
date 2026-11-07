@@ -97,3 +97,7 @@ All eight books and the original Literacy proof now have the smaller centred Ang
 ## Final header spacing revision
 
 Desktop header controls now sit below the border, with a larger centred Angel Leaf logo lowered into the clear header area. The approved mobile logo is unchanged. The Amazon wordmark baseline matches the adjacent heading words, with its smile underneath and clear space above the country controls. Shared styles applied to all eight book pages and the first proof. Local validation covers normal/short laptop windows and small phones; original covers, real samples, store controls and purchase-link data retained. Review image: reviews/Angel-Leaf-Final-Spacing.jpg.
+
+## Current: mobile locked; fuller desktop samples and fitted icons
+
+All eight individual book pages now show their cover plus four real PDF sample pages on desktop. The two additional samples are desktop-only. Country flags and globe fit the existing button bars, including shorter widescreen layouts. Mobile is explicitly approved and unchanged (pixel-identical Activity comparison); its gallery and lightbox remain three images. Desktop logo, border artwork, titles and the homepage/collection files are untouched. Review version: desktop-gallery-20261107. Purchasing URLs are still pending Simon's table.

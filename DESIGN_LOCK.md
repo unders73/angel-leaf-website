@@ -63,3 +63,9 @@ Simon requested only three changes across the eight approved book pages: a small
 Simon approved the mobile Angel Leaf logo exactly as positioned and requested desktop-only enlargement/lowering of the centred logo and lowering of Back to collection, Sample pages and Choose your Amazon store below the decorative border. He also requested Amazon lettering aligned with the surrounding words, its smile below, and proportionate clearance above the country buttons on both layouts.
 
 These refinements use shared styles for all eight books. Mobile brand rules and measured coordinates remain unchanged. Standard desktop/mobile gallery and country-button geometry is retained. Short desktop windows reserve a slightly taller header row to keep the larger lowered logo clear of the book images, while the country grid stays in place. Amazon lettering uses its actual wordmark baseline and the whole heading is lifted slightly; the smile clears the helper text by at least 7px in tested layouts. Checked 1363×936, 1363×768, 390×844 and 320×568 with no page scrolling.
+
+## Mobile final approval; desktop gallery and icon correction — 7 November 2026
+
+Simon explicitly approved mobile across all eight books: “mobile, don't touch, finished.” Preserve the existing phone layout, logo, artwork, original three-image gallery, country buttons, type and no-scroll behaviour.
+
+The only authorised desktop changes are a fuller gallery (his preferred cover plus four genuine interior pages, with overlap allowed) and reducing country flags/globe to fit the existing bars. These changes are desktop-container-only. The original logo, artwork, title, intro and store layout are unchanged. Additional samples and the five-image lightbox are desktop-only; mobile retains its original three. See BOOK_PAGE_PROOF.md for genuine source page mapping. Further design changes require a new request.
