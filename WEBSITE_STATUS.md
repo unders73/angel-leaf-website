@@ -89,3 +89,7 @@ Keep the source and these continuation notes current so a conversation restart d
 ## All eight individual book pages
 
 Simon approved the desktop/mobile layout and authorised the eight-book rollout with borders matching each book. All eight book routes have now been replaced with that layout. Every page has its original cover, two genuine interior pages, matching decorative border, nine country buttons and image enlargement. See BOOK_PAGE_PROOF.md and BOOK_ARTWORK.md. Country URLs are the remaining input.
+
+## Latest individual-book refinement
+
+All eight books and the original Literacy proof now have the smaller centred Angel Leaf logo with no border-masking background; the visible coming-soon footer is removed; the store heading reads “Choose your Amazon store” with a locally served Amazon wordmark. Shared gallery/market geometry and all actual book artwork are retained. CSS/JS cache keys updated.

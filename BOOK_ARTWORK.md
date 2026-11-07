@@ -52,3 +52,7 @@ Coral red, turquoise cyan, yellow, black and white. Match this book's concert/wo
 
 Shared prompt: Create one landscape 1536 × 1024 decorative frame, narrow continuous artwork around all four edges, transparent empty centre, crisp hand-drawn outlines. No characters, faces, covers, logo, text, headings, UI or watermark. Decoration remains at edges and corners so real HTML and authentic book pages remain separate. Frames use CSS nine-slice round repeat to preserve natural icon proportions on different screens.
 
+
+## Amazon store wordmark
+
+`assets/amazon-logo.svg` is the original unmodified Amazon wordmark obtained from https://upload.wikimedia.org/wikipedia/commons/0/06/Amazon_2024.svg (source page: https://commons.wikimedia.org/wiki/File:Amazon_2024.svg). Used to identify the retailer in the country selector, with accessible “Choose your Amazon store” heading text.

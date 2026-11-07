@@ -53,3 +53,7 @@ Approved source: commit 909039c4052e1d043a29220939e834cecbd7f7b2, learning.html 
 
 Simon approved the first Literacy Studio Sessions desktop/mobile proof: “the layout is perfect, for both the mobile and the web page.” He authorised applying that format to all eight books, with each page's border and artwork matching its own book. The first proof's generic frame must be corrected too. Preserve this layout for all eight routes; original covers and genuine interior pages must not be generated. See BOOK_PAGE_PROOF.md for the rollout and source mapping. Purchasing URLs are still to come from Simon's table.
 
+
+## Individual-book header and store refinements — 7 November 2026
+
+Simon requested only three changes across the eight approved book pages: a smaller, centrally aligned Angel Leaf logo clear of the border; removal of the small purchasing-links-coming-soon footer; and “Choose your Amazon store” with an Amazon logo. Shared header positioning removes the former opaque white backing so the matching artwork remains continuous. Existing book galleries, titles, country buttons, original cover/sample artwork and collection pages remain unchanged. The footer text is removed while its empty layout space is retained to preserve country button positions. Purchase-link placeholder dialogs remain until actual links are supplied.

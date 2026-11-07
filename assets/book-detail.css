@@ -29,3 +29,25 @@ html[data-view="mobile"] .page{grid-template-rows:clamp(53px,8.6svh,76px) minmax
 @container(max-width:700px){body[data-book="fan-journal"] .series{font-size:19px}.brand{box-shadow:0 0 5px 2px #fff}}
 
 @media(min-width:701px) and (max-width:1100px){.page:before{border-image-width:70px}}
+
+/* Approved header and Amazon wording refinements, 7 November 2026. */
+.masthead{grid-template-columns:1fr 1fr}
+.brand{position:absolute;left:50%;top:16px;transform:translateX(-50%);width:210px;height:calc(100% - 20px);margin:0;background:transparent;box-shadow:none}
+.brand img{width:100%;height:100%;object-fit:contain}
+.head-links{grid-column:2}
+.market h2{display:flex;align-items:center;justify-content:center;gap:.25em;white-space:nowrap}
+.amazon-logo{display:block;width:3.35em;height:1.12em;object-fit:contain;flex:none;transform:translateY(.11em)}
+.store-footer-space{height:11px}
+@container(max-height:760px) and (min-width:701px){.store-footer-space{height:9.9px}}
+@container(max-width:700px){
+ .masthead{grid-template-columns:1fr}
+ .brand{width:170px;top:15px;height:calc(100% - 17px);margin:0;box-shadow:none}
+ .market h2{font-size:clamp(19px,5.6cqw,23px);height:calc(clamp(22px,6cqw,28px) + 6px);padding:3px 4px;letter-spacing:-.55px;gap:.25em}
+ .store-footer-space{height:8.8px}
+}
+@container(max-width:700px) and (max-height:650px){.market h2{height:29px;font-size:19px}}
+.market h2{height:calc(clamp(23px,3cqw,43px) + 10px)}
+@container(max-height:760px) and (min-width:701px){.market h2{height:40px}}
+@container(max-width:700px){.market h2{height:calc(clamp(22px,6cqw,28px) + 6px)}}
+@container(max-width:700px) and (max-height:650px){.market h2{height:29px}}
+@container(min-width:701px){.brand{top:26px;height:calc(100% - 30px)}}
