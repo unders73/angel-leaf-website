@@ -1,44 +1,34 @@
-# Individual book page — first proof
+# Individual book pages — eight-book rollout
 
-Status: first desktop and mobile proof ready for Simon's review. Do not roll this design out to the other seven books until he approves both views.
+Status: desktop/mobile layout approved by Simon on 7 November 2026 and applied to all eight books. Each book now uses a separate border based on its own original cover. The former generic Literacy proof frame has been replaced by blue/yellow literacy artwork.
 
-## Review scope
+## Approved layout
 
-- First title: K-pop Literacy — Studio Sessions, matching Simon's uploaded reference 1000030925.png.
-- Desktop review: https://unders73.github.io/angel-leaf-website/preview-studio-literacy.html?v=studio-proof-1
-- Mobile review: https://unders73.github.io/angel-leaf-website/preview-studio-literacy.html?view=mobile&v=studio-proof-1
-- Isolated review page: preview-studio-literacy.html. The existing homepage, Activity and Literacy/Numeracy collection pages remain locked. Existing book-detail routes are not replaced by this proof.
-- Desktop composition: illustrated border, centred Angel Leaf logo, descriptive text at left, original cover plus two genuine sample pages at right, 3 × 3 country grid underneath.
-- Mobile: one screen with no scrolling; heading, fanned cover/sample previews, brief content indicators, and all nine buttons. Images open in a viewport-fitted dialog with previous/next controls.
-- Button order follows the uploaded reference: United Kingdom, United States, Canada; Australia, Ireland, New Zealand; South Africa, South Korea, More countries.
-- All country buttons currently open clearly labelled preview information. Simon will supply purchasing URLs later in a Book title | Country | Amazon link table. Do not invent or activate assumed country URLs.
+Desktop: centred Angel Leaf brand, description at left, authentic cover and two original sample pages at right, nine country buttons underneath. Mobile: one screen, no scrolling, fanned artwork, tap-to-enlarge samples, nine country buttons. Shared CSS and JavaScript keep placement consistent. The previous preview-studio-literacy.html URL is retained with the corrected design.
 
-## Genuine source artwork
+The homepage, Activity collection, and Literacy/Numeracy collection HTML and artwork remain unchanged. Existing collection links already lead to the eight book routes below.
 
-- Cover: existing assets/studio-literacy.webp, already rendered from the original cover PDF for the approved collection page.
-- Interior: K-Pop Literacy Studio Sessions Content - Angel_Leaf.pdf, 140 pages.
-- Samples are direct rasterisations of PDF page 9, Meet the Word Families, and PDF page 75, Set the Scene. Text and page artwork are unchanged; no generated or redrawn sample pages.
-- Original Angel Leaf logo and flag assets reused from the retained Literacy page source.
-- Only the surrounding decorative frame is newly generated. The built-in image tool used Simon's uploaded screenshot as the reference, retaining cyan/magenta/yellow scribbles, musical objects, stars, headphones and corner books while removing all central text, covers, pages, buttons and the Preview overlay. The transparent frame is a separate asset; all book content is real HTML and authentic image assets.
+## Original source pages
 
-## Verification
+| Book route | Interior PDF | PDF pages and titles |
+| --- | --- | --- |
+| book-activity.html | K-Pop Content -Angel_Leaf(3).pdf | 5: First Group Word Search; 25: Stage Outfit Studio |
+| book-fun-facts.html | K-Pop Quiz Content - Angel_Leaf(1).pdf | 3: The Billion-View Breakthrough; 5: Know Your K-pop! |
+| book-fan-journal.html | K-Pop Journal Content - Angel_Leaf.pdf | 9: Things to Remember; 37: My Musical Comfort Zone |
+| book-release-tracker.html | K-Pop - Release & Review Content - Angel_Leaf(2).pdf | 42: Comeback Countdown; 60: Song Review |
+| book-studio-literacy.html | K-Pop Literacy Studio Sessions Content - Angel_Leaf.pdf | 9: Meet the Word Families; 75: Set the Scene |
+| book-world-literacy.html | LiteracyWorldTourInteriorFlat.pdf | 9: Word Families and a Press Release; 68: Plan an Interview with Room to Listen |
+| book-studio-numeracy.html | Angel_Leaf_Numeracy_Interior_Final.pdf | 9: Build the Numbers; 73: Estimate, Then Measure |
+| book-world-numeracy.html | Angel_Leaf_World_Tour_Interior.pdf | 22: Discounts Without the Hype; 64: Triangles and Parallelograms |
 
-- Phone sizes checked: 320 × 568, 360 × 640, 390 × 844, 430 × 932. Document scroll dimensions equal each viewport; all nine buttons are inside it. Smallest country button height is 46.734px.
-- Desktop sizes checked: 1363 × 936 and 900 × 700. Layout fits without horizontal or vertical scrolling.
-- Cover/sample image dialog opens and navigates between the three originals; closes back to the page. UK and More countries preview buttons exercised.
-- All referenced assets exist. Original Activity file SHA-256 remains aaf3270baf3740cecdfb35aabd8477ccbcd7f8a8ed448c0b8b315b9e46e34d76.
+Every sample is a direct rasterisation of the original PDF at 1.8×. Covers remain the original assets. Images use object-fit: contain and retain their proportions; no interior text or artwork was redrawn. Decorative frame generation is documented in BOOK_ARTWORK.md.
 
-## Sources available for the eight-book rollout
+## Purchasing links
 
-| Book | Original interior source |
-| --- | --- |
-| K-pop Activity | K-Pop Content -Angel_Leaf(3).pdf |
-| K-pop Fun Facts | K-Pop Quiz Content - Angel_Leaf(1).pdf |
-| K-pop Fan Journal | K-Pop Journal Content - Angel_Leaf.pdf |
-| K-pop Release Tracker & Review | K-Pop - Release & Review Content - Angel_Leaf(2).pdf |
-| Literacy Studio Sessions | K-Pop Literacy Studio Sessions Content - Angel_Leaf.pdf |
-| Literacy World Tour | LiteracyWorldTourInteriorFlat.pdf |
-| Numeracy Studio Sessions | Angel_Leaf_Numeracy_Interior_Final.pdf |
-| Numeracy World Tour | Angel_Leaf_World_Tour_Interior.pdf |
+The exact country order remains UK, US, Canada, Australia, Ireland, New Zealand, South Africa, South Korea and More countries. `assets/purchase-links.json` contains one empty country-to-URL map per book. Fill only with Simon's supplied links. No URLs were invented. Empty buttons explain that purchasing links are coming soon. More countries supports additional country entries in the same table.
 
-All eight covers already exist as original cover assets in this repository. Select actual, visually varied interior pages for each book. Preserve their text, artwork and natural proportions.
+## Validation
+
+All eight pages checked at desktop 1363 × 936, compact desktop 900 × 700, mobile 390 × 844 and small mobile 320 × 568. Document dimensions equal viewport dimensions, all nine country buttons remain visible, and minimum phone button height is 46.734px. Desktop gallery and cover positioning are identical across all eight. Mobile header space is fixed to the approved dimensions to prevent variations in title text shifting the book position.
+
+Original sample enlargement, next/previous navigation, close controls and country placeholder messages are checked in browser. Shared JavaScript passes node --check. Every cover/sample/flag/local link reference resolves. No existing homepage or collection layout edits were made.

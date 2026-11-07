@@ -48,3 +48,8 @@ Approved source: commit 909039c4052e1d043a29220939e834cecbd7f7b2, learning.html 
 - Verified book and panel geometry matches Activity at 1363 × 936, 390 × 844 and 320 × 740. Mobile figures are centred and bottom-anchored at 88%; base-scene fade is 48–58%, clearing heads and microphones beneath the Literacy covers.
 - Do not redesign or adjust these approved views unless Simon explicitly requests a further change. Preserve them when building the remaining collection and individual book pages.
 - This approval concerns the collection page. Individual book detail drafts and country purchase links remain unfinished.
+
+## Individual book pages — layout approved 7 November 2026
+
+Simon approved the first Literacy Studio Sessions desktop/mobile proof: “the layout is perfect, for both the mobile and the web page.” He authorised applying that format to all eight books, with each page's border and artwork matching its own book. The first proof's generic frame must be corrected too. Preserve this layout for all eight routes; original covers and genuine interior pages must not be generated. See BOOK_PAGE_PROOF.md for the rollout and source mapping. Purchasing URLs are still to come from Simon's table.
+

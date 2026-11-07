@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "books": {
+    "activity": {},
+    "fun-facts": {},
+    "fan-journal": {},
+    "release-tracker": {},
+    "studio-literacy": {},
+    "world-literacy": {},
+    "studio-numeracy": {},
+    "world-numeracy": {}
+  }
+}

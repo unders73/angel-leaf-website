@@ -1,6 +1,6 @@
 # Angel Leaf website — continuation point
 
-Updated: first individual-book desktop/mobile proof prepared for Literacy Studio Sessions. Homepage and both completed collection pages remain locked.
+Updated 7 November 2026: approved individual-book layout rolled out to all eight books with book-specific borders and genuine sample pages.
 
 - Repository: https://github.com/unders73/angel-leaf-website
 - Branch: main
@@ -82,10 +82,10 @@ Simon explicitly approved both Literacy & Numeracy views: “Yes, lock in please
 
 Activity remains the approved reference. Adult Colouring is the remaining collection page; await Simon’s instruction to begin it.
 
-Individual book detail pages and country purchasing options remain separate later work; do not present those drafts as finished.
+All eight individual book pages now use the approved format. Country purchasing links remain pending Simon’s table.
 
 Keep the source and these continuation notes current so a conversation restart does not require rebuilding or reapproving completed work.
 
-## Individual book proof — awaiting review
+## All eight individual book pages
 
-Simon asked for the first desktop and mobile pair for Literacy Studio Sessions, following his uploaded reference, ready for morning review. See BOOK_PAGE_PROOF.md for exact source pages, constraints, review links and verification. Mobile must fit on one screen without scrolling. Purchasing links come later from Simon's table. This is one book/two views only; the remaining seven books/fourteen views await his approval of this template.
+Simon approved the desktop/mobile layout and authorised the eight-book rollout with borders matching each book. All eight book routes have now been replaced with that layout. Every page has its original cover, two genuine interior pages, matching decorative border, nine country buttons and image enlargement. See BOOK_PAGE_PROOF.md and BOOK_ARTWORK.md. Country URLs are the remaining input.
