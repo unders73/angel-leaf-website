@@ -170,3 +170,8 @@ Simon replaced the decorative leafy-arrow brief. Desktop now uses a straight, th
 ## Desktop twig-arrow refinement — 7 November 2026
 
 Simon approved and locked the mobile arrows and requested only thicker, straight brown twig/vine arrows on desktop, in the botanical border style. The two desktop SVGs now have organic bark edges, warm brown shading, knots and engraved grain with clear branch-shaped arrow tips. Their stem is thicker; heading centres and horizontal spans are retained. Mobile SVGs, mobile CSS, book artwork, sizes, titles, border, logo, homepage and other pages are unchanged. Browser checks confirmed the desktop appearance and a pixel-identical 390×844 mobile view.
+
+
+## Adult collection engraved logo — 7 November 2026
+
+Simon supplied Angel_Leaf_Hollow_Engraved_Final_Spacing_Transparent.png and authorised this logo only on the adult collection page, desktop and mobile. It is stored as a pixel-identical lossless transparent WebP. The existing responsive logo box, position and link are preserved, with object-fit contain so the new artwork is not distorted. A restrained CSS brightness adjustment and subpixel shadow reinforce the brown linework at its small display size. No logo illustration or faces are regenerated. Homepage, all other page logos, mobile arrows, books and layout remain unchanged. The thicker desktop twig arrows from the preceding request are retained.
