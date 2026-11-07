@@ -155,3 +155,8 @@ Simon supplied `Black Wonders Cover with Raised Footer-1.png` and `Grey Fairgrou
 ## Desktop adult collection typography — 7 November 2026
 
 Simon reconfirmed the complete mobile site is locked. He requested slightly larger desktop Curious Wonderings, Gentle Moments and Hidden Details headings, in warmer brown, and darker/browner book titles below. Only a `min-width:901px` colouring-container override was added: range-heading size increases from 1.7cqw/max23px to 1.9cqw/max26px, colour #6b4329; book titles use #51301f. The heading line box retains its previous height so cover positions do not shift. All mobile rules, other text, covers, dimensions, artwork and homepage remain unchanged.
+
+
+## Adult range progression order and vine arrows — 7 November 2026
+
+Simon requested a targeted exception to the mobile lock: the collection order is Gentle Moments, Curious Wonderings, Hidden Details, from gentler to more detailed. Desktop range sections move as complete groups (headings, covers and captions). Mobile tab DOM order matches, and Gentle Moments is the initial selected range. Keyboard Left/Right/Home/End navigation continues to follow that order. Small original inline SVG vine arrows sit between the desktop headings and between the mobile tabs. Mobile tabs are narrower and inset 8px at each side, retaining their original height and vertical position. All book artwork, sizes, captions, page border, logo, homepage and other pages are preserved. The homepage already had the correct pair order.
