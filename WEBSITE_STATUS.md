@@ -1,5 +1,11 @@
 # Angel Leaf website — continuation point
 
+## Primary address updated — 7 November 2026
+
+The public website is now https://angelleaf.web.app/ on free Firebase Hosting. The approved desktop and mobile designs are preserved. GitHub remains the source, and the former GitHub Pages address remains available. See FIREBASE_HOSTING.md for verification and publishing steps. Future updates must be published to Firebase as well as committed to GitHub; GitHub-to-Firebase automatic deployment is not configured.
+
+The historical entries below retain their original review URLs and progression. Use the new address for public sharing.
+
 Updated 7 November 2026: approved individual-book layout rolled out to all eight books with book-specific borders and genuine sample pages.
 
 - Repository: https://github.com/unders73/angel-leaf-website

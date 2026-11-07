@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "site": "angelleaf",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "firebase-debug*.log",
+      "ui-debug.log"
+    ],
+    "cleanUrls": false
+  }
+}
