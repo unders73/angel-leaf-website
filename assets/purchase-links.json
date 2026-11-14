@@ -81,7 +81,22 @@
       "Belgium": "https://www.amazon.com.be/dp/B0HQ6B61GK",
       "Japan": "https://www.amazon.co.jp/dp/B0HQ6B61GK"
     },
-    "world-literacy": {},
+    "world-literacy": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HQZG2NK3",
+      "United States": "https://www.amazon.com/dp/B0HQZG2NK3",
+      "Canada": "https://www.amazon.ca/dp/B0HQZG2NK3",
+      "Australia": "https://www.amazon.com.au/dp/B0HQZG2NK3",
+      "Ireland": "https://www.amazon.ie/dp/B0HQZG2NK3",
+      "Germany": "https://www.amazon.de/dp/B0HQZG2NK3",
+      "France": "https://www.amazon.fr/dp/B0HQZG2NK3",
+      "Spain": "https://www.amazon.es/dp/B0HQZG2NK3",
+      "Italy": "https://www.amazon.it/dp/B0HQZG2NK3",
+      "Netherlands": "https://www.amazon.nl/dp/B0HQZG2NK3",
+      "Poland": "https://www.amazon.pl/dp/B0HQZG2NK3",
+      "Sweden": "https://www.amazon.se/dp/B0HQZG2NK3",
+      "Belgium": "https://www.amazon.com.be/dp/B0HQZG2NK3",
+      "Japan": "https://www.amazon.co.jp/dp/B0HQZG2NK3"
+    },
     "studio-numeracy": {
       "United Kingdom": "https://www.amazon.co.uk/dp/B0HQ2Z4C5L",
       "United States": "https://www.amazon.com/dp/B0HQ2Z4C5L",
@@ -98,7 +113,22 @@
       "Belgium": "https://www.amazon.com.be/dp/B0HQ2Z4C5L",
       "Japan": "https://www.amazon.co.jp/dp/B0HQ2Z4C5L"
     },
-    "world-numeracy": {}
+    "world-numeracy": {
+      "United Kingdom": "https://www.amazon.co.uk/dp/B0HQZ9SG9N",
+      "United States": "https://www.amazon.com/dp/B0HQZ9SG9N",
+      "Canada": "https://www.amazon.ca/dp/B0HQZ9SG9N",
+      "Australia": "https://www.amazon.com.au/dp/B0HQZ9SG9N",
+      "Ireland": "https://www.amazon.ie/dp/B0HQZ9SG9N",
+      "Germany": "https://www.amazon.de/dp/B0HQZ9SG9N",
+      "France": "https://www.amazon.fr/dp/B0HQZ9SG9N",
+      "Spain": "https://www.amazon.es/dp/B0HQZ9SG9N",
+      "Italy": "https://www.amazon.it/dp/B0HQZ9SG9N",
+      "Netherlands": "https://www.amazon.nl/dp/B0HQZ9SG9N",
+      "Poland": "https://www.amazon.pl/dp/B0HQZ9SG9N",
+      "Sweden": "https://www.amazon.se/dp/B0HQZ9SG9N",
+      "Belgium": "https://www.amazon.com.be/dp/B0HQZ9SG9N",
+      "Japan": "https://www.amazon.co.jp/dp/B0HQZ9SG9N"
+    }
   },
   "international_routes": {
     "New Zealand": [

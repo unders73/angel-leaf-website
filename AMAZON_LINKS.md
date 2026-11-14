@@ -1,6 +1,6 @@
 # Amazon purchasing links
 
-Updated 7 November 2026. The six identifiers and UK/US product URLs below were supplied by Simon on 4 November and recovered from that conversation. These are supplied destinations, not independently verified live product listings.
+Updated 14 November 2026. Simon supplied the first six identifiers on 4 November and the two World Tour Amazon US product links on 14 November, confirming that all eight K-pop books are published. These are supplied destinations, not independent stock or delivery checks.
 
 | Book | ASIN | UK | US |
 | --- | --- | --- | --- |
@@ -10,6 +10,8 @@ Updated 7 November 2026. The six identifiers and UK/US product URLs below were s
 | K-pop Release Tracker & Review Book | B0HP8D7TCQ | [Amazon UK](https://www.amazon.co.uk/dp/B0HP8D7TCQ) | [Amazon US](https://www.amazon.com/dp/B0HP8D7TCQ) |
 | K-pop Literacy — Studio Sessions | B0HQ6B61GK | [Amazon UK](https://www.amazon.co.uk/dp/B0HQ6B61GK) | [Amazon US](https://www.amazon.com/dp/B0HQ6B61GK) |
 | K-pop Numeracy — Studio Sessions | B0HQ2Z4C5L | [Amazon UK](https://www.amazon.co.uk/dp/B0HQ2Z4C5L) | [Amazon US](https://www.amazon.com/dp/B0HQ2Z4C5L) |
+| K-pop Literacy — World Tour | B0HQZG2NK3 | [Amazon UK](https://www.amazon.co.uk/dp/B0HQZG2NK3) | [Amazon US](https://www.amazon.com/dp/B0HQZG2NK3) |
+| K-pop Numeracy — World Tour | B0HQZ9SG9N | [Amazon UK](https://www.amazon.co.uk/dp/B0HQZ9SG9N) | [Amazon US](https://www.amazon.com/dp/B0HQZ9SG9N) |
 
 ## Regional links — completed 7 November 2026
 
@@ -40,6 +42,12 @@ All 84 regional URLs were checked for exact country domain and the correct suppl
 
 The Activity UK button was previously clicked in the site and reached the exact supplied URL. Amazon rejected that browser session/client, so product identity, format, stock, price and delivery have not been independently confirmed. Standard regional link construction is now based on Amazon's documented pattern rather than treating the inability to inspect stock as a reason to leave the links blank.
 
-World Tour Literacy and World Tour Numeracy cannot be uploaded until Sunday 8 November 2026. Their maps remain empty and all buttons retain Coming soon. Add their exact ASINs once supplied/live, using the same region table; never substitute Studio Sessions.
+## World Tour publication correction — 14 November 2026
+
+Both World Tour maps were still empty after publication, so their nine country buttons each ended in a Coming soon message. Simon supplied the exact Amazon US listings: Literacy `B0HQZG2NK3`, Numeracy `B0HQZ9SG9N`. The two maps now use those identifiers across the same 14 supported marketplaces, bringing the catalogue to 112 regional product URLs. Existing New Zealand, South Africa and South Korea choices now resolve for World Tour too. The other six books' maps are unchanged.
+
+The 14 November pre-fix audit verified that the homepage, both K-pop collections and all eight book pages returned HTTP 200 and matched current source. All 72 country-button paths were exercised against the shared JavaScript. The post-fix check passed all 72 country-button paths using the prepared data and shared JavaScript, with 14 correct destinations per book and no Coming soon outcomes. All 112 product URLs match the identifiers in the table above; a nonempty map alone is not sufficient.
+
+Only purchase data and this record change. HTML, shared JavaScript, CSS, images and layout are unchanged. The shared code fetches purchase data with `cache: 'no-store'`; no HTML or script cache bump is needed. A GitHub push does not publish Firebase: run the existing Hosting deployment and verify the live purchase JSON before describing the fix as live.
 
 The purchase-data fetch uses cache:no-store, and the shared script query is regional-links-20261107 on the eight book routes and retained Literacy preview. Only link data, dialog behavior and script query strings changed. All page layouts, CSS, covers, sample pages, borders, logos and the Adult Colouring page remain unchanged.
