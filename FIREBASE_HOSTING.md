@@ -46,4 +46,4 @@ A GitHub push currently updates GitHub Pages only. It does **not** automatically
 
 ## Scope retained
 
-The eight K-pop pages keep their approved cover-plus-four-sample desktop galleries and three-image mobile galleries. Adult Colouring keeps its approved border, equal cover presentation and raised second mobile book/caption. World Tour purchase links remain coming soon until supplied/verified. Future TV, products, accessories, education and app sections are separate future work.
+The eight K-pop pages keep their approved cover-plus-four-sample desktop galleries and three-image mobile galleries. Adult Colouring keeps its approved border, equal cover presentation and raised second mobile book/caption. Both World Tour purchase maps were completed on 14 November 2026 using Simon's supplied Amazon identifiers. Future TV, products, accessories, education and app sections are separate future work.

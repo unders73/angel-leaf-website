@@ -1,6 +1,6 @@
 # Amazon purchasing links
 
-Updated 14 November 2026. Simon supplied the first six identifiers on 4 November and the two World Tour Amazon US product links on 14 November, confirming that all eight K-pop books are published. These are supplied destinations, not independent stock or delivery checks.
+Updated 16 November 2026. Simon supplied the first six identifiers on 4 November and the two World Tour Amazon US product links on 14 November, confirming that all eight K-pop books are published. These are supplied destinations, not independent stock or delivery checks.
 
 | Book | ASIN | UK | US |
 | --- | --- | --- | --- |
@@ -51,3 +51,16 @@ The 14 November pre-fix audit verified that the homepage, both K-pop collections
 Only purchase data and this record change. HTML, shared JavaScript, CSS, images and layout are unchanged. The shared code fetches purchase data with `cache: 'no-store'`; no HTML or script cache bump is needed. A GitHub push does not publish Firebase: run the existing Hosting deployment and verify the live purchase JSON before describing the fix as live.
 
 The purchase-data fetch uses cache:no-store, and the shared script query is regional-links-20261107 on the eight book routes and retained Literacy preview. Only link data, dialog behavior and script query strings changed. All page layouts, CSS, covers, sample pages, borders, logos and the Adult Colouring page remain unchanged.
+
+## Curious Wonderings publication links — 16 November 2026
+
+| Book | Supplied ASIN | Country routes | Publication state |
+| --- | --- | --- | --- |
+| Where Time Stands Still | B0HRV6P7GL | 14 regional Amazon stores, plus existing international delivery-check choices | Source updated; Firebase release still required |
+| Treasures of Another Time | B0HRTZ7SNJ | 14 regional Amazon stores, plus existing international delivery-check choices | Source updated; Firebase release still required |
+
+Both collection covers and titles now lead to book-specific purchase pages. Their Coming Soon ribbons are removed; the remaining four adult books retain theirs. Existing collection cover assets, proportions, typography, artwork and layout rules are preserved. The old Where Time placeholder's broken image is replaced by the approved collection cover. Both purchase pages use real HTML links and native expandable country lists, so Amazon choices work without JavaScript. Back to collection reopens Curious Wonderings on mobile. Existing Metricool tracking is retained on the collection and included on both purchase pages.
+
+The source audit checks all 140 regional mappings against exact country domains and book identifiers, confirms all 112 K-pop mappings are unchanged, checks both collection-to-book routes, 18 actual purchase anchors per new page (14 stores plus four international repeats), and verifies local asset/navigation references. Amazon stock, price and delivery remain customer-address-specific and are not certified by these URL checks. Local browser preview access was unavailable in this session; a successful source audit is not a claim of completed visual or live Firebase verification.
+
+Publishing remains separate from pushing to GitHub. The successful Firebase deployment in Simon's screenshot used the Cloud Shell account shown as `angel_leaf_admin`; the earlier failed attempts used a different account. No authenticated Firebase CLI or Google Cloud credentials are available in this workspace. Verify the live Firebase pages after deployment before marking either title live there.
