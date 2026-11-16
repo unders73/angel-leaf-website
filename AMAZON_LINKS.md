@@ -56,11 +56,15 @@ The purchase-data fetch uses cache:no-store, and the shared script query is regi
 
 | Book | Supplied ASIN | Country routes | Publication state |
 | --- | --- | --- | --- |
-| Where Time Stands Still | B0HRV6P7GL | 14 regional Amazon stores, plus existing international delivery-check choices | Source updated; Firebase release still required |
-| Treasures of Another Time | B0HRTZ7SNJ | 14 regional Amazon stores, plus existing international delivery-check choices | Source updated; Firebase release still required |
+| Where Time Stands Still | B0HRV6P7GL | 14 regional Amazon stores, plus existing international delivery-check choices | Live on GitHub Pages; Firebase release still required |
+| Treasures of Another Time | B0HRTZ7SNJ | 14 regional Amazon stores, plus existing international delivery-check choices | Live on GitHub Pages; Firebase release still required |
 
 Both collection covers and titles now lead to book-specific purchase pages. Their Coming Soon ribbons are removed; the remaining four adult books retain theirs. Existing collection cover assets, proportions, typography, artwork and layout rules are preserved. The old Where Time placeholder's broken image is replaced by the approved collection cover. Both purchase pages use real HTML links and native expandable country lists, so Amazon choices work without JavaScript. Back to collection reopens Curious Wonderings on mobile. Existing Metricool tracking is retained on the collection and included on both purchase pages.
 
 The source audit checks all 140 regional mappings against exact country domains and book identifiers, confirms all 112 K-pop mappings are unchanged, checks both collection-to-book routes, 18 actual purchase anchors per new page (14 stores plus four international repeats), and verifies local asset/navigation references. Amazon stock, price and delivery remain customer-address-specific and are not certified by these URL checks. Local browser preview access was unavailable in this session; a successful source audit is not a claim of completed visual or live Firebase verification.
 
 Publishing remains separate from pushing to GitHub. The successful Firebase deployment in Simon's screenshot used the Cloud Shell account shown as `angel_leaf_admin`; the earlier failed attempts used a different account. No authenticated Firebase CLI or Google Cloud credentials are available in this workspace. Verify the live Firebase pages after deployment before marking either title live there.
+
+GitHub Pages release `117b5c1743a232ca709ee6493a46349d0ffa4130` completed successfully. Both collection links were followed in the browser; both covers loaded; all four expandable store groups on each book exposed the expected destinations (18 purchase anchors per page, including international repeats). Desktop collection geometry matched the previous release for all covers, book headings, range headings and logo; the only removed cover text was the two requested Coming Soon ribbons. The collection's built-in 430px mobile preview showed both available titles, functioning links and the selected Curious Wonderings tab. This preview is not a full phone-viewport test of the two new purchase pages.
+
+The public Firebase collection was checked after the push and still served the previous version. GitHub Pages is the working fallback at https://unders73.github.io/angel-leaf-website/colouring.html#range-curious; the primary Firebase release remains outstanding.
