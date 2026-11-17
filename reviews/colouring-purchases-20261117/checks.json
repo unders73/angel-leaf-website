@@ -1,0 +1,138 @@
+[
+  {
+    "allCountriesVisible": true,
+    "book": "where-time-stands-still",
+    "coverHeight": 162.5,
+    "document": [
+      320,
+      568
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 51,
+    "noScroll": true,
+    "viewport": [
+      320,
+      568
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "where-time-stands-still",
+    "coverHeight": 352.984375,
+    "document": [
+      390,
+      844
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 66.046875,
+    "noScroll": true,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "where-time-stands-still",
+    "coverHeight": 232,
+    "document": [
+      900,
+      600
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 38.53125,
+    "noScroll": true,
+    "viewport": [
+      900,
+      600
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "where-time-stands-still",
+    "coverHeight": 338.5,
+    "document": [
+      1366,
+      768
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 48.90625,
+    "noScroll": true,
+    "viewport": [
+      1366,
+      768
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "treasures-of-another-time",
+    "coverHeight": 338.5,
+    "document": [
+      1366,
+      768
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 48.90625,
+    "noScroll": true,
+    "viewport": [
+      1366,
+      768
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "treasures-of-another-time",
+    "coverHeight": 232,
+    "document": [
+      900,
+      600
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 38.53125,
+    "noScroll": true,
+    "viewport": [
+      900,
+      600
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "treasures-of-another-time",
+    "coverHeight": 352.984375,
+    "document": [
+      390,
+      844
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 66.046875,
+    "noScroll": true,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "allCountriesVisible": true,
+    "book": "treasures-of-another-time",
+    "coverHeight": 162.5,
+    "document": [
+      320,
+      568
+    ],
+    "flags": 8,
+    "introClearOfStores": true,
+    "minimumButtonHeight": 51,
+    "noScroll": true,
+    "viewport": [
+      320,
+      568
+    ]
+  }
+]
