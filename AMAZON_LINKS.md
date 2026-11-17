@@ -77,6 +77,10 @@ Simon supplied a successful Cloud Shell deployment screenshot from `angel_leaf_a
 
 Simon rejected the plain adult purchase pages as inconsistent with the approved K-pop format. The purchase links were live, but the visual work was not complete. The replacement pages now reuse the shared book-page layout and purchasing behaviour, with the approved adult botanical frame, warm brown/cream theme, original covers, and eight country flags plus the globe. No collection, K-pop page, shared K-pop styling/script, or purchase identifier was changed.
 
-The replacement is available for review at `preview-colouring-purchases.html`; Simon has not yet approved this revision and Firebase has not been republished with it. Keep this distinct from the earlier successful link deployment.
+The replacement is available for review at `preview-colouring-purchases.html`; Simon explicitly approved this revision on 17 November 2026 and instructed publication. Firebase publication is still pending. Keep this distinct from the earlier successful link deployment.
 
 Both books were checked in real browser frames at 1366×768, 900×600, 390×844 and 320×568. All eight checks had document dimensions equal to the viewport, all nine country controls within the screen, eight flags, and the intro clear of the store section. Phone buttons were at least 51px high. The small-phone More countries dialog displayed nine additional stores with its close button in view. Final desktop/phone screenshots and measurements are in `reviews/colouring-purchases-20261117/`. The original border asset and cover images were reused; no artwork or faces were regenerated. The consistency requirement was also saved and verified in Simon's standing working instructions.
+
+## Approved release — 17 November 2026
+
+Simon explicitly approved the desktop/mobile proofs with “Yes, approved. Please LEARN from this. Go”. The approved runtime files are those at commit `d6eb944621dbe59a9fd45e4da9cbfaf1f71c7d1e`: both adult book HTML pages and `assets/colouring-book.css`. Preserve the exact approved botanical border, warm theme, original covers, flag buttons and one-screen layout. Source approval is complete; Firebase publication and a fresh live verification remain outstanding. The approval-record commit changes documentation only.
