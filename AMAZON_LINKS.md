@@ -1,6 +1,6 @@
 # Amazon purchasing links
 
-Updated 16 November 2026. Simon supplied the first six identifiers on 4 November and the two World Tour Amazon US product links on 14 November, confirming that all eight K-pop books are published. These are supplied destinations, not independent stock or delivery checks.
+Updated 17 November 2026. Simon supplied the first six identifiers on 4 November and the two World Tour Amazon US product links on 14 November, confirming that all eight K-pop books are published. These are supplied destinations, not independent stock or delivery checks.
 
 | Book | ASIN | UK | US |
 | --- | --- | --- | --- |
@@ -56,8 +56,8 @@ The purchase-data fetch uses cache:no-store, and the shared script query is regi
 
 | Book | Supplied ASIN | Country routes | Publication state |
 | --- | --- | --- | --- |
-| Where Time Stands Still | B0HRV6P7GL | 14 regional Amazon stores, plus existing international delivery-check choices | Live on GitHub Pages; Firebase release still required |
-| Treasures of Another Time | B0HRTZ7SNJ | 14 regional Amazon stores, plus existing international delivery-check choices | Live on GitHub Pages; Firebase release still required |
+| Where Time Stands Still | B0HRV6P7GL | 14 regional Amazon stores, plus existing international delivery-check choices | Live on Firebase and GitHub Pages; Firebase verified 17 November 2026 |
+| Treasures of Another Time | B0HRTZ7SNJ | 14 regional Amazon stores, plus existing international delivery-check choices | Live on Firebase and GitHub Pages; Firebase verified 17 November 2026 |
 
 Both collection covers and titles now lead to book-specific purchase pages. Their Coming Soon ribbons are removed; the remaining four adult books retain theirs. Existing collection cover assets, proportions, typography, artwork and layout rules are preserved. The old Where Time placeholder's broken image is replaced by the approved collection cover. Both purchase pages use real HTML links and native expandable country lists, so Amazon choices work without JavaScript. Back to collection reopens Curious Wonderings on mobile. Existing Metricool tracking is retained on the collection and included on both purchase pages.
 
@@ -67,4 +67,8 @@ Publishing remains separate from pushing to GitHub. The successful Firebase depl
 
 GitHub Pages release `117b5c1743a232ca709ee6493a46349d0ffa4130` completed successfully. Both collection links were followed in the browser; both covers loaded; all four expandable store groups on each book exposed the expected destinations (18 purchase anchors per page, including international repeats). Desktop collection geometry matched the previous release for all covers, book headings, range headings and logo; the only removed cover text was the two requested Coming Soon ribbons. The collection's built-in 430px mobile preview showed both available titles, functioning links and the selected Curious Wonderings tab. This preview is not a full phone-viewport test of the two new purchase pages.
 
-The public Firebase collection was checked after the push and still served the previous version. GitHub Pages is the working fallback at https://unders73.github.io/angel-leaf-website/colouring.html#range-curious; the primary Firebase release remains outstanding.
+On 16 November, the public Firebase collection still served the previous version after the GitHub push. GitHub Pages provided the working fallback pending the separate Firebase deployment.
+
+## Firebase release verified — 17 November 2026
+
+Simon supplied a successful Cloud Shell deployment screenshot from `angel_leaf_admin` showing 169 files and Deploy complete. A fresh independent HTTP check of https://angelleaf.web.app/ verified the collection, both new book pages, shared purchase data and adult purchase stylesheet all return HTTP 200. Both collection-to-book anchors are present; both purchase pages contain all 14 exact regional destinations using the supplied ASINs and no Coming Soon text. The collection retains four ribbons for the other adult titles. All 140 published country/ASIN mappings were checked, including all 112 existing K-pop mappings. The two requested book updates are now live on the primary Firebase website. This verifies website links, not Amazon stock or delivery eligibility. No further deployment is needed for this documentation-only record.
